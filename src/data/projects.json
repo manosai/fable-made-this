@@ -1,0 +1,506 @@
+[
+  {
+    "id": "autonomous-codebase-migration",
+    "title": "Autonomous Codebase Migration",
+    "creator": "Reported by launch coverage",
+    "category": "Long-Horizon Agents",
+    "format": "Case Study",
+    "impressiveness": 95,
+    "proof": "Long-running autonomous software task used as a launch example.",
+    "whyItMatters": "Shows sustained planning, repository-scale edits, and execution over a long horizon.",
+    "sourceUrl": "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-fable-5-brings-mythos-to-the-masses-anthropics-next-frontier-model-is-state-of-the-art-on-nearly-all-tested-benchmarks",
+    "createdDuringWindow": "Needs verification",
+    "tags": ["autonomy", "code", "migration"],
+    "status": "seed"
+  },
+  {
+    "id": "pokemon-vision-playthrough",
+    "title": "Pokemon FireRed Vision Playthrough",
+    "creator": "Reported by launch coverage",
+    "category": "One-Shot Complete Worlds",
+    "format": "Demo",
+    "impressiveness": 88,
+    "proof": "Played through a game using visual input.",
+    "whyItMatters": "A legible demo for multimodal agency: perception, state tracking, and repeated action.",
+    "sourceUrl": "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-fable-5-brings-mythos-to-the-masses-anthropics-next-frontier-model-is-state-of-the-art-on-nearly-all-tested-benchmarks",
+    "createdDuringWindow": "Needs verification",
+    "tags": ["vision", "games", "agent"],
+    "status": "seed"
+  },
+  {
+    "id": "survey-analysis-tool",
+    "title": "Survey Analysis Tool",
+    "creator": "Reported by launch coverage",
+    "category": "Research and Knowledge Work",
+    "format": "Tool",
+    "impressiveness": 84,
+    "proof": "Built as a multi-hour autonomous academic workflow example.",
+    "whyItMatters": "Turns raw qualitative data into an artifact people can use, not just a text answer.",
+    "sourceUrl": "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-fable-5-brings-mythos-to-the-masses-anthropics-next-frontier-model-is-state-of-the-art-on-nearly-all-tested-benchmarks",
+    "createdDuringWindow": "Needs verification",
+    "tags": ["research", "analysis", "tooling"],
+    "status": "seed"
+  },
+  {
+    "id": "higgsfield-voyager-documentary",
+    "title": "One-Prompt Voyager Documentary",
+    "creator": "Higgsfield AI",
+    "category": "Taste and Polish",
+    "format": "Video",
+    "impressiveness": 91,
+    "proof": "X post says Claude Fable 5 + Higgsfield MCP made a full Voyager documentary from a single prompt, sourcing public-domain NASA/JPL footage, planning 8 visual beats, filling gaps with labeled AI-generated shots, synthesizing TTS, and exporting the final MP4.",
+    "whyItMatters": "This is not just image generation. It is a multi-step media production pipeline: research, source selection, beat planning, gap filling, narration, and final video assembly.",
+    "sourceUrl": "https://x.com/higgsfield/status/2064858973216580002",
+    "createdDuringWindow": "Verified: posted Jun 10, 2026",
+    "windowRule": "Substantially shared during active availability window",
+    "platform": "X",
+    "engagement": {
+      "views": "25.8K",
+      "likes": 297,
+      "reposts": 49,
+      "replies": 32,
+      "bookmarks": 145
+    },
+    "media": {
+      "type": "video",
+      "src": "/media/higgsfield-voyager/video.mp4",
+      "poster": "/media/higgsfield-voyager/poster.jpg",
+      "duration": "01:00"
+    },
+    "tags": ["video", "documentary", "mcp", "higgsfield", "voyager"],
+    "status": "verified"
+  },
+  {
+    "id": "higgsfield-one-click-playable-game",
+    "title": "One-Click Playable Story Game",
+    "creator": "Higgsfield AI",
+    "category": "One-Shot Complete Worlds",
+    "format": "Playable Demo",
+    "impressiveness": 89,
+    "proof": "Quoted X post says Fable 5 researches the idea and writes a playable game with a full story while Higgsfield MCP generates all assets.",
+    "whyItMatters": "It combines planning, writing, asset generation, and executable game assembly into a single creator workflow. Good gallery fit because the result is concrete, visual, and easy to understand quickly.",
+    "sourceUrl": "https://x.com/higgsfield/status/2064780036234969131",
+    "createdDuringWindow": "Verified: posted Jun 10, 2026",
+    "windowRule": "Substantially shared during active availability window",
+    "platform": "X",
+    "media": {
+      "type": "video",
+      "src": "/media/higgsfield-game/video.mp4",
+      "poster": "/media/higgsfield-game/poster.jpg",
+      "duration": "00:43"
+    },
+    "tags": ["game", "story", "assets", "mcp", "higgsfield"],
+    "status": "verified"
+  },
+  {
+    "id": "fable-browser-cad-editor",
+    "title": "Browser CAD Editor That Designs 3D-Printable Models",
+    "creator": "Greg Feingold",
+    "category": "First-Principles Engines",
+    "format": "Interactive Tool",
+    "impressiveness": 87,
+    "proof": "X post says Claude Fable 5 designed a complete 3D-printable model inside a browser-based CAD editor, and that the CAD editor itself, including the built-in AI copilot, was also created by Fable 5.",
+    "whyItMatters": "This is a layered artifact: Fable creates the tool, the tool embeds an AI copilot, and that copilot produces a physical-world 3D-printable object. It belongs high in the gallery because it crosses software, design, and fabrication.",
+    "sourceUrl": "https://x.com/GregFeingold/status/2064400480206266384",
+    "createdDuringWindow": "Verified: posted Jun 9, 2026",
+    "windowRule": "Substantially shared during active availability window",
+    "platform": "X",
+    "engagement": {
+      "views": "2.1K",
+      "likes": 28,
+      "reposts": 1,
+      "replies": 2,
+      "bookmarks": 7
+    },
+    "media": {
+      "type": "image",
+      "src": "/media/fable-cad-editor/poster.jpg"
+    },
+    "tags": ["cad", "3d-printing", "browser-app", "copilot", "fabrication"],
+    "status": "verified"
+  },
+  {
+    "id": "asaad-fable-site",
+    "title": "Few-Prompt Interactive Website",
+    "creator": "Asaad Mahmood",
+    "category": "Taste and Polish",
+    "format": "Website Demo",
+    "impressiveness": 82,
+    "proof": "X post says the site was designed in Fable 5 with just a few prompts and includes a 22-second screen recording.",
+    "whyItMatters": "A strong gallery item because it shows the everyday creator end of Fable: not a lab benchmark, but a polished website made quickly enough that the craft question becomes taste, selection, and iteration.",
+    "sourceUrl": "https://x.com/AsaadMahmood5/status/2064603342387724332",
+    "createdDuringWindow": "Verified: posted Jun 10, 2026",
+    "windowRule": "Substantially shared during active availability window",
+    "platform": "X",
+    "engagement": {
+      "views": "106.2K",
+      "likes": 478,
+      "reposts": 20,
+      "replies": 49,
+      "bookmarks": 612
+    },
+    "media": {
+      "type": "video",
+      "src": "/media/asaad-fable-site/video.mp4",
+      "poster": "/media/asaad-fable-site/poster.jpg",
+      "duration": "00:22"
+    },
+    "tags": ["website", "few-prompts", "design", "screen-recording"],
+    "status": "verified"
+  },
+  {
+    "id": "dataempire-analytics-game",
+    "title": "DataEmpire: Web Analytics as a Civilization Game",
+    "creator": "Marc Lou",
+    "category": "Productized Play",
+    "format": "Playable Product Demo",
+    "impressiveness": 94,
+    "proof": "X post says Marc Lou asked Claude Fable 5 to build a game on top of his web analytics API: every visitor becomes a villager, traffic grows an empire, and an Age of Legends unlocks at 1M visitors.",
+    "whyItMatters": "This is one of the clearest examples of Fable turning boring business telemetry into a playful product surface. It is not merely a toy game; it wraps a real analytics API and gives users a reason to revisit their dashboard.",
+    "sourceUrl": "https://x.com/marclou/status/2065029898243318093",
+    "artifactUrl": "https://DataEmpire.DataFa.st",
+    "createdDuringWindow": "Verified: posted Jun 11, 2026",
+    "windowRule": "Substantially shared during active availability window",
+    "platform": "X",
+    "engagement": {
+      "views": "103K",
+      "likes": "1.3K",
+      "reposts": 51,
+      "replies": 163,
+      "bookmarks": 541
+    },
+    "media": {
+      "type": "image",
+      "src": "/media/dataempire/poster.jpg"
+    },
+    "tags": ["analytics", "game", "dashboard", "product", "datafast"],
+    "status": "verified"
+  },
+  {
+    "id": "spawn-5-system-build",
+    "title": "Spawn 5.0: Weeklong Game/Engine System Push",
+    "creator": "jacob / spawn",
+    "category": "Long-Horizon Agents",
+    "format": "System Build",
+    "impressiveness": 92,
+    "proof": "Creator's X post says Spawn 5.0 was built with Claude Fable 5 across 1,687 prompts and 102 sessions, including a from-scratch physics engine, clustered froxel lighting, realtime diffuse GI on WebGPU, million-particle GPU VFX, MMO-scale netcode, and an alpha native iOS app.",
+    "whyItMatters": "Even with creator-claim caveats, this is a major example of Fable as an extended engineering collaborator. The impressive part is not a single demo but sustained system evolution across rendering, physics, networking, and mobile surfaces.",
+    "sourceUrl": "https://x.com/jsnnsa/status/2064420561078693941",
+    "createdDuringWindow": "Verified post date: Jun 9, 2026",
+    "windowRule": "Substantially shared during active availability window",
+    "platform": "X",
+    "engagement": {
+      "views": "54.1K",
+      "likes": 253,
+      "reposts": 18,
+      "replies": 23,
+      "bookmarks": 109
+    },
+    "media": {
+      "type": "image",
+      "src": "/media/spawn-5/poster.jpg"
+    },
+    "tags": ["game-engine", "webgpu", "physics", "netcode", "ios"],
+    "status": "verified"
+  },
+  {
+    "id": "hermesworld-automated-mmo-loop",
+    "title": "HermesWorld Automated MMO Redesign Loop",
+    "creator": "Eric / outsource_",
+    "category": "Long-Horizon Agents",
+    "format": "Agentic Game Dev Loop",
+    "impressiveness": 93,
+    "proof": "Creator's X post says over 1B Fable 5 tokens were spent on HermesWorld, with Fable redesigning the MMO in a fully automated loop: integrating 12 maps, spawning in-game, taking screenshots for QA, root-causing crashes from logs, and shipping fixes in the next build.",
+    "whyItMatters": "This belongs in the gallery because it shows Fable being used less like a chatbot and more like a persistent game-development worker: run, inspect, diagnose, patch, and rebuild.",
+    "sourceUrl": "https://x.com/outsource_/status/2065586212266541515",
+    "createdDuringWindow": "Verified: posted Jun 13, 2026",
+    "windowRule": "Substantially shared during active availability window",
+    "platform": "X",
+    "engagement": {
+      "views": "109.7K",
+      "likes": 365,
+      "reposts": 32,
+      "replies": 55,
+      "bookmarks": 172
+    },
+    "media": {
+      "type": "video",
+      "src": "/media/hermesworld-mmo/video.mp4",
+      "poster": "/media/hermesworld-mmo/poster.jpg",
+      "duration": "00:58"
+    },
+    "tags": ["mmo", "game-dev", "qa", "autonomous-loop", "debugging"],
+    "status": "verified"
+  },
+  {
+    "id": "fable-one-shot-horror-game",
+    "title": "One-Shot Horror Game Live Demo",
+    "creator": "SuggestionMission516",
+    "category": "One-Shot Complete Worlds",
+    "format": "Game Demo",
+    "impressiveness": 90,
+    "proof": "Reddit post in r/singularity titled \"It's over. Claude Fable 5 one-shots horror game live\" includes a 4:30 video player and was surfaced by the /last30days Reddit pass.",
+    "whyItMatters": "A full-length public gameplay demo is more digestible than a claim. The gallery value is immediate: visitors can watch the artifact and understand why one-shot game generation caught attention.",
+    "sourceUrl": "https://www.reddit.com/r/singularity/comments/1u1h7de/its_over_claude_fable_5_oneshots_horror_game_live/",
+    "createdDuringWindow": "Verified: Reddit post 7d before Jun 16, 2026",
+    "windowRule": "Substantially shared during active availability window",
+    "platform": "Reddit",
+    "engagement": {
+      "upvotes": "2.4K",
+      "comments": 580,
+      "awards": 3
+    },
+    "media": {
+      "type": "video",
+      "src": "/media/fable-horror-game/video.mp4",
+      "poster": "/media/fable-horror-game/poster.png",
+      "duration": "04:30"
+    },
+    "tags": ["horror-game", "one-shot", "reddit", "gameplay", "last30days"],
+    "status": "verified"
+  },
+  {
+    "id": "fable-ai-lab-monopoly",
+    "title": "AI-Lab Monopoly With Multiplayer Share Codes",
+    "creator": "Justine Moore",
+    "category": "Productized Play",
+    "format": "Game Demo",
+    "impressiveness": 95,
+    "proof": "X post says Fable 5 recreated Monopoly with AI labs and startups as properties, including game rules, money, turns, and share codes for multiplayer games. The post includes a 22-second embedded video.",
+    "whyItMatters": "This is a compact but unusually complete game artifact: recognizable rules, custom theme, stateful turns, money mechanics, and shareable multiplayer sessions. It is also highly legible for gallery visitors because the premise lands immediately.",
+    "sourceUrl": "https://x.com/venturetwins/status/2064504760951304346",
+    "createdDuringWindow": "Verified: posted 8:27 PM · Jun 9, 2026",
+    "windowRule": "Substantially shared during active availability window",
+    "platform": "X",
+    "engagement": {
+      "views": "426K",
+      "likes": "2.1K",
+      "reposts": 184,
+      "replies": 119,
+      "bookmarks": 793
+    },
+    "media": {
+      "type": "image",
+      "src": "/media/fable-ai-lab-monopoly/poster.jpg"
+    },
+    "tags": ["monopoly", "multiplayer", "game-rules", "share-codes", "ai-labs"],
+    "status": "verified"
+  },
+  {
+    "id": "fable-v8-engine-cad",
+    "title": "Working V8 Engine Model in CAD",
+    "creator": "Aaron Li",
+    "category": "First-Principles Engines",
+    "format": "CAD Demo",
+    "impressiveness": 96,
+    "proof": "X post says Claude Fable 5 made a fully working V8 engine model in under 10 minutes and includes a 9-second embedded CAD video. A follow-up links to the Adam Fusion extension.",
+    "whyItMatters": "This is one of the clearest Fable-era examples of AI moving from code/text into spatial engineering. The artifact is specific, mechanical, and immediately inspectable, with unusually high engagement for a CAD demo.",
+    "sourceUrl": "https://x.com/aaronli/status/2064876123109089742",
+    "artifactUrl": "https://adam.new",
+    "createdDuringWindow": "Verified: posted 9:03 PM · Jun 10, 2026",
+    "windowRule": "Substantially shared during active availability window",
+    "platform": "X",
+    "engagement": {
+      "views": "835.1K",
+      "likes": "6.9K",
+      "reposts": 627,
+      "replies": 236,
+      "bookmarks": "3K"
+    },
+    "media": {
+      "type": "image",
+      "src": "/media/fable-v8-engine/poster.jpg"
+    },
+    "tags": ["cad", "fusion", "mechanical-design", "v8-engine", "adam"],
+    "status": "verified"
+  },
+  {
+    "id": "fable-boeing-747-cad",
+    "title": "Boeing 747 Designed in Autodesk Fusion",
+    "creator": "Zach Dive",
+    "category": "First-Principles Engines",
+    "format": "CAD Demo",
+    "impressiveness": 91,
+    "proof": "X post says one prompt through Adam/Fable designed an entire Boeing 747 in Autodesk Fusion and includes a 26-second embedded video.",
+    "whyItMatters": "A strong visual example of CAD automation: even if the model is a demo rather than production engineering, it shows Fable being used inside professional creation software instead of only generating standalone webpages.",
+    "sourceUrl": "https://x.com/zachdive/status/2064793406145269919",
+    "createdDuringWindow": "Verified: posted 3:34 PM · Jun 10, 2026",
+    "windowRule": "Substantially shared during active availability window",
+    "platform": "X",
+    "engagement": {
+      "views": "212K",
+      "likes": "1.1K",
+      "reposts": 108,
+      "replies": 49,
+      "bookmarks": 636
+    },
+    "media": {
+      "type": "image",
+      "src": "/media/fable-boeing-cad/poster.jpg"
+    },
+    "tags": ["cad", "autodesk-fusion", "boeing-747", "adam", "design-tool"],
+    "status": "verified"
+  },
+  {
+    "id": "fable-limbo-clone",
+    "title": "Limbo-Style Side-Scroller Clone",
+    "creator": "Chris",
+    "category": "One-Shot Complete Worlds",
+    "format": "Game Demo",
+    "impressiveness": 87,
+    "proof": "X post says Claude Fable 5 at extra-high reasoning produced a Limbo clone and includes a 42-second embedded video.",
+    "whyItMatters": "This broadens the gallery's game set beyond board games and horror demos into physics/platformer feel. The post is terse, but the public video plus date and engagement make it a useful browseable artifact.",
+    "sourceUrl": "https://x.com/ChrissGPT/status/2065478857960849631",
+    "createdDuringWindow": "Verified: posted 12:58 PM · Jun 12, 2026",
+    "windowRule": "Substantially shared during active availability window",
+    "platform": "X",
+    "engagement": {
+      "views": "51.9K",
+      "likes": 387,
+      "reposts": 27,
+      "replies": 33,
+      "bookmarks": 98
+    },
+    "media": {
+      "type": "image",
+      "src": "/media/fable-limbo-clone/poster.jpg"
+    },
+    "tags": ["platformer", "limbo", "game-demo", "extra-high", "side-scroller"],
+    "status": "verified"
+  },
+  {
+    "id": "fable-city-block-simulator",
+    "title": "One-Shot City Block Simulator",
+    "creator": "Bilawal Sidhu",
+    "category": "One-Shot Complete Worlds",
+    "format": "Simulation Demo",
+    "impressiveness": 96,
+    "proof": "X post says Claude Fable created a city block simulator with multi-agent traffic, live detection boxes and tracks, plus a day-to-night cycle, and that it one-shotted the result. The post includes a 24-second embedded video.",
+    "whyItMatters": "This is the cleanest example of the one-shot awe pattern: not a single UI screen, but a miniature world with agents, visual instrumentation, and environmental time. The impressive part is coherence across interacting systems.",
+    "sourceUrl": "https://x.com/bilawalsidhu/status/2064524211914223867",
+    "createdDuringWindow": "Verified: posted 9:45 PM · Jun 9, 2026",
+    "windowRule": "Substantially shared during active availability window",
+    "platform": "X",
+    "engagement": {
+      "views": "360.7K",
+      "likes": "1.9K",
+      "reposts": 198,
+      "replies": 80,
+      "bookmarks": 802
+    },
+    "media": {
+      "type": "image",
+      "src": "/media/fable-city-block-sim/poster.jpg"
+    },
+    "tags": ["one-shot", "simulation", "multi-agent", "traffic", "city"],
+    "status": "verified"
+  },
+  {
+    "id": "fable-minecraft-one-prompt",
+    "title": "Minecraft-Like World From One Prompt",
+    "creator": "Noah Wachnik",
+    "category": "One-Shot Complete Worlds",
+    "format": "Game/World Demo",
+    "impressiveness": 90,
+    "proof": "X post says Claude Fable made a Minecraft-like experience from one prompt in 20 minutes and includes a 19-second embedded video.",
+    "whyItMatters": "The claim is provocative, but the gallery value is specific: voxel worlds make gaps in generation obvious. A plausible Minecraft-like loop suggests Fable can hold terrain, motion, interaction, and game feel together long enough to make a coherent toy world.",
+    "sourceUrl": "https://x.com/noahwachnik/status/2064473058597863857",
+    "createdDuringWindow": "Verified: posted 6:21 PM · Jun 9, 2026",
+    "windowRule": "Substantially shared during active availability window",
+    "platform": "X",
+    "engagement": {
+      "views": "142.9K",
+      "likes": 760,
+      "reposts": 57,
+      "replies": 92,
+      "bookmarks": 206
+    },
+    "media": {
+      "type": "image",
+      "src": "/media/fable-minecraft/poster.jpg"
+    },
+    "tags": ["minecraft", "voxel", "one-prompt", "world-generation", "game"],
+    "status": "verified"
+  },
+  {
+    "id": "fable-qdd-actuator-validation",
+    "title": "QDD Actuator With Collision Validation",
+    "creator": "Jake Fitzgerald",
+    "category": "First-Principles Engines",
+    "format": "Mechanical Design Demo",
+    "impressiveness": 97,
+    "proof": "X post says Claude Fable 5 designed a QDD actuator, animated the gearbox, and inspected collisions as part of the validation loop in roughly 30 minutes using about 400K tokens.",
+    "whyItMatters": "This is a first-principles artifact, not a vibe mockup. The important signal is the validation loop: model, animate, inspect collisions, and iterate against physical constraints.",
+    "sourceUrl": "https://x.com/earthtojake/status/2064883158441672706",
+    "createdDuringWindow": "Verified: posted 9:31 PM · Jun 10, 2026",
+    "windowRule": "Substantially shared during active availability window",
+    "platform": "X",
+    "engagement": {
+      "views": "316.1K",
+      "likes": "2.5K",
+      "reposts": 215,
+      "replies": 75,
+      "bookmarks": "1.4K"
+    },
+    "media": {
+      "type": "image",
+      "src": "/media/fable-qdd-actuator/poster.jpg"
+    },
+    "tags": ["mechanical-design", "robotics", "actuator", "collision-checking", "validation-loop"],
+    "status": "verified"
+  },
+  {
+    "id": "fable-islamic-pattern-visualizer",
+    "title": "Interactive Islamic Pattern Visualizer",
+    "creator": "Misbah Syed",
+    "category": "Taste and Polish",
+    "format": "Interactive Art Tool",
+    "impressiveness": 86,
+    "proof": "X post says Claude Fable 5 one-shotted a playable geometric Islamic patterns visualizer where every seed generates a new downloadable pattern. The post includes a 16-second embedded video.",
+    "whyItMatters": "This is a good counterpoint to pure engineering demos: Fable's appeal was also about making complete, beautiful, usable toys. It has generation, interaction, and export in one small polished surface.",
+    "sourceUrl": "https://x.com/MisbahSy/status/2064578147719249947",
+    "createdDuringWindow": "Verified: posted 1:19 AM · Jun 10, 2026",
+    "windowRule": "Substantially shared during active availability window",
+    "platform": "X",
+    "engagement": {
+      "views": "77.3K",
+      "likes": 345,
+      "reposts": 32,
+      "replies": 13,
+      "bookmarks": 302
+    },
+    "media": {
+      "type": "image",
+      "src": "/media/fable-islamic-patterns/poster.jpg"
+    },
+    "tags": ["generative-art", "patterns", "visualizer", "downloadable", "one-shot"],
+    "status": "verified"
+  },
+  {
+    "id": "fable-v16-threejs-engine",
+    "title": "Playable V16 Engine in Three.js",
+    "creator": "echo.hive",
+    "category": "First-Principles Engines",
+    "format": "Interactive Mechanical Simulation",
+    "impressiveness": 90,
+    "proof": "X post says the Fable 5 + Three.js demo is a playable, sliceable V16 engine driven by slider-crank geometry from a single 45-degree crankshaft.",
+    "whyItMatters": "It shows the first-principles theme in a browseable form: a mechanical object whose believability depends on geometry, motion, and constraints, not just surface-level aesthetics.",
+    "sourceUrl": "https://x.com/hive_echo/status/2064840850312716463",
+    "createdDuringWindow": "Verified: posted 6:43 PM · Jun 10, 2026",
+    "windowRule": "Substantially shared during active availability window",
+    "platform": "X",
+    "engagement": {
+      "views": "18.7K",
+      "likes": 154,
+      "reposts": 17,
+      "replies": 3,
+      "bookmarks": 60
+    },
+    "media": {
+      "type": "image",
+      "src": "/media/fable-v16-engine/poster.jpg"
+    },
+    "tags": ["threejs", "engine", "mechanical-simulation", "slider-crank", "playable"],
+    "status": "verified"
+  }
+]

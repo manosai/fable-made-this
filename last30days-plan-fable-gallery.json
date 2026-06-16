@@ -1,0 +1,44 @@
+{
+  "intent": "product",
+  "freshness_mode": "strict_recent",
+  "cluster_mode": "story",
+  "raw_topic": "Claude Fable 5 projects people built",
+  "source_weights": {
+    "reddit": 1.0,
+    "hackernews": 0.8,
+    "github": 0.9
+  },
+  "subqueries": [
+    {
+      "label": "built artifacts",
+      "search_query": "\"Claude Fable 5\" built project demo app game",
+      "ranking_query": "Find concrete apps, games, demos, websites, tools, or projects people say they built with Claude Fable 5.",
+      "sources": ["reddit", "hackernews", "github"],
+      "weight": 1.0
+    },
+    {
+      "label": "made with fable",
+      "search_query": "\"made with Fable 5\" OR \"built with Fable 5\"",
+      "ranking_query": "Find public posts or repos where creators explicitly say an artifact was made or built with Fable 5.",
+      "sources": ["reddit", "hackernews", "github"],
+      "weight": 1.0
+    },
+    {
+      "label": "game and agent demos",
+      "search_query": "\"Fable 5\" game agent demo prototype",
+      "ranking_query": "Find agentic game demos, autonomous workflows, and prototype videos made with Fable 5.",
+      "sources": ["reddit", "hackernews", "github"],
+      "weight": 0.9
+    },
+    {
+      "label": "creator launch reactions",
+      "search_query": "\"Claude Fable\" creator built app website tool",
+      "ranking_query": "Find creator reactions that include an actual built artifact rather than just launch commentary.",
+      "sources": ["reddit", "hackernews", "github"],
+      "weight": 0.8
+    }
+  ],
+  "notes": [
+    "Used after Browser/X discovery pass; focus on non-X corroboration and discoverable repos/discussions."
+  ]
+}
