@@ -23,10 +23,9 @@ const promotedCandidates = candidates.map((candidate, index) => ({
 
 const galleryItems = [...projects, ...promotedCandidates];
 const categories = ["All", ...Array.from(new Set(galleryItems.map((project) => project.category)))];
+const featuredItems = galleryItems.slice(0, 8);
 const windowLabel = "June 9-13, 2026";
 const catalogUrl = "https://github.com/Anil-matcha/awesome-claude-fable-5";
-const windowNote =
-  "Fable 5 was broadly available starting June 9. Access was suspended worldwide after the June 12 export-control directive, leaving only a very short public testing window.";
 
 const synthesisThemes = [
   {
@@ -139,7 +138,6 @@ function App() {
   }, [category, query, sort]);
 
   const capturedMedia = galleryItems.filter((item) => item.media).length;
-  const sourceBacked = galleryItems.filter((item) => item.status === "source-backed").length;
 
   const handleCardClick = (item, event) => {
     if (event.target.closest("a, button, input, select, textarea, video")) return;
@@ -153,34 +151,137 @@ function App() {
     openCard(item);
   };
 
+  const handleCardPointerMove = (event) => {
+    const rect = event.currentTarget.getBoundingClientRect();
+    event.currentTarget.style.setProperty("--ripple-x", `${event.clientX - rect.left}px`);
+    event.currentTarget.style.setProperty("--ripple-y", `${event.clientY - rect.top}px`);
+  };
+
   return (
     <main>
       <section className="hero">
-        <p className="eyebrow">Fable Window Gallery</p>
-        <h1>Fable Made This</h1>
-        <p className="dek">
-          A public gallery of 100 impressive things people built with Claude Fable during its brief active availability
-          window: polished prototypes, playable worlds, CAD objects, agents, research workflows, art systems, and other
-          artifacts that made the model feel different.
-        </p>
-        <div className="stats">
-          <span>{windowLabel}</span>
-          <span>{galleryItems.length} curated entries</span>
-          <span>{capturedMedia} captured media cards</span>
-          <span>{sourceBacked} source-backed writeups</span>
-          <span>{categories.length - 1} categories</span>
+        <div className="heroCopy">
+          <p className="eyebrow">Fable Window Gallery</p>
+          <h1>Fable Made This</h1>
+          <p className="dek">
+            100 artifacts from the few public days when Claude Fable felt less like a chatbot and more like a builder:
+            games, worlds, agents, CAD tools, simulations, visual systems, and polished product surfaces.
+          </p>
+          <div className="stats">
+            <span>{windowLabel}</span>
+            <span>{galleryItems.length} entries</span>
+            <span>{capturedMedia} media cards</span>
+            <span>{categories.length - 1} categories</span>
+          </div>
+          <div className="heroLinks">
+            <a href="#gallery">Enter the gallery</a>
+            <a href="#synthesis">What made it interesting?</a>
+          </div>
         </div>
-        <p className="windowNote">{windowNote}</p>
-        <div className="heroLinks">
-          <a href="#gallery">Browse the gallery</a>
-          <a href="#synthesis">Read the synthesis</a>
+        <div className="heroVisual" aria-label="Featured artifact preview">
+          {featuredItems.map((item) => (
+            <a
+              className="previewTile"
+              href={cardDestination(item)}
+              key={item.id}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`Open ${item.title}`}
+            >
+              <Media item={item} />
+              <span>{item.category}</span>
+            </a>
+          ))}
         </div>
+      </section>
+
+      <section className="controls" aria-label="Gallery controls">
+        <input
+          type="search"
+          placeholder="Search artifacts, creators, tags..."
+          value={query}
+          onChange={(event) => setQuery(event.target.value)}
+        />
+        <select value={category} onChange={(event) => setCategory(event.target.value)}>
+          {categories.map((item) => (
+            <option key={item}>{item}</option>
+          ))}
+        </select>
+        <select value={sort} onChange={(event) => setSort(event.target.value)}>
+          <option value="impressiveness">Most impressive</option>
+          <option value="category">Group by category</option>
+          <option value="title">A-Z</option>
+        </select>
+      </section>
+
+      <section className="sectionHeader" id="gallery">
+        <div>
+          <p className="eyebrow">Gallery</p>
+          <h2>Browse the artifacts</h2>
+          <p>
+            Bigger thumbnails, lighter cards, and quick filters. Hover or focus a card to reveal the source trail.
+          </p>
+        </div>
+        <strong>{filtered.length}</strong>
+      </section>
+
+      <section className="grid">
+        {filtered.map((item) => (
+          <article
+            className="card"
+            key={item.id}
+            role="link"
+            tabIndex={0}
+            data-destination={cardDestination(item)}
+            onClick={(event) => handleCardClick(item, event)}
+            onKeyDown={(event) => handleCardKeyDown(item, event)}
+            onPointerMove={handleCardPointerMove}
+            aria-label={`Open ${item.title}`}
+          >
+            <div className="cardTop">
+              <span>{item.category}</span>
+              <small>{item.artifactUrl ? "Open artifact" : "Open source"}</small>
+            </div>
+            <Media item={item} />
+            <h2>{item.title}</h2>
+            <p className="creator">{item.creator}</p>
+            <p className="cardSummary">{item.whyItMatters}</p>
+            <div className="cardDetails">
+              <p className="proof">{item.proof}</p>
+              <p className={`status ${item.status}`}>{item.createdDuringWindow}</p>
+              {item.engagement && (
+                <div className="engagement">
+                  {Object.entries(item.engagement).map(([key, value]) => (
+                    <span key={key}>
+                      {value} {key}
+                    </span>
+                  ))}
+                </div>
+              )}
+              <div className="tags">
+                {item.tags.map((tag) => (
+                  <span key={tag}>{tag}</span>
+                ))}
+              </div>
+              <div className="links">
+                {item.artifactUrl && (
+                  <a href={item.artifactUrl} target="_blank" rel="noreferrer">
+                    Open artifact
+                  </a>
+                )}
+                <a href={item.sourceUrl} target="_blank" rel="noreferrer">
+                  View source
+                </a>
+              </div>
+            </div>
+          </article>
+        ))}
       </section>
 
       <section className="synthesis" id="synthesis" aria-label="Why Fable looked impressive">
         <div className="sectionIntro">
           <p className="eyebrow">Synthesis</p>
-          <h2>Why Fable Looked So Impressive</h2>
+          <h2>Why it felt different</h2>
           <p>
             The public reaction was not just benchmark excitement. It was a threshold feeling: people watched a model
             turn underspecified creative intent into complete, inspectable artifacts with working mechanics and enough
@@ -213,87 +314,6 @@ function App() {
             </article>
           ))}
         </div>
-      </section>
-
-      <section className="controls" aria-label="Gallery controls">
-        <input
-          type="search"
-          placeholder="Search artifacts, creators, tags..."
-          value={query}
-          onChange={(event) => setQuery(event.target.value)}
-        />
-        <select value={category} onChange={(event) => setCategory(event.target.value)}>
-          {categories.map((item) => (
-            <option key={item}>{item}</option>
-          ))}
-        </select>
-        <select value={sort} onChange={(event) => setSort(event.target.value)}>
-          <option value="impressiveness">Most impressive</option>
-          <option value="category">Group by category</option>
-          <option value="title">A-Z</option>
-        </select>
-      </section>
-
-      <section className="sectionHeader" id="gallery">
-        <div>
-          <p className="eyebrow">Gallery</p>
-          <h2>100 Curated Entries</h2>
-          <p>
-            Captured media appears where available. When direct media capture was not practical, the card uses a generated
-            visual panel and preserves the original source link for context.
-          </p>
-        </div>
-        <strong>{filtered.length}</strong>
-      </section>
-
-      <section className="grid">
-        {filtered.map((item) => (
-          <article
-            className="card"
-            key={item.id}
-            role="link"
-            tabIndex={0}
-            data-destination={cardDestination(item)}
-            onClick={(event) => handleCardClick(item, event)}
-            onKeyDown={(event) => handleCardKeyDown(item, event)}
-            aria-label={`Open ${item.title}`}
-          >
-            <div className="cardTop">
-              <span>{item.category}</span>
-              <small>{item.artifactUrl ? "Open artifact" : "Open source"}</small>
-            </div>
-            <Media item={item} />
-            <h2>{item.title}</h2>
-            <p className="creator">{item.creator}</p>
-            <p>{item.whyItMatters}</p>
-            <p className="proof">{item.proof}</p>
-            <p className={`status ${item.status}`}>{item.createdDuringWindow}</p>
-            {item.engagement && (
-              <div className="engagement">
-                {Object.entries(item.engagement).map(([key, value]) => (
-                  <span key={key}>
-                    {value} {key}
-                  </span>
-                ))}
-              </div>
-            )}
-            <div className="tags">
-              {item.tags.map((tag) => (
-                <span key={tag}>{tag}</span>
-              ))}
-            </div>
-            <div className="links">
-              {item.artifactUrl && (
-                <a href={item.artifactUrl} target="_blank" rel="noreferrer">
-                  Open artifact
-                </a>
-              )}
-              <a href={item.sourceUrl} target="_blank" rel="noreferrer">
-                View source
-              </a>
-            </div>
-          </article>
-        ))}
       </section>
 
       <footer>
