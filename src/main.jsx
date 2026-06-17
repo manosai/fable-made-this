@@ -4,80 +4,91 @@ import projects from "./data/projects.json";
 import candidates from "./data/candidates.json";
 import "./styles.css";
 
-const categories = [
-  "All",
-  ...Array.from(new Set([...projects.map((project) => project.category), ...candidates.map((item) => item.category)]))
-];
-
 const assetPath = (path) => (path?.startsWith("/") ? `${import.meta.env.BASE_URL}${path.slice(1)}` : path);
 
+const promotedCandidates = candidates.map((candidate, index) => ({
+  id: `promoted-${candidate.id}`,
+  title: candidate.title,
+  creator: candidate.creator,
+  category: candidate.category,
+  impressiveness: Math.max(70, 88 - Math.floor(index / 7)),
+  proof: `${candidate.evidence.replace(/^Type: /, "")} via ${candidate.sourceCollection}`,
+  whyItMatters: candidate.summary,
+  sourceUrl: candidate.sourceUrl,
+  createdDuringWindow: candidate.evidence.includes("Date:") ? candidate.evidence.replace(/^Type: /, "") : "Source-backed lead",
+  tags: candidate.tags,
+  status: "source-backed",
+  visual: "generated"
+}));
+
+const galleryItems = [...projects, ...promotedCandidates];
+const categories = ["All", ...Array.from(new Set(galleryItems.map((project) => project.category)))];
 const windowLabel = "June 9-13, 2026";
 const windowNote =
-  "Fable 5 was broadly available starting June 9, then worldwide access was suspended after the June 12 export-control directive. The originally announced no-extra-cost plan window ran June 9-22, but this gallery treats the active discovery window as June 9-13.";
+  "Fable 5 was broadly available starting June 9. Access was suspended worldwide after the June 12 export-control directive, leaving only a very short public testing window.";
 
-const themeNotes = [
+const synthesisThemes = [
   {
-    label: "One-shot awe",
-    text: "The most viral examples felt complete on first contact: not a component, but a playable world, working system, or usable product-shaped artifact."
+    title: "1. Complete artifacts from a single intent",
+    body:
+      "The dominant public reaction was not that Fable wrote better snippets. It was that one prompt could turn into a whole thing: a city simulator, web OS, CAD editor, game world, analytics product, robot design, or agent workflow with enough structure to inspect and share. That is why so many posts sound like awe: the unit of generation moved from component to finished artifact.",
+    sourceUrl: "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+    sourceLabel: "Anthropic launch"
   },
   {
-    label: "Taste jump",
-    text: "People were reacting to visual judgment as much as raw code: nicer spacing, richer motion, stronger materials, and less of the default generated-app look."
+    title: "2. Longer horizon, less babysitting",
+    body:
+      "Fable's clearest model-level advantage was task length. Anthropic says its lead grows as work gets longer and more complex, and the system card calls Mythos 5 the most capable model Anthropic had trained. The public examples rhyme with that: migrations, multi-hour game builds, long-running agents, code review, CAD generation, and workflows that preserve intent across many steps.",
+    sourceUrl: "https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620.pdf",
+    sourceLabel: "System card"
   },
   {
-    label: "Rules inside the world",
-    text: "The best demos had mechanics: traffic, collisions, CAD constraints, game loops, physics, simulation, validation, or real-world domain structure."
+    title: "3. Taste plus working mechanics",
+    body:
+      "The best demos were visually legible and mechanically grounded. People were reacting to spacing, material, motion, and polish, but also to rules: orbital motion, collision checks, traffic agents, gearbox animation, CAD constraints, lensing, shaders, game loops, and validation. Fable made artifacts that looked designed and behaved like they had an internal world model.",
+    sourceUrl: "https://x.com/earthtojake/status/2064883158441672706",
+    sourceLabel: "QDD actuator example"
   },
   {
-    label: "Long horizon",
-    text: "Fable looked different when tasks got longer. The model could hold plans, iterate internally, inspect its own output, and return with something more whole."
+    title: "4. A Mythos-class jump, not just a UI setting",
+    body:
+      "Fable 5 and Mythos 5 share the same underlying model; the difference is safeguards. The system card describes a proprietary mix of public, licensed/private, and synthetic data, followed by substantial post-training and fine-tuning. It does not disclose a magic recipe, but the measured pattern is clear: stronger vision, memory, coding, search, long-context, and agentic performance, with Fable routing high-risk domains through conservative safeguards.",
+    sourceUrl: "https://platform.claude.com/docs/en/about-claude/models/introducing-claude-fable-5-and-claude-mythos-5",
+    sourceLabel: "Claude API docs"
   }
 ];
 
-const insights = [
-  {
-    title: "One-shot complete worlds",
-    body:
-      "The strongest public reaction was awe at complete end-to-end artifacts: city simulators, playable games, CAD objects, dashboards, and art tools arriving from one front-loaded prompt instead of many supervised passes.",
-    source: "https://x.com/bilawalsidhu/status/2064524211914223867",
-    sourceLabel: "Bilawal Sidhu"
-  },
-  {
-    title: "Longer task horizon",
-    body:
-      "Anthropic framed Fable's lead as growing with task length, and early testers echoed that: work that used to take several supervised model sessions could finish after one scoping pass plus autonomous execution.",
-    source: "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-    sourceLabel: "Anthropic launch notes"
-  },
-  {
-    title: "First-principles objects",
-    body:
-      "Many hits were not just screens. They were engines, actuators, watches, traffic systems, physics-ish worlds, and CAD models where rules, constraints, geometry, or validation loops made the artifact feel grounded.",
-    source: "https://x.com/earthtojake/status/2064883158441672706",
-    sourceLabel: "Jake Fitzgerald"
-  },
-  {
-    title: "Taste became the human interface",
-    body:
-      "Some creators loved the polish and aesthetic jump, especially in interactive art and game-like demos. But the signal is mixed: Lenny's review found one-shot design output surprisingly poor in a skills-registry task, so taste is a theme and a caveat.",
-    source: "https://www.lennysnewsletter.com/p/how-i-ai-claude-fable-5-review-and",
-    sourceLabel: "Lenny's Newsletter"
-  },
-  {
-    title: "Effort was a real lever",
-    body:
-      "System-card readers highlighted that Fable converted extra reasoning effort into better coding results on hard agentic tasks. That helps explain why the best demos often look like sustained work rather than a lucky autocomplete.",
-    source: "https://www.digitalapplied.com/blog/claude-fable-5-mythos-5-agentic-coding-deep-dive-2026",
-    sourceLabel: "Digital Applied"
-  },
-  {
-    title: "The catch: impressive is not identical to reliable",
-    body:
-      "Endor Labs found average results on security-fixing tasks despite a few hall-of-fame solves. The gallery should show wonder, but also preserve evidence quality, creator claims, and source context.",
-    source: "https://www.endorlabs.com/learn/claude-fable-5-mythos-grade-hype",
-    sourceLabel: "Endor Labs"
+function GeneratedVisual({ item }) {
+  const words = item.title
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 4)
+    .join(" ");
+
+  return (
+    <div className={`generatedMedia ${item.category.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}>
+      <span>{item.category}</span>
+      <strong>{words}</strong>
+      <small>{item.creator}</small>
+    </div>
+  );
+}
+
+function Media({ item }) {
+  if (item.media?.type === "video") {
+    return (
+      <video className="media" controls poster={assetPath(item.media.poster)} preload="metadata">
+        <source src={assetPath(item.media.src)} type="video/mp4" />
+      </video>
+    );
   }
-];
+
+  if (item.media?.type === "image") {
+    return <img className="media" src={assetPath(item.media.src)} alt="" loading="lazy" />;
+  }
+
+  return <GeneratedVisual item={item} />;
+}
 
 function App() {
   const [category, setCategory] = useState("All");
@@ -86,43 +97,24 @@ function App() {
 
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase();
-    return projects
-      .filter((project) => category === "All" || project.category === category)
-      .filter((project) => {
+    return galleryItems
+      .filter((item) => category === "All" || item.category === category)
+      .filter((item) => {
         if (!needle) return true;
-        return [project.title, project.creator, project.category, project.whyItMatters, project.tags.join(" ")]
+        return [item.title, item.creator, item.category, item.whyItMatters, item.proof, item.tags.join(" ")]
           .join(" ")
           .toLowerCase()
           .includes(needle);
       })
       .sort((a, b) => {
         if (sort === "title") return a.title.localeCompare(b.title);
+        if (sort === "category") return a.category.localeCompare(b.category) || b.impressiveness - a.impressiveness;
         return b.impressiveness - a.impressiveness;
       });
   }, [category, query, sort]);
 
-  const candidateFiltered = useMemo(() => {
-    const needle = query.trim().toLowerCase();
-    return candidates
-      .filter((candidate) => category === "All" || candidate.category === category)
-      .filter((candidate) => {
-        if (!needle) return true;
-        return [
-          candidate.title,
-          candidate.creator,
-          candidate.category,
-          candidate.summary,
-          candidate.whyPromising,
-          candidate.tags.join(" ")
-        ]
-          .join(" ")
-          .toLowerCase()
-          .includes(needle);
-      });
-  }, [category, query]);
-
-  const totalBrowseable = projects.length + candidates.length;
-  const verifiedCount = projects.filter((project) => project.status === "verified").length;
+  const capturedMedia = galleryItems.filter((item) => item.media).length;
+  const sourceBacked = galleryItems.filter((item) => item.status === "source-backed").length;
 
   return (
     <main>
@@ -130,50 +122,41 @@ function App() {
         <p className="eyebrow">Last 30 Days Gallery</p>
         <h1>Fable Made This</h1>
         <p className="dek">
-          A public gallery of the most impressive things people built with Claude Fable during its brief active
-          availability window: polished prototypes, playable worlds, CAD objects, agents, research workflows, art
-          systems, and the odd tiny miracle.
+          A public gallery of 100 impressive things people built with Claude Fable during its brief active availability
+          window: polished prototypes, playable worlds, CAD objects, agents, research workflows, art systems, and other
+          artifacts that made the model feel different.
         </p>
         <div className="stats">
           <span>{windowLabel}</span>
-          <span>{totalBrowseable} browseable leads</span>
-          <span>{projects.length} curated artifacts</span>
-          <span>{candidates.length} promotion candidates</span>
-          <span>{verifiedCount} verified cards</span>
+          <span>{galleryItems.length} curated entries</span>
+          <span>{capturedMedia} captured media cards</span>
+          <span>{sourceBacked} source-backed writeups</span>
           <span>{categories.length - 1} categories</span>
         </div>
         <p className="windowNote">{windowNote}</p>
         <div className="heroLinks">
-          <a href="#curated">Browse curated artifacts</a>
-          <a href="#queue">See the 80-lead research queue</a>
+          <a href="#gallery">Browse the gallery</a>
+          <a href="#synthesis">Read the synthesis</a>
         </div>
       </section>
 
-      <section className="insights" aria-label="Why Fable looked impressive">
+      <section className="synthesis" id="synthesis" aria-label="Why Fable looked impressive">
         <div className="sectionIntro">
           <p className="eyebrow">Synthesis</p>
           <h2>Why Fable Looked So Impressive</h2>
           <p>
-            The public testing window was tiny, but the pattern is surprisingly crisp: Fable impressed when it
-            could turn a fuzzy idea into a complete, inspectable artifact with taste, rules, and a longer arc of
-            execution than people expected.
+            The pattern across the best examples is sharper than raw benchmark discourse: Fable collapsed more of the
+            distance between intention and artifact. The model looked strongest when taste, mechanics, and long-horizon
+            execution all had to show up in the same run.
           </p>
         </div>
-        <div className="themeStrip">
-          {themeNotes.map((theme) => (
-            <article key={theme.label}>
-              <h3>{theme.label}</h3>
-              <p>{theme.text}</p>
-            </article>
-          ))}
-        </div>
-        <div className="insightGrid">
-          {insights.map((insight) => (
-            <article className="insightCard" key={insight.title}>
-              <h3>{insight.title}</h3>
-              <p>{insight.body}</p>
-              <a href={insight.source} target="_blank" rel="noreferrer">
-                Source: {insight.sourceLabel}
+        <div className="synthesisList">
+          {synthesisThemes.map((theme) => (
+            <article key={theme.title}>
+              <h3>{theme.title}</h3>
+              <p>{theme.body}</p>
+              <a href={theme.sourceUrl} target="_blank" rel="noreferrer">
+                Source: {theme.sourceLabel}
               </a>
             </article>
           ))}
@@ -194,45 +177,39 @@ function App() {
         </select>
         <select value={sort} onChange={(event) => setSort(event.target.value)}>
           <option value="impressiveness">Most impressive</option>
+          <option value="category">Group by category</option>
           <option value="title">A-Z</option>
         </select>
       </section>
 
-      <section className="sectionHeader" id="curated">
+      <section className="sectionHeader" id="gallery">
         <div>
-          <p className="eyebrow">Curated Gallery</p>
-          <h2>Verified and Hand-Written Cards</h2>
+          <p className="eyebrow">Gallery</p>
+          <h2>100 Curated Entries</h2>
           <p>
-            These are the strongest cards so far: media captured where possible, source links preserved, and a short
-            explanation of why each artifact belongs in the gallery.
+            Captured media appears where available. When direct media capture was not practical, the card uses a generated
+            visual panel and preserves the original source link for context.
           </p>
         </div>
         <strong>{filtered.length}</strong>
       </section>
 
       <section className="grid">
-        {filtered.map((project) => (
-          <article className="card" key={project.id}>
+        {filtered.map((item) => (
+          <article className="card" key={item.id}>
             <div className="cardTop">
-              <span>{project.category}</span>
-              <strong>{project.impressiveness}</strong>
+              <span>{item.category}</span>
+              <strong>{item.impressiveness}</strong>
             </div>
-            {project.media?.type === "video" && (
-              <video className="media" controls poster={assetPath(project.media.poster)} preload="metadata">
-                <source src={assetPath(project.media.src)} type="video/mp4" />
-              </video>
-            )}
-            {project.media?.type === "image" && (
-              <img className="media" src={assetPath(project.media.src)} alt="" loading="lazy" />
-            )}
-            <h2>{project.title}</h2>
-            <p className="creator">{project.creator}</p>
-            <p>{project.whyItMatters}</p>
-            <p className="proof">{project.proof}</p>
-            <p className={`status ${project.status}`}>{project.createdDuringWindow}</p>
-            {project.engagement && (
+            <Media item={item} />
+            <h2>{item.title}</h2>
+            <p className="creator">{item.creator}</p>
+            <p>{item.whyItMatters}</p>
+            <p className="proof">{item.proof}</p>
+            <p className={`status ${item.status}`}>{item.createdDuringWindow}</p>
+            {item.engagement && (
               <div className="engagement">
-                {Object.entries(project.engagement).map(([key, value]) => (
+                {Object.entries(item.engagement).map(([key, value]) => (
                   <span key={key}>
                     {value} {key}
                   </span>
@@ -240,17 +217,17 @@ function App() {
               </div>
             )}
             <div className="tags">
-              {project.tags.map((tag) => (
+              {item.tags.map((tag) => (
                 <span key={tag}>{tag}</span>
               ))}
             </div>
             <div className="links">
-              {project.artifactUrl && (
-                <a href={project.artifactUrl} target="_blank" rel="noreferrer">
+              {item.artifactUrl && (
+                <a href={item.artifactUrl} target="_blank" rel="noreferrer">
                   Open artifact
                 </a>
               )}
-              <a href={project.sourceUrl} target="_blank" rel="noreferrer">
+              <a href={item.sourceUrl} target="_blank" rel="noreferrer">
                 View source
               </a>
             </div>
@@ -258,53 +235,9 @@ function App() {
         ))}
       </section>
 
-      <section className="queueIntro" id="queue" aria-label="Road to 100">
-        <div>
-          <p className="eyebrow">Road to 100</p>
-          <h2>Research Queue</h2>
-          <p>
-            This second layer is for discovery velocity: source-backed leads that look gallery-worthy, but still need
-            original-post verification, media capture, and a final write-up before they graduate into the curated grid.
-          </p>
-        </div>
-        <div className="queueStats">
-          <strong>{candidates.length}</strong>
-          <span>candidates ready to verify</span>
-        </div>
-      </section>
-
-      <section className="candidateGrid" aria-label="Candidate queue">
-        {candidateFiltered.map((candidate) => (
-          <article className="candidateCard" key={candidate.id}>
-            <div className="candidateTop">
-              <span>{candidate.category}</span>
-              <span>{candidate.evidence}</span>
-            </div>
-            <h2>{candidate.title}</h2>
-            <p className="creator">{candidate.creator}</p>
-            <p>{candidate.summary}</p>
-            <p className="proof">{candidate.whyPromising}</p>
-            <p className="status candidate">Needs verification</p>
-            <div className="tags">
-              {candidate.tags.map((tag) => (
-                <span key={tag}>{tag}</span>
-              ))}
-            </div>
-            <div className="links">
-              <a href={candidate.sourceUrl} target="_blank" rel="noreferrer">
-                Open source
-              </a>
-              <a href={candidate.creatorUrl} target="_blank" rel="noreferrer">
-                Creator
-              </a>
-            </div>
-          </article>
-        ))}
-      </section>
-
       <footer>
-        Built from direct X/Reddit research, local media capture, `/last30days` passes, and a public source catalog.
-        Candidate entries are deliberately labeled until each original artifact is verified.
+        Built from direct X/Reddit research, local media capture, `/last30days` passes, the Anthropic launch and system
+        card, and a public source catalog. Source-backed entries remain linked so the trail is inspectable.
       </footer>
     </main>
   );

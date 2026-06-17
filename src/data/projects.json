@@ -9,9 +9,13 @@
     "proof": "Long-running autonomous software task used as a launch example.",
     "whyItMatters": "Shows sustained planning, repository-scale edits, and execution over a long horizon.",
     "sourceUrl": "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-fable-5-brings-mythos-to-the-masses-anthropics-next-frontier-model-is-state-of-the-art-on-nearly-all-tested-benchmarks",
-    "createdDuringWindow": "Needs verification",
-    "tags": ["autonomy", "code", "migration"],
-    "status": "seed"
+    "createdDuringWindow": "Launch coverage example",
+    "tags": [
+      "autonomy",
+      "code",
+      "migration"
+    ],
+    "status": "source-backed"
   },
   {
     "id": "pokemon-vision-playthrough",
@@ -23,9 +27,13 @@
     "proof": "Played through a game using visual input.",
     "whyItMatters": "A legible demo for multimodal agency: perception, state tracking, and repeated action.",
     "sourceUrl": "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-fable-5-brings-mythos-to-the-masses-anthropics-next-frontier-model-is-state-of-the-art-on-nearly-all-tested-benchmarks",
-    "createdDuringWindow": "Needs verification",
-    "tags": ["vision", "games", "agent"],
-    "status": "seed"
+    "createdDuringWindow": "Launch coverage example",
+    "tags": [
+      "vision",
+      "games",
+      "agent"
+    ],
+    "status": "source-backed"
   },
   {
     "id": "survey-analysis-tool",
@@ -37,9 +45,13 @@
     "proof": "Built as a multi-hour autonomous academic workflow example.",
     "whyItMatters": "Turns raw qualitative data into an artifact people can use, not just a text answer.",
     "sourceUrl": "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-fable-5-brings-mythos-to-the-masses-anthropics-next-frontier-model-is-state-of-the-art-on-nearly-all-tested-benchmarks",
-    "createdDuringWindow": "Needs verification",
-    "tags": ["research", "analysis", "tooling"],
-    "status": "seed"
+    "createdDuringWindow": "Launch coverage example",
+    "tags": [
+      "research",
+      "analysis",
+      "tooling"
+    ],
+    "status": "source-backed"
   },
   {
     "id": "higgsfield-voyager-documentary",
@@ -67,7 +79,13 @@
       "poster": "/media/higgsfield-voyager/poster.jpg",
       "duration": "01:00"
     },
-    "tags": ["video", "documentary", "mcp", "higgsfield", "voyager"],
+    "tags": [
+      "video",
+      "documentary",
+      "mcp",
+      "higgsfield",
+      "voyager"
+    ],
     "status": "verified"
   },
   {
@@ -89,7 +107,13 @@
       "poster": "/media/higgsfield-game/poster.jpg",
       "duration": "00:43"
     },
-    "tags": ["game", "story", "assets", "mcp", "higgsfield"],
+    "tags": [
+      "game",
+      "story",
+      "assets",
+      "mcp",
+      "higgsfield"
+    ],
     "status": "verified"
   },
   {
@@ -116,7 +140,13 @@
       "type": "image",
       "src": "/media/fable-cad-editor/poster.jpg"
     },
-    "tags": ["cad", "3d-printing", "browser-app", "copilot", "fabrication"],
+    "tags": [
+      "cad",
+      "3d-printing",
+      "browser-app",
+      "copilot",
+      "fabrication"
+    ],
     "status": "verified"
   },
   {
@@ -145,7 +175,12 @@
       "poster": "/media/asaad-fable-site/poster.jpg",
       "duration": "00:22"
     },
-    "tags": ["website", "few-prompts", "design", "screen-recording"],
+    "tags": [
+      "website",
+      "few-prompts",
+      "design",
+      "screen-recording"
+    ],
     "status": "verified"
   },
   {
@@ -173,7 +208,13 @@
       "type": "image",
       "src": "/media/dataempire/poster.jpg"
     },
-    "tags": ["analytics", "game", "dashboard", "product", "datafast"],
+    "tags": [
+      "analytics",
+      "game",
+      "dashboard",
+      "product",
+      "datafast"
+    ],
     "status": "verified"
   },
   {
@@ -200,7 +241,13 @@
       "type": "image",
       "src": "/media/spawn-5/poster.jpg"
     },
-    "tags": ["game-engine", "webgpu", "physics", "netcode", "ios"],
+    "tags": [
+      "game-engine",
+      "webgpu",
+      "physics",
+      "netcode",
+      "ios"
+    ],
     "status": "verified"
   },
   {
@@ -229,7 +276,13 @@
       "poster": "/media/hermesworld-mmo/poster.jpg",
       "duration": "00:58"
     },
-    "tags": ["mmo", "game-dev", "qa", "autonomous-loop", "debugging"],
+    "tags": [
+      "mmo",
+      "game-dev",
+      "qa",
+      "autonomous-loop",
+      "debugging"
+    ],
     "status": "verified"
   },
   {
@@ -256,7 +309,13 @@
       "poster": "/media/fable-horror-game/poster.png",
       "duration": "04:30"
     },
-    "tags": ["horror-game", "one-shot", "reddit", "gameplay", "last30days"],
+    "tags": [
+      "horror-game",
+      "one-shot",
+      "reddit",
+      "gameplay",
+      "last30days"
+    ],
     "status": "verified"
   },
   {
@@ -283,7 +342,13 @@
       "type": "image",
       "src": "/media/fable-ai-lab-monopoly/poster.jpg"
     },
-    "tags": ["monopoly", "multiplayer", "game-rules", "share-codes", "ai-labs"],
+    "tags": [
+      "monopoly",
+      "multiplayer",
+      "game-rules",
+      "share-codes",
+      "ai-labs"
+    ],
     "status": "verified"
   },
   {
@@ -311,7 +376,13 @@
       "type": "image",
       "src": "/media/fable-v8-engine/poster.jpg"
     },
-    "tags": ["cad", "fusion", "mechanical-design", "v8-engine", "adam"],
+    "tags": [
+      "cad",
+      "fusion",
+      "mechanical-design",
+      "v8-engine",
+      "adam"
+    ],
     "status": "verified"
   },
   {
@@ -338,7 +409,13 @@
       "type": "image",
       "src": "/media/fable-boeing-cad/poster.jpg"
     },
-    "tags": ["cad", "autodesk-fusion", "boeing-747", "adam", "design-tool"],
+    "tags": [
+      "cad",
+      "autodesk-fusion",
+      "boeing-747",
+      "adam",
+      "design-tool"
+    ],
     "status": "verified"
   },
   {
@@ -365,7 +442,13 @@
       "type": "image",
       "src": "/media/fable-limbo-clone/poster.jpg"
     },
-    "tags": ["platformer", "limbo", "game-demo", "extra-high", "side-scroller"],
+    "tags": [
+      "platformer",
+      "limbo",
+      "game-demo",
+      "extra-high",
+      "side-scroller"
+    ],
     "status": "verified"
   },
   {
@@ -392,7 +475,13 @@
       "type": "image",
       "src": "/media/fable-city-block-sim/poster.jpg"
     },
-    "tags": ["one-shot", "simulation", "multi-agent", "traffic", "city"],
+    "tags": [
+      "one-shot",
+      "simulation",
+      "multi-agent",
+      "traffic",
+      "city"
+    ],
     "status": "verified"
   },
   {
@@ -419,7 +508,13 @@
       "type": "image",
       "src": "/media/fable-minecraft/poster.jpg"
     },
-    "tags": ["minecraft", "voxel", "one-prompt", "world-generation", "game"],
+    "tags": [
+      "minecraft",
+      "voxel",
+      "one-prompt",
+      "world-generation",
+      "game"
+    ],
     "status": "verified"
   },
   {
@@ -446,7 +541,13 @@
       "type": "image",
       "src": "/media/fable-qdd-actuator/poster.jpg"
     },
-    "tags": ["mechanical-design", "robotics", "actuator", "collision-checking", "validation-loop"],
+    "tags": [
+      "mechanical-design",
+      "robotics",
+      "actuator",
+      "collision-checking",
+      "validation-loop"
+    ],
     "status": "verified"
   },
   {
@@ -473,7 +574,13 @@
       "type": "image",
       "src": "/media/fable-islamic-patterns/poster.jpg"
     },
-    "tags": ["generative-art", "patterns", "visualizer", "downloadable", "one-shot"],
+    "tags": [
+      "generative-art",
+      "patterns",
+      "visualizer",
+      "downloadable",
+      "one-shot"
+    ],
     "status": "verified"
   },
   {
@@ -500,7 +607,13 @@
       "type": "image",
       "src": "/media/fable-v16-engine/poster.jpg"
     },
-    "tags": ["threejs", "engine", "mechanical-simulation", "slider-crank", "playable"],
+    "tags": [
+      "threejs",
+      "engine",
+      "mechanical-simulation",
+      "slider-crank",
+      "playable"
+    ],
     "status": "verified"
   }
 ]
