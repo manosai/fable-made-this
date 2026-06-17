@@ -26,6 +26,8 @@ const categories = ["All", ...Array.from(new Set(galleryItems.map((project) => p
 const featuredItems = galleryItems.slice(0, 8);
 const windowLabel = "June 9-13, 2026";
 const catalogUrl = "https://github.com/Anil-matcha/awesome-claude-fable-5";
+const submissionUrl =
+  "https://github.com/manosai/fable-made-this/issues/new?title=Fable%20Made%20This%20submission&body=Source%20link%3A%0A%0ACreator%3A%0A%0AWhat%20did%20Fable%20make%3F%0A%0AWhy%20is%20it%20impressive%3F";
 const rowsPerPage = 4;
 
 const synthesisThemes = [
@@ -236,6 +238,9 @@ function App() {
           <div className="heroLinks">
             <a href="#gallery">Enter the gallery</a>
             <a href="#synthesis">What made it interesting?</a>
+            <a href={submissionUrl} target="_blank" rel="noreferrer">
+              Submit a missing artifact
+            </a>
           </div>
         </div>
         <div className="heroVisual" aria-label="Featured artifact preview">
@@ -422,7 +427,11 @@ function App() {
           Anil-matcha/awesome-claude-fable-5
         </a>
         , which collected many of the original posts used for source-backed entries. Every card links to the playable
-        artifact when available, otherwise to the original source.
+        artifact when available, otherwise to the original source. Missing something great?{" "}
+        <a href={submissionUrl} target="_blank" rel="noreferrer">
+          Submit it here
+        </a>
+        .
       </footer>
     </main>
   );
