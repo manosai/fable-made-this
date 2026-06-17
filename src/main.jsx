@@ -66,8 +66,8 @@ const synthesisThemes = [
 ];
 
 const synthesisSignals = [
-  "100 curated artifacts",
-  "73 entries about worlds, engines, or polished interfaces",
+  `${galleryItems.length} curated artifacts`,
+  "Worlds, engines, agents, and polished interfaces",
   "12 long-horizon agent examples",
   "Same underlying capabilities as Mythos 5",
   "1M token context and up to 128k output"
@@ -164,8 +164,8 @@ function App() {
           <p className="eyebrow">Fable Window Gallery</p>
           <h1>Fable Made This</h1>
           <p className="dek">
-            100 artifacts from the few public days when Claude Fable felt less like a chatbot and more like a builder:
-            games, worlds, agents, CAD tools, simulations, visual systems, and polished product surfaces.
+            {galleryItems.length} artifacts from the few public days when Claude Fable felt less like a chatbot and more
+            like a builder: games, worlds, agents, CAD tools, simulations, visual systems, and polished product surfaces.
           </p>
           <div className="stats">
             <span>{windowLabel}</span>
