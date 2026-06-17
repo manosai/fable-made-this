@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import projects from "./data/projects.json";
 import candidates from "./data/candidates.json";
@@ -26,6 +26,7 @@ const categories = ["All", ...Array.from(new Set(galleryItems.map((project) => p
 const featuredItems = galleryItems.slice(0, 8);
 const windowLabel = "June 9-13, 2026";
 const catalogUrl = "https://github.com/Anil-matcha/awesome-claude-fable-5";
+const rowsPerPage = 4;
 
 const synthesisThemes = [
   {
@@ -114,10 +115,37 @@ function openCard(item) {
   if (destination) window.open(destination, "_blank", "noopener,noreferrer");
 }
 
+function visiblePageItems(currentPage, pageCount) {
+  if (pageCount <= 7) return Array.from({ length: pageCount }, (_, index) => index + 1);
+
+  const pages = new Set([1, pageCount, currentPage, currentPage - 1, currentPage + 1]);
+  if (currentPage <= 3) {
+    pages.add(2);
+    pages.add(3);
+    pages.add(4);
+  }
+  if (currentPage >= pageCount - 2) {
+    pages.add(pageCount - 1);
+    pages.add(pageCount - 2);
+    pages.add(pageCount - 3);
+  }
+
+  return Array.from(pages)
+    .filter((pageNumber) => pageNumber >= 1 && pageNumber <= pageCount)
+    .sort((a, b) => a - b)
+    .flatMap((pageNumber, index, pageNumbers) => {
+      if (index === 0 || pageNumber === pageNumbers[index - 1] + 1) return [pageNumber];
+      return [`ellipsis-${pageNumbers[index - 1]}-${pageNumber}`, pageNumber];
+    });
+}
+
 function App() {
   const [category, setCategory] = useState("All");
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState("impressiveness");
+  const [page, setPage] = useState(1);
+  const [columns, setColumns] = useState(3);
+  const gridRef = useRef(null);
 
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase();
@@ -138,6 +166,38 @@ function App() {
   }, [category, query, sort]);
 
   const capturedMedia = galleryItems.filter((item) => item.media).length;
+  const pageSize = Math.max(rowsPerPage, columns * rowsPerPage);
+  const pageCount = Math.max(1, Math.ceil(filtered.length / pageSize));
+  const currentPage = Math.min(page, pageCount);
+  const pageStart = (currentPage - 1) * pageSize;
+  const pageEnd = Math.min(pageStart + pageSize, filtered.length);
+  const paginatedItems = filtered.slice(pageStart, pageEnd);
+  const paginationItems = visiblePageItems(currentPage, pageCount);
+
+  useEffect(() => {
+    setPage(1);
+  }, [category, query, sort]);
+
+  useEffect(() => {
+    const grid = gridRef.current;
+    if (!grid) return undefined;
+
+    const updateColumns = () => {
+      const computed = window.getComputedStyle(grid);
+      setColumns(computed.gridTemplateColumns.split(" ").filter(Boolean).length || 1);
+    };
+
+    updateColumns();
+
+    if (typeof ResizeObserver === "undefined") {
+      window.addEventListener("resize", updateColumns);
+      return () => window.removeEventListener("resize", updateColumns);
+    }
+
+    const observer = new ResizeObserver(updateColumns);
+    observer.observe(grid);
+    return () => observer.disconnect();
+  }, []);
 
   const handleCardClick = (item, event) => {
     if (event.target.closest("a, button, input, select, textarea, video")) return;
@@ -225,8 +285,8 @@ function App() {
         <strong>{filtered.length}</strong>
       </section>
 
-      <section className="grid">
-        {filtered.map((item) => (
+      <section className="grid" ref={gridRef}>
+        {paginatedItems.map((item) => (
           <article
             className="card"
             key={item.id}
@@ -277,6 +337,45 @@ function App() {
           </article>
         ))}
       </section>
+
+      <nav className="pagination" aria-label="Gallery pagination">
+        <p>
+          Showing {filtered.length === 0 ? 0 : pageStart + 1}-{pageEnd} of {filtered.length}
+          <span>Four rows per page</span>
+        </p>
+        <div className="paginationControls">
+          <button type="button" onClick={() => setPage((value) => Math.max(1, value - 1))} disabled={currentPage === 1}>
+            Previous
+          </button>
+          <div className="pageDots" aria-label={`Page ${currentPage} of ${pageCount}`}>
+            {paginationItems.map((pageItem) =>
+              typeof pageItem === "number" ? (
+                <button
+                  type="button"
+                  key={pageItem}
+                  className={pageItem === currentPage ? "active" : ""}
+                  onClick={() => setPage(pageItem)}
+                  aria-label={`Go to page ${pageItem}`}
+                  aria-current={pageItem === currentPage ? "page" : undefined}
+                >
+                  {pageItem}
+                </button>
+              ) : (
+                <span className="ellipsis" key={pageItem} aria-hidden="true">
+                  ...
+                </span>
+              )
+            )}
+          </div>
+          <button
+            type="button"
+            onClick={() => setPage((value) => Math.min(pageCount, value + 1))}
+            disabled={currentPage === pageCount}
+          >
+            Next
+          </button>
+        </div>
+      </nav>
 
       <section className="synthesis" id="synthesis" aria-label="Why Fable looked impressive">
         <div className="sectionIntro">

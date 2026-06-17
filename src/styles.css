@@ -131,7 +131,9 @@ h1 {
 .tags,
 .cardTop,
 .controls,
-.signalRow {
+.signalRow,
+.paginationControls,
+.pageDots {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
@@ -725,6 +727,95 @@ a:hover {
   cursor: auto;
 }
 
+.pagination {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 22px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  padding: 14px;
+  background: rgba(255, 252, 246, 0.68);
+  box-shadow: 0 16px 38px rgba(91, 59, 32, 0.08);
+}
+
+.pagination p {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 850;
+}
+
+.pagination p span {
+  display: block;
+  margin-top: 2px;
+  color: var(--soft);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.paginationControls {
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.pagination button {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 10px 13px;
+  background: rgba(255, 255, 255, 0.76);
+  color: var(--terra);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 900;
+  transition:
+    background 140ms ease,
+    border-color 140ms ease,
+    box-shadow 140ms ease,
+    color 140ms ease,
+    transform 140ms ease;
+}
+
+.pagination button:hover:not(:disabled),
+.pagination button:focus-visible {
+  border-color: rgba(199, 111, 58, 0.36);
+  background: #fff8ed;
+  box-shadow: 0 10px 26px rgba(91, 59, 32, 0.12);
+  color: #9f4f28;
+  outline: none;
+  transform: translateY(-1px);
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 0.42;
+}
+
+.pageDots {
+  gap: 6px;
+  align-items: center;
+}
+
+.pageDots button {
+  min-width: 40px;
+  padding-inline: 12px;
+}
+
+.pageDots button.active {
+  border-color: rgba(199, 111, 58, 0.42);
+  background: var(--terra);
+  color: #fffaf1;
+}
+
+.pageDots .ellipsis {
+  display: grid;
+  min-width: 24px;
+  place-items: center;
+  color: var(--soft);
+  font-weight: 900;
+}
+
 footer {
   margin-top: 34px;
   border-top: 1px solid var(--line);
@@ -830,6 +921,15 @@ footer {
 
   .card {
     min-height: 470px;
+  }
+
+  .pagination {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .paginationControls {
+    justify-content: flex-start;
   }
 }
 
