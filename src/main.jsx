@@ -30,33 +30,48 @@ const windowNote =
 
 const synthesisThemes = [
   {
-    title: "1. Complete artifacts from a single intent",
+    title: "1. The unit of generation became the artifact",
     body:
-      "The dominant public reaction was not that Fable wrote better snippets. It was that one prompt could turn into a whole thing: a city simulator, web OS, CAD editor, game world, analytics product, robot design, or agent workflow with enough structure to inspect and share. That is why so many posts sound like awe: the unit of generation moved from component to finished artifact.",
+      "The interesting jump was not better snippets. It was that one intent could become a shareable object: a city simulator, web OS, CAD editor, playable game, analytics product, research tool, or media pipeline. The examples feel uncanny because the model crosses the last mile from answer to artifact: packaging, defaults, state, edge cases, and enough polish that someone else can inspect it without needing the prompt history.",
     sourceUrl: "https://www.anthropic.com/news/claude-fable-5-mythos-5",
     sourceLabel: "Anthropic launch"
   },
   {
-    title: "2. Longer horizon, less babysitting",
+    title: "2. It held the plot across long horizons",
     body:
-      "Fable's clearest model-level advantage was task length. Anthropic says its lead grows as work gets longer and more complex, and the system card calls Mythos 5 the most capable model Anthropic had trained. The public examples rhyme with that: migrations, multi-hour game builds, long-running agents, code review, CAD generation, and workflows that preserve intent across many steps.",
+      "Anthropic's own framing matches the gallery: Fable's lead grows as tasks get longer and more complex. The strongest public artifacts are not clever one-screen tricks; they are sustained runs with many dependent choices. Codebase migrations, 74-file PR reviews, multi-hour game builds, autonomous MMO loops, and multi-stage research workflows all test whether the model remembers what it is building after the novelty of the first response is gone.",
     sourceUrl: "https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620.pdf",
     sourceLabel: "System card"
   },
   {
-    title: "3. Taste plus working mechanics",
+    title: "3. Taste stopped being a thin skin",
     body:
-      "The best demos were visually legible and mechanically grounded. People were reacting to spacing, material, motion, and polish, but also to rules: orbital motion, collision checks, traffic agents, gearbox animation, CAD constraints, lensing, shaders, game loops, and validation. Fable made artifacts that looked designed and behaved like they had an internal world model.",
+      "A lot of generated software used to look like a demo of the prompt, not a thing a person chose. The Fable examples have more editorial taste: cleaner hierarchy, more coherent motion, more plausible defaults, and UI surfaces that seem intentionally composed. That matters because taste is compression. It lets the artifact communicate what it is before the viewer reads the explanation.",
     sourceUrl: "https://x.com/earthtojake/status/2064883158441672706",
     sourceLabel: "QDD actuator example"
   },
   {
-    title: "4. A Mythos-class jump, not just a UI setting",
+    title: "4. The demos had rules, not just vibes",
     body:
-      "Fable 5 and Mythos 5 share the same underlying model; the difference is safeguards. The system card describes a proprietary mix of public, licensed/private, and synthetic data, followed by substantial post-training and fine-tuning. It does not disclose a magic recipe, but the measured pattern is clear: stronger vision, memory, coding, search, long-context, and agentic performance, with Fable routing high-risk domains through conservative safeguards.",
+      "The most convincing cards are grounded in systems with consequences: orbital motion, black-hole lensing, traffic agents, gearboxes, collision validation, CAD constraints, voxel worlds, game loops, spreadsheet reasoning, and tool execution. That is why the first-principles examples matter so much. They suggest Fable was not only making plausible surfaces; it was often preserving a causal model long enough for the surface to behave.",
+    sourceUrl: "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+    sourceLabel: "Physics and CAD examples"
+  },
+  {
+    title: "5. Fable was a public Mythos-class glimpse",
+    body:
+      "Fable and Mythos share the same underlying capabilities, but Fable added classifiers and refusals for risky domains while Mythos stayed limited to trusted access. That split explains the strange energy around the release: for a few days, ordinary builders could touch a Mythos-class model with a 1M-token context window, large outputs, adaptive thinking, memory, code execution, and tool calling. The gallery is a record of what people did when that threshold briefly opened.",
     sourceUrl: "https://platform.claude.com/docs/en/about-claude/models/introducing-claude-fable-5-and-claude-mythos-5",
     sourceLabel: "Claude API docs"
   }
+];
+
+const synthesisSignals = [
+  "100 curated artifacts",
+  "73 entries about worlds, engines, or polished interfaces",
+  "12 long-horizon agent examples",
+  "Same underlying capabilities as Mythos 5",
+  "1M token context and up to 128k output"
 ];
 
 function GeneratedVisual({ item }) {
@@ -167,10 +182,25 @@ function App() {
           <p className="eyebrow">Synthesis</p>
           <h2>Why Fable Looked So Impressive</h2>
           <p>
-            The pattern across the best examples is sharper than raw benchmark discourse: Fable collapsed more of the
-            distance between intention and artifact. The model looked strongest when taste, mechanics, and long-horizon
-            execution all had to show up in the same run.
+            The public reaction was not just benchmark excitement. It was a threshold feeling: people watched a model
+            turn underspecified creative intent into complete, inspectable artifacts with working mechanics and enough
+            design taste to feel authored.
           </p>
+        </div>
+        <div className="thesisPanel">
+          <p className="eyebrow">Thesis</p>
+          <h3>Fable made the artifact, not the answer, feel like the natural output of a model.</h3>
+          <p>
+            The strongest examples combine three things that usually fall apart separately: long-horizon execution,
+            tasteful product judgment, and respect for the rules of a domain. That combination is what made the launch
+            feel discontinuous. It did not merely help builders move faster; it briefly changed what counted as a
+            reasonable first draft.
+          </p>
+          <div className="signalRow" aria-label="Evidence signals">
+            {synthesisSignals.map((signal) => (
+              <span key={signal}>{signal}</span>
+            ))}
+          </div>
         </div>
         <div className="synthesisList">
           {synthesisThemes.map((theme) => (
@@ -230,6 +260,7 @@ function App() {
           >
             <div className="cardTop">
               <span>{item.category}</span>
+              <small>{item.artifactUrl ? "Open artifact" : "Open source"}</small>
             </div>
             <Media item={item} />
             <h2>{item.title}</h2>
