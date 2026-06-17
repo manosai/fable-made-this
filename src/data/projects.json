@@ -292,7 +292,7 @@
     "category": "One-Shot Complete Worlds",
     "format": "Game Demo",
     "impressiveness": 90,
-    "proof": "Reddit post in r/singularity titled \"It's over. Claude Fable 5 one-shots horror game live\" includes a 4:30 video player and was surfaced by the /last30days Reddit pass.",
+    "proof": "Reddit post in r/singularity titled \"It's over. Claude Fable 5 one-shots horror game live\" includes a 4:30 video player and a public discussion thread.",
     "whyItMatters": "A full-length public gameplay demo is more digestible than a claim. The gallery value is immediate: visitors can watch the artifact and understand why one-shot game generation caught attention.",
     "sourceUrl": "https://www.reddit.com/r/singularity/comments/1u1h7de/its_over_claude_fable_5_oneshots_horror_game_live/",
     "createdDuringWindow": "Verified: Reddit post 7d before Jun 16, 2026",
@@ -314,7 +314,7 @@
       "one-shot",
       "reddit",
       "gameplay",
-      "last30days"
+      "public-demo"
     ],
     "status": "verified"
   },

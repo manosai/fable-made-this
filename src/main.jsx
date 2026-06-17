@@ -24,6 +24,7 @@ const promotedCandidates = candidates.map((candidate, index) => ({
 const galleryItems = [...projects, ...promotedCandidates];
 const categories = ["All", ...Array.from(new Set(galleryItems.map((project) => project.category)))];
 const windowLabel = "June 9-13, 2026";
+const catalogUrl = "https://github.com/Anil-matcha/awesome-claude-fable-5";
 const windowNote =
   "Fable 5 was broadly available starting June 9. Access was suspended worldwide after the June 12 export-control directive, leaving only a very short public testing window.";
 
@@ -90,6 +91,15 @@ function Media({ item }) {
   return <GeneratedVisual item={item} />;
 }
 
+function cardDestination(item) {
+  return item.artifactUrl || item.sourceUrl;
+}
+
+function openCard(item) {
+  const destination = cardDestination(item);
+  if (destination) window.open(destination, "_blank", "noopener,noreferrer");
+}
+
 function App() {
   const [category, setCategory] = useState("All");
   const [query, setQuery] = useState("");
@@ -116,10 +126,22 @@ function App() {
   const capturedMedia = galleryItems.filter((item) => item.media).length;
   const sourceBacked = galleryItems.filter((item) => item.status === "source-backed").length;
 
+  const handleCardClick = (item, event) => {
+    if (event.target.closest("a, button, input, select, textarea, video")) return;
+    openCard(item);
+  };
+
+  const handleCardKeyDown = (item, event) => {
+    if (event.key !== "Enter" && event.key !== " ") return;
+    if (event.target.closest("a, button, input, select, textarea, video")) return;
+    event.preventDefault();
+    openCard(item);
+  };
+
   return (
     <main>
       <section className="hero">
-        <p className="eyebrow">Last 30 Days Gallery</p>
+        <p className="eyebrow">Fable Window Gallery</p>
         <h1>Fable Made This</h1>
         <p className="dek">
           A public gallery of 100 impressive things people built with Claude Fable during its brief active availability
@@ -196,10 +218,18 @@ function App() {
 
       <section className="grid">
         {filtered.map((item) => (
-          <article className="card" key={item.id}>
+          <article
+            className="card"
+            key={item.id}
+            role="link"
+            tabIndex={0}
+            data-destination={cardDestination(item)}
+            onClick={(event) => handleCardClick(item, event)}
+            onKeyDown={(event) => handleCardKeyDown(item, event)}
+            aria-label={`Open ${item.title}`}
+          >
             <div className="cardTop">
               <span>{item.category}</span>
-              <strong>{item.impressiveness}</strong>
             </div>
             <Media item={item} />
             <h2>{item.title}</h2>
@@ -236,8 +266,13 @@ function App() {
       </section>
 
       <footer>
-        Built from direct X/Reddit research, local media capture, `/last30days` passes, the Anthropic launch and system
-        card, and a public source catalog. Source-backed entries remain linked so the trail is inspectable.
+        Built from direct X/Reddit research, local media capture, Anthropic launch and system-card sources, and the
+        public catalog{" "}
+        <a href={catalogUrl} target="_blank" rel="noreferrer">
+          Anil-matcha/awesome-claude-fable-5
+        </a>
+        , which collected many of the original posts used for source-backed entries. Every card links to the playable
+        artifact when available, otherwise to the original source.
       </footer>
     </main>
   );
