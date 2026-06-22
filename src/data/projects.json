@@ -1,59 +1,5 @@
 [
   {
-    "id": "autonomous-codebase-migration",
-    "title": "Autonomous Codebase Migration",
-    "creator": "Reported by launch coverage",
-    "category": "Long-Horizon Agents",
-    "format": "Case Study",
-    "impressiveness": 95,
-    "proof": "Long-running autonomous software task used as a launch example.",
-    "whyItMatters": "Shows sustained planning, repository-scale edits, and execution over a long horizon.",
-    "sourceUrl": "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-fable-5-brings-mythos-to-the-masses-anthropics-next-frontier-model-is-state-of-the-art-on-nearly-all-tested-benchmarks",
-    "createdDuringWindow": "Launch coverage example",
-    "tags": [
-      "autonomy",
-      "code",
-      "migration"
-    ],
-    "status": "source-backed"
-  },
-  {
-    "id": "pokemon-vision-playthrough",
-    "title": "Pokemon FireRed Vision Playthrough",
-    "creator": "Reported by launch coverage",
-    "category": "One-Shot Complete Worlds",
-    "format": "Demo",
-    "impressiveness": 88,
-    "proof": "Played through a game using visual input.",
-    "whyItMatters": "A legible demo for multimodal agency: perception, state tracking, and repeated action.",
-    "sourceUrl": "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-fable-5-brings-mythos-to-the-masses-anthropics-next-frontier-model-is-state-of-the-art-on-nearly-all-tested-benchmarks",
-    "createdDuringWindow": "Launch coverage example",
-    "tags": [
-      "vision",
-      "games",
-      "agent"
-    ],
-    "status": "source-backed"
-  },
-  {
-    "id": "survey-analysis-tool",
-    "title": "Survey Analysis Tool",
-    "creator": "Reported by launch coverage",
-    "category": "Research and Knowledge Work",
-    "format": "Tool",
-    "impressiveness": 84,
-    "proof": "Built as a multi-hour autonomous academic workflow example.",
-    "whyItMatters": "Turns raw qualitative data into an artifact people can use, not just a text answer.",
-    "sourceUrl": "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-fable-5-brings-mythos-to-the-masses-anthropics-next-frontier-model-is-state-of-the-art-on-nearly-all-tested-benchmarks",
-    "createdDuringWindow": "Launch coverage example",
-    "tags": [
-      "research",
-      "analysis",
-      "tooling"
-    ],
-    "status": "source-backed"
-  },
-  {
     "id": "higgsfield-voyager-documentary",
     "title": "One-Prompt Voyager Documentary",
     "creator": "Higgsfield AI",
@@ -613,28 +559,6 @@
       "mechanical-simulation",
       "slider-crank",
       "playable"
-    ],
-    "status": "verified"
-  },
-  {
-    "id": "fable-alpha-school-adaptive-3d-game",
-    "title": "Adaptive 3D Learning Game for Alpha School",
-    "creator": "Matt Shumer",
-    "category": "Productized Play",
-    "format": "3D Educational Game Prototype",
-    "impressiveness": 92,
-    "proof": "X post says Matt Shumer built a two-day Claude Fable prototype for Alpha School: a 3D game that generates itself on the fly by combining what a kid needs to learn with what they are already interested in. The post includes an embedded video and asks viewers to turn sound on.",
-    "whyItMatters": "This is a strong productized-play example because it turns personalization from a content recommendation into a generated game world. The impressive part is not only the 3D surface, but the premise that curriculum, student interest, and gameplay can be fused into a single adaptive artifact.",
-    "sourceUrl": "https://x.com/mattshumer_/status/2067308452028789107",
-    "createdDuringWindow": "Verified: posted Jun 17, 2026; described as a two-day Fable prototype",
-    "windowRule": "Shared after the initial access window; creator explicitly says it was built with Fable",
-    "platform": "X",
-    "tags": [
-      "education",
-      "adaptive-learning",
-      "3d-game",
-      "personalization",
-      "alpha-school"
     ],
     "status": "verified"
   }

@@ -1,27 +1,11 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import projects from "./data/projects.json";
-import candidates from "./data/candidates.json";
 import "./styles.css";
 
 const assetPath = (path) => (path?.startsWith("/") ? `${import.meta.env.BASE_URL}${path.slice(1)}` : path);
 
-const promotedCandidates = candidates.map((candidate, index) => ({
-  id: `promoted-${candidate.id}`,
-  title: candidate.title,
-  creator: candidate.creator,
-  category: candidate.category,
-  impressiveness: Math.max(70, 88 - Math.floor(index / 7)),
-  proof: `${candidate.evidence.replace(/^Type: /, "")} via ${candidate.sourceCollection}`,
-  whyItMatters: candidate.summary,
-  sourceUrl: candidate.sourceUrl,
-  createdDuringWindow: candidate.evidence.includes("Date:") ? candidate.evidence.replace(/^Type: /, "") : "Source-backed lead",
-  tags: candidate.tags,
-  status: "source-backed",
-  visual: "generated"
-}));
-
-const galleryItems = [...projects, ...promotedCandidates];
+const galleryItems = projects.filter((project) => project.media);
 const categories = ["All", ...Array.from(new Set(galleryItems.map((project) => project.category)))];
 const featuredItems = galleryItems.slice(0, 8);
 const windowLabel = "June 9-13, 2026";
@@ -41,7 +25,7 @@ const synthesisThemes = [
   {
     title: "2. It held the plot across long horizons",
     body:
-      "Anthropic's own framing matches the gallery: Fable's lead grows as tasks get longer and more complex. The strongest public artifacts are not clever one-screen tricks; they are sustained runs with many dependent choices. Codebase migrations, 74-file PR reviews, multi-hour game builds, autonomous MMO loops, and multi-stage research workflows all test whether the model remembers what it is building after the novelty of the first response is gone.",
+      "Anthropic's own framing matches the gallery: Fable's lead grows as tasks get longer and more complex. The strongest public artifacts are not clever one-screen tricks; they are sustained runs with many dependent choices. Multi-hour game builds, automated MMO loops, media pipelines, CAD systems, and world simulations all test whether the model remembers what it is building after the novelty of the first response is gone.",
     sourceUrl: "https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620.pdf",
     sourceLabel: "System card"
   },
@@ -69,28 +53,12 @@ const synthesisThemes = [
 ];
 
 const synthesisSignals = [
-  `${galleryItems.length} curated artifacts`,
-  "Worlds, engines, agents, and polished interfaces",
-  "12 long-horizon agent examples",
+  `${galleryItems.length} media-backed artifacts`,
+  "Only cards with a visible artifact, video, or screenshot",
+  "Worlds, engines, games, agents, and polished interfaces",
   "Same underlying capabilities as Mythos 5",
   "1M token context and up to 128k output"
 ];
-
-function GeneratedVisual({ item }) {
-  const words = item.title
-    .split(/\s+/)
-    .filter(Boolean)
-    .slice(0, 4)
-    .join(" ");
-
-  return (
-    <div className={`generatedMedia ${item.category.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}>
-      <span>{item.category}</span>
-      <strong>{words}</strong>
-      <small>{item.creator}</small>
-    </div>
-  );
-}
 
 function Media({ item }) {
   if (item.media?.type === "video") {
@@ -104,8 +72,7 @@ function Media({ item }) {
   if (item.media?.type === "image") {
     return <img className="media" src={assetPath(item.media.src)} alt="" loading="lazy" />;
   }
-
-  return <GeneratedVisual item={item} />;
+  return null;
 }
 
 function cardDestination(item) {
@@ -226,8 +193,9 @@ function App() {
           <p className="eyebrow">Fable Window Gallery</p>
           <h1>Fable Made This</h1>
           <p className="dek">
-            {galleryItems.length} artifacts from the few public days when Claude Fable felt less like a chatbot and more
-            like a builder: games, worlds, agents, CAD tools, simulations, visual systems, and polished product surfaces.
+            {galleryItems.length} media-backed artifacts from the few public days when Claude Fable felt less like a
+            chatbot and more like a builder: games, worlds, agents, CAD tools, simulations, visual systems, and polished
+            product surfaces.
           </p>
           <div className="stats">
             <span>{windowLabel}</span>
@@ -284,7 +252,8 @@ function App() {
           <p className="eyebrow">Gallery</p>
           <h2>Browse the artifacts</h2>
           <p>
-            Bigger thumbnails, lighter cards, and quick filters. Hover or focus a card to reveal the source trail.
+            The gallery now only keeps examples with a visible artifact, screenshot, or video. Hover or focus a card to
+            reveal the source trail.
           </p>
         </div>
         <strong>{filtered.length}</strong>
@@ -389,7 +358,7 @@ function App() {
           <p>
             The public reaction was not just benchmark excitement. It was a threshold feeling: people watched a model
             turn underspecified creative intent into complete, inspectable artifacts with working mechanics and enough
-            design taste to feel authored.
+            design taste to feel authored. This page intentionally privileges examples you can understand by looking.
           </p>
         </div>
         <div className="thesisPanel">
@@ -426,7 +395,7 @@ function App() {
         <a href={catalogUrl} target="_blank" rel="noreferrer">
           Anil-matcha/awesome-claude-fable-5
         </a>
-        , which collected many of the original posts used for source-backed entries. Every card links to the playable
+        , which collected many of the original posts used for source-backed leads. Every card links to the playable
         artifact when available, otherwise to the original source. Missing something great?{" "}
         <a href={submissionUrl} target="_blank" rel="noreferrer">
           Submit it here
