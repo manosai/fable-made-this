@@ -39,7 +39,7 @@ Key structures:
 - Sticky controls for search, category, and sort.
 - Responsive paginated artifact grid for the strongest visual examples.
 - Synthesis section beneath the gallery.
-- Compact source trail lower on the page for deeper browsing.
+- Card-based source trail lower on the page for deeper browsing.
 
 Direction:
 
@@ -58,9 +58,9 @@ Should quickly communicate: “a short Fable window produced complete artifacts.
 
 Media-first and clickable. The card should surface title, creator, and quick rationale without hiding the artifact or requiring hover to understand why it matters.
 
-### Source Lead
+### Source Trail Card
 
-Compact, text-led, and clearly secondary. Source-trail cards should preserve research coverage without pretending to be visual artifacts.
+Card-based, clearly secondary, and visually consistent with the gallery. Source-trail cards should use an on-brand generated cover so they remain browsable, while still preserving the hierarchy that keeps true media artifacts first.
 
 ### Controls
 

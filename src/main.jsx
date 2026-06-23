@@ -15,6 +15,7 @@ const candidateItems = candidates.map((candidate, index) => ({
   proof: `${candidate.evidence.replace(/^Type: /, "")} via ${candidate.sourceCollection}`,
   whyItMatters: candidate.summary,
   sourceUrl: candidate.sourceUrl,
+  sourceCollection: candidate.sourceCollection,
   createdDuringWindow: candidate.evidence.includes("Date:") ? candidate.evidence.replace(/^Type: /, "") : "Source-backed lead",
   tags: candidate.tags,
   status: "source-backed",
@@ -82,6 +83,100 @@ const synthesisSignals = [
   "Same underlying capabilities as Mythos 5",
   "1M token context and up to 128k output"
 ];
+
+const coverThemes = {
+  "One-Shot Complete Worlds": {
+    tone: "world",
+    label: "World lead",
+    primary: "#cf657c",
+    secondary: "#f4b45f",
+    accent: "#416f94"
+  },
+  "Taste and Polish": {
+    tone: "polish",
+    label: "Design lead",
+    primary: "#b95f34",
+    secondary: "#f1c16b",
+    accent: "#cf657c"
+  },
+  "First-Principles Engines": {
+    tone: "engine",
+    label: "Engine lead",
+    primary: "#416f94",
+    secondary: "#7f9d72",
+    accent: "#f4b45f"
+  },
+  "Long-Horizon Agents": {
+    tone: "agent",
+    label: "Agent lead",
+    primary: "#637f55",
+    secondary: "#416f94",
+    accent: "#cf657c"
+  },
+  "Research and Knowledge Work": {
+    tone: "research",
+    label: "Research lead",
+    primary: "#6f5f9a",
+    secondary: "#f4b45f",
+    accent: "#b95f34"
+  },
+  "Productized Play": {
+    tone: "product",
+    label: "Product lead",
+    primary: "#b95f34",
+    secondary: "#416f94",
+    accent: "#7f9d72"
+  }
+};
+
+const sourceLabels = {
+  "github-search": "GitHub",
+  "awesome-claude-fable-5": "Source",
+  "reddit-x-search": "Thread",
+  "manual": "Source"
+};
+
+function coverInitials(title) {
+  return title
+    .split(/[\s:/-]+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((word) => word[0])
+    .join("")
+    .toUpperCase();
+}
+
+function ArtifactCover({ item }) {
+  const theme = coverThemes[item.category] ?? coverThemes["One-Shot Complete Worlds"];
+  const sourceLabel = sourceLabels[item.sourceCollection] ?? item.sourceCollection?.replace(/-/g, " ") ?? "Source";
+  const initials = coverInitials(item.title);
+
+  return (
+    <div
+      className={`generatedCover ${theme.tone}`}
+      style={{
+        "--cover-primary": theme.primary,
+        "--cover-secondary": theme.secondary,
+        "--cover-accent": theme.accent
+      }}
+      aria-hidden="true"
+    >
+      <div className="coverGrid" />
+      <div className="coverOrb coverOrbA" />
+      <div className="coverOrb coverOrbB" />
+      <div className="coverGlyph">{initials}</div>
+      <div className="coverMiniCards">
+        <span />
+        <span />
+        <span />
+      </div>
+      <div className="coverCaption">
+        <span>{sourceLabel}</span>
+        <strong>{theme.label}</strong>
+      </div>
+    </div>
+  );
+}
 
 function matchesItem(item, category, query) {
   if (category !== "All" && item.category !== category) return false;
@@ -451,17 +546,21 @@ function App() {
               key={item.id}
               role="link"
               tabIndex={0}
+              data-destination={cardDestination(item)}
               onClick={(event) => handleCardClick(item, event)}
               onKeyDown={(event) => handleCardKeyDown(item, event)}
+              onPointerMove={handleCardPointerMove}
               aria-label={`Open ${item.title}`}
             >
               <div className="sourceMeta">
                 <span>{item.category}</span>
-                <small>{item.createdDuringWindow}</small>
+                <small>Open source</small>
               </div>
+              <ArtifactCover item={item} />
               <h3>{item.title}</h3>
               <p className="creator">{item.creator}</p>
               <p>{item.whyItMatters}</p>
+              <p className="sourceProof">{item.createdDuringWindow}</p>
               <div className="links">
                 <a href={item.sourceUrl} target="_blank" rel="noreferrer">
                   View source
