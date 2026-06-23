@@ -63,14 +63,20 @@ const synthesisSignals = [
 function Media({ item }) {
   if (item.media?.type === "video") {
     return (
-      <video className="media" controls poster={assetPath(item.media.poster)} preload="metadata">
+      <video
+        className="media"
+        controls
+        poster={assetPath(item.media.poster)}
+        preload="metadata"
+        aria-label={`${item.title} demo video`}
+      >
         <source src={assetPath(item.media.src)} type="video/mp4" />
       </video>
     );
   }
 
   if (item.media?.type === "image") {
-    return <img className="media" src={assetPath(item.media.src)} alt="" loading="lazy" />;
+    return <img className="media" src={assetPath(item.media.src)} alt={`${item.title} preview`} loading="lazy" />;
   }
   return null;
 }
@@ -231,16 +237,21 @@ function App() {
       <section className="controls" aria-label="Gallery controls">
         <input
           type="search"
+          aria-label="Search artifacts, creators, and tags"
           placeholder="Search artifacts, creators, tags..."
           value={query}
           onChange={(event) => setQuery(event.target.value)}
         />
-        <select value={category} onChange={(event) => setCategory(event.target.value)}>
+        <select
+          value={category}
+          onChange={(event) => setCategory(event.target.value)}
+          aria-label="Filter by category"
+        >
           {categories.map((item) => (
             <option key={item}>{item}</option>
           ))}
         </select>
-        <select value={sort} onChange={(event) => setSort(event.target.value)}>
+        <select value={sort} onChange={(event) => setSort(event.target.value)} aria-label="Sort gallery">
           <option value="impressiveness">Most impressive</option>
           <option value="category">Group by category</option>
           <option value="title">A-Z</option>
