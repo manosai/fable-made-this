@@ -19,63 +19,6 @@
     ]
   },
   {
-    "id": "candidate-02",
-    "caseNumber": 2,
-    "title": "Recreating GitHub from a Screenshot",
-    "creator": "@coldopn",
-    "category": "Taste and Polish",
-    "sourceUrl": "https://x.com/coldopn/status/2064435234465087638",
-    "creatorUrl": "https://x.com/coldopn",
-    "summary": "Paste a product screenshot into an agentic coding tool and ask Fable 5 to recreate the interface with working functionality. Anthropic Fable 5 just replicated GITHUB from a SCREENSHOT!! All I did was paste a screenshot of the GitHub UI into Kilo Code, and told it to recreate GitHub with real functionality. It coded for 10 minutes and spent $4.07. The result was a functional GitHub replica:",
-    "whyPromising": "benchmark signal - Paste a product screenshot into an agentic coding tool and ask Fable 5 to recreate the interface with working functionality. Anthropic Fable 5 just replicated GITHUB from a SCREENSHOT!! All ",
-    "status": "candidate",
-    "evidence": "Type: Demo | Date: 2026-06-09",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "taste-and-polish",
-      "benchmark-signal"
-    ]
-  },
-  {
-    "id": "candidate-03",
-    "caseNumber": 3,
-    "title": "One-Prompt Black Hole Simulation",
-    "creator": "@deveshcodes",
-    "category": "First-Principles Engines",
-    "sourceUrl": "https://x.com/deveshcodes_/status/2064437742189379745",
-    "creatorUrl": "https://x.com/deveshcodes_",
-    "summary": "Give Fable 5 one detailed creative-coding prompt and ask it to produce a self-contained Three.js physics visualization. @claudeai one-shotted a real-time black hole lensing sim in Three.js with Claude Fable 5. It included gravitational lensing, a doppler-boosted accretion disk, photon sphere, chromatic aberration, and procedural starfield. The result: 60fps, single HTML file, one prompt. The new baseline is wild",
-    "whyPromising": "one-shot artifact - Give Fable 5 one detailed creative-coding prompt and ask it to produce a self-contained Three.js physics visualization. @claudeai one-shotted a real-time black hole lensing sim in Three.js w",
-    "status": "candidate",
-    "evidence": "Type: Tutorial | Date: 2026-06-09",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "first-principles-engines",
-      "one-shot-artifact"
-    ]
-  },
-  {
-    "id": "candidate-04",
-    "caseNumber": 4,
-    "title": "One-Shot macOS-Style Web OS",
-    "creator": "@intheworldofai",
-    "category": "One-Shot Complete Worlds",
-    "sourceUrl": "https://x.com/intheworldofai/status/2064421915347812672",
-    "creatorUrl": "https://x.com/intheworldofai",
-    "summary": "Ask Fable 5 for a complete single-file web OS and let it build the UI shell, apps, interactions, audio, and embedded game behavior in one pass. Claude Fable 5 just built a full macOS-style web OS in one shot and went further than most models. Single HTML file, embedded CSS + JS. From one prompt, it built: - macOS menu bar + dock - Draggable and resizable app windows - Functional file explorer - Working terminal + bro",
-    "whyPromising": "one-shot artifact - Ask Fable 5 for a complete single-file web OS and let it build the UI shell, apps, interactions, audio, and embedded game behavior in one pass. Claude Fable 5 just built a full macOS-style w",
-    "status": "candidate",
-    "evidence": "Type: Tutorial | Date: 2026-06-09",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "one-shot-complete-worlds",
-      "one-shot-artifact"
-    ]
-  },
-  {
     "id": "candidate-06",
     "caseNumber": 6,
     "title": "Large Pull Request Review with Findings",
@@ -133,25 +76,6 @@
     ]
   },
   {
-    "id": "candidate-09",
-    "caseNumber": 9,
-    "title": "Finger-Tracking Dino Runner",
-    "creator": "@aiforsuccess",
-    "category": "One-Shot Complete Worlds",
-    "sourceUrl": "https://x.com/ai_for_success/status/2064413182396108932",
-    "creatorUrl": "https://x.com/ai_for_success",
-    "summary": "Ask Fable 5 to build a browser game that uses finger tracking as the input mechanic. Asked Fable 5 to build a Dino runner game with finger tracking. It one-shotted the finger runner game in about 11 to 12 minutes, consumed around 914K tokens, and implemented everything in just 629 lines of code.",
-    "whyPromising": "one-shot artifact - Ask Fable 5 to build a browser game that uses finger tracking as the input mechanic. Asked Fable 5 to build a Dino runner game with finger tracking. It one-shotted the finger runner game in ",
-    "status": "candidate",
-    "evidence": "Type: Demo | Date: 2026-06-09",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "one-shot-complete-worlds",
-      "one-shot-artifact"
-    ]
-  },
-  {
     "id": "candidate-10",
     "caseNumber": 10,
     "title": "Two-Sentence Racing Game Build",
@@ -167,120 +91,6 @@
     "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
     "tags": [
       "one-shot-complete-worlds",
-      "public-demo-lead"
-    ]
-  },
-  {
-    "id": "candidate-11",
-    "caseNumber": 11,
-    "title": "Installable Terminal Minecraft in Rust",
-    "creator": "@vikvang1",
-    "category": "One-Shot Complete Worlds",
-    "sourceUrl": "https://x.com/vikvang1/status/2064500731848319303",
-    "creatorUrl": "https://x.com/vikvang1",
-    "summary": "Run Fable 5 through a terminal coding harness and ask it to build an installable Rust terminal game. I let Claude Fable 5 with Warp's harness cook for an hour. It made a TUI version of Minecraft that renders directly in your terminal, built entirely in Rust. Install command: cargo install termcraft-3d",
-    "whyPromising": "public demo lead - Run Fable 5 through a terminal coding harness and ask it to build an installable Rust terminal game. I let Claude Fable 5 with Warp's harness cook for an hour. It made a TUI version of Minec",
-    "status": "candidate",
-    "evidence": "Type: Demo | Date: 2026-06-10",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "one-shot-complete-worlds",
-      "public-demo-lead"
-    ]
-  },
-  {
-    "id": "candidate-12",
-    "caseNumber": 12,
-    "title": "Minecraft Clone with Time and Cost",
-    "creator": "@ydamitcodes",
-    "category": "One-Shot Complete Worlds",
-    "sourceUrl": "https://x.com/ydamitcodes/status/2064536076518363353",
-    "creatorUrl": "https://x.com/ydamitcodes",
-    "summary": "Use one prompt to ask Fable 5 for a playable Minecraft-style clone, then evaluate time, cost, code volume, and feature coverage. @claudeai Fable 5 built me a Minecraft clone in 37 minutes. One prompt. ~3K lines of code. $12 in API costs. It included biomes, caves, ores, day/night, mobs, all of it. Minecraft took Notch 2 years. Visual, Design, Video, and 3D",
-    "whyPromising": "one-shot artifact - Use one prompt to ask Fable 5 for a playable Minecraft-style clone, then evaluate time, cost, code volume, and feature coverage. @claudeai Fable 5 built me a Minecraft clone in 37 minutes. O",
-    "status": "candidate",
-    "evidence": "Type: Tutorial | Date: 2026-06-10",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "one-shot-complete-worlds",
-      "one-shot-artifact"
-    ]
-  },
-  {
-    "id": "candidate-13",
-    "caseNumber": 13,
-    "title": "Full Reproducible Ecommerce Email Prompt",
-    "creator": "@ecomchasedimond",
-    "category": "First-Principles Engines",
-    "sourceUrl": "https://x.com/ecomchasedimond/status/2064454139225297091",
-    "creatorUrl": "https://x.com/ecomchasedimond",
-    "summary": "Give Fable 5 a complete creative brief for a brand email mockup, including exact sections, product requirements, visual direction, and constraints. Claude Fable 5 made this with a single prompt and no edits. Here is the full prompt I used: Create a full-length, tall vertical ecommerce email mockup for MVMT, a modern watch and accessories brand for millennials. Design a highly realistic premium DTC email that feels sl",
-    "whyPromising": "one-shot artifact - Give Fable 5 a complete creative brief for a brand email mockup, including exact sections, product requirements, visual direction, and constraints. Claude Fable 5 made this with a single pro",
-    "status": "candidate",
-    "evidence": "Type: Tutorial | Date: 2026-06-09",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "first-principles-engines",
-      "one-shot-artifact"
-    ]
-  },
-  {
-    "id": "candidate-14",
-    "caseNumber": 14,
-    "title": "Swiss Lever Watchmaker Benchmark",
-    "creator": "@quanghuynt14",
-    "category": "First-Principles Engines",
-    "sourceUrl": "https://x.com/quanghuynt14/status/2064509430650065278",
-    "creatorUrl": "https://x.com/quanghuynt14",
-    "summary": "Use Fable 5 on a mechanical simulation benchmark and ask it to implement, verify, and iterate on physical correctness. So I gave Fable 5 the watchmaker benchmark: a full Swiss lever movement in Three.js. Real gear ratios (18,000 bph), working escapement, breathing hairspring and the hands tell actual time. It verified its own work with vision, in a loop, until done.",
-    "whyPromising": "benchmark signal - Use Fable 5 on a mechanical simulation benchmark and ask it to implement, verify, and iterate on physical correctness. So I gave Fable 5 the watchmaker benchmark: a full Swiss lever movement",
-    "status": "candidate",
-    "evidence": "Type: Evaluation | Date: 2026-06-10",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "first-principles-engines",
-      "benchmark-signal"
-    ]
-  },
-  {
-    "id": "candidate-15",
-    "caseNumber": 15,
-    "title": "Three.js Friends Apartment Scene",
-    "creator": "@scottstts",
-    "category": "One-Shot Complete Worlds",
-    "sourceUrl": "https://x.com/scottstts/status/2064464351906673029",
-    "creatorUrl": "https://x.com/scottstts",
-    "summary": "Prompt Fable 5 to turn a floor plan and scene reference into a navigable Three.js environment. Holy Crap!!! Fable 5: in @threejs, create a first person pov navigable 3d scene of the iconic Monica's apartment from tv show Friends correctly based on this floor plan, stay true to the original look and feel, use warm lighting This is by far THE BEST I've seen on this test! This single html cost me $12, but the result is ",
-    "whyPromising": "benchmark signal - Prompt Fable 5 to turn a floor plan and scene reference into a navigable Three.js environment. Holy Crap!!! Fable 5: in @threejs, create a first person pov navigable 3d scene of the iconic M",
-    "status": "candidate",
-    "evidence": "Type: Evaluation | Date: 2026-06-09",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "one-shot-complete-worlds",
-      "benchmark-signal"
-    ]
-  },
-  {
-    "id": "candidate-16",
-    "caseNumber": 16,
-    "title": "Solar System Simulation with Prompt and URL",
-    "creator": "@tetumemo",
-    "category": "First-Principles Engines",
-    "sourceUrl": "https://x.com/tetumemo/status/2064477582930989357",
-    "creatorUrl": "https://x.com/tetumemo",
-    "summary": "Use Fable 5 to build an astronomy simulation from physics principles, iterating until the simulation and public output are ready. Claude Fable 5 is intense. Because it seems strong at physics simulations, I asked it: 'Build a solar system simulation by deriving planetary orbital motion from the basic principles of physics and using that to predict solar eclipses.' After a few rounds of back-and-forth, this was comple",
-    "whyPromising": "public demo lead - Use Fable 5 to build an astronomy simulation from physics principles, iterating until the simulation and public output are ready. Claude Fable 5 is intense. Because it seems strong at physic",
-    "status": "candidate",
-    "evidence": "Type: Tutorial | Date: 2026-06-09",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "first-principles-engines",
       "public-demo-lead"
     ]
   },
@@ -342,63 +152,6 @@
     ]
   },
   {
-    "id": "candidate-20",
-    "caseNumber": 20,
-    "title": "How Fable 5 Changes Claude Code Workflows",
-    "creator": "@AImasaou",
-    "category": "Taste and Polish",
-    "sourceUrl": "https://x.com/AI_masaou/status/2064448218038223206",
-    "creatorUrl": "https://x.com/AI_masaou",
-    "summary": "Use Fable 5 by setting direction, context, goals, and verification criteria instead of micromanaging every step. What changed in the Claude Code team's day-to-day work after Claude Fable 5 is interesting. Thariq from the Claude Code team says Fable 5 significantly changed how people inside Anthropic work with Claude. Previously, humans had to carefully check whether Claude was doing the work correctly: break tasks do",
-    "whyPromising": "long-horizon run - Use Fable 5 by setting direction, context, goals, and verification criteria instead of micromanaging every step. What changed in the Claude Code team's day-to-day work after Claude Fable 5 i",
-    "status": "candidate",
-    "evidence": "Type: Demo | Date: 2026-06-09",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "taste-and-polish",
-      "long-horizon-run"
-    ]
-  },
-  {
-    "id": "candidate-21",
-    "caseNumber": 21,
-    "title": "One-Billion-Token Review and Routing Strategy",
-    "creator": "@JJEnglert",
-    "category": "First-Principles Engines",
-    "sourceUrl": "https://x.com/JJEnglert/status/2064420538798260388",
-    "creatorUrl": "https://x.com/JJEnglert",
-    "summary": "Use Fable 5 for frontier planning and review, then route high-volume implementation to cheaper models. The Claude Fable 5 Review: One Billion Tokens, Judged by a Non-Engineer. I spent a billion tokens testing Claude Fable 5 on real projects: UI and UX, writing, strategy, security, engineering, and knowledge work. The kind of work I actually needed to ship. It truthfully felt like I had an unfair advantage. First, the",
-    "whyPromising": "long-horizon run - Use Fable 5 for frontier planning and review, then route high-volume implementation to cheaper models. The Claude Fable 5 Review: One Billion Tokens, Judged by a Non-Engineer. I spent a bill",
-    "status": "candidate",
-    "evidence": "Type: Tutorial | Date: 2026-06-09",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "first-principles-engines",
-      "long-horizon-run"
-    ]
-  },
-  {
-    "id": "candidate-22",
-    "caseNumber": 22,
-    "title": "Defensive Device Hardening Prompt",
-    "creator": "@Truunik",
-    "category": "First-Principles Engines",
-    "sourceUrl": "https://x.com/Truunik/status/2064399110384292077",
-    "creatorUrl": "https://x.com/Truunik",
-    "summary": "Run a step-by-step defensive hardening prompt where Fable 5 inventories devices, gives exact checks, and waits for verification. \"Safe for general use\" here's a prompt to secure your devices. It works with Opus 4.8 and Fable 5. DEVICE HARDENING Claude 5 Security Pass You are acting as a defensive security assistant. Your job is to walk me through hardening ALL of my devices and verify each step. This is authorized se",
-    "whyPromising": "public demo lead - Run a step-by-step defensive hardening prompt where Fable 5 inventories devices, gives exact checks, and waits for verification. \"Safe for general use\" here's a prompt to secure your devices",
-    "status": "candidate",
-    "evidence": "Type: Tutorial | Date: 2026-06-09",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "first-principles-engines",
-      "public-demo-lead"
-    ]
-  },
-  {
     "id": "candidate-23",
     "caseNumber": 23,
     "title": "Full-Site Design Audit Goal Prompt",
@@ -456,82 +209,6 @@
     ]
   },
   {
-    "id": "candidate-26",
-    "caseNumber": 26,
-    "title": "Copy-Paste Repository Audit Prompt",
-    "creator": "@metaalchemist",
-    "category": "First-Principles Engines",
-    "sourceUrl": "https://x.com/meta_alchemist/status/2064431279383433646",
-    "creatorUrl": "https://x.com/meta_alchemist",
-    "summary": "Paste the repository audit prompt into Fable 5 and ask for file-backed discovery, findings, strategy, and a milestone task plan. Got your hands on Claude Fable 5? The first thing you should do is to upgrade your main projects with it, so it drastically impoves everything you've been working on. Run this Audit & Project Improvement Prompt on each repo that's important to you. Simply copy-paste it: Repo Audit & Improve",
-    "whyPromising": "public demo lead - Paste the repository audit prompt into Fable 5 and ask for file-backed discovery, findings, strategy, and a milestone task plan. Got your hands on Claude Fable 5? The first thing you should ",
-    "status": "candidate",
-    "evidence": "Type: Tutorial | Date: 2026-06-09",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "first-principles-engines",
-      "public-demo-lead"
-    ]
-  },
-  {
-    "id": "candidate-27",
-    "caseNumber": 27,
-    "title": "Limited-Window Usage Strategy",
-    "creator": "@metaalchemist",
-    "category": "Taste and Polish",
-    "sourceUrl": "https://x.com/meta_alchemist/status/2064423360428490911",
-    "creatorUrl": "https://x.com/meta_alchemist",
-    "summary": "Spend Fable 5 usage on audit, architecture, and planning while the access window is favorable, then use cheaper models for execution. A tip for Claude users who are excited about Fable 5: Claude Fable 5 is SOTA across the board, with a large margin, and I love that. BUT from the 23rd, it will only be available through credits, instead of being able to use the model fully with a plan. Use these 14 days on your best pr",
-    "whyPromising": "long-horizon run - Spend Fable 5 usage on audit, architecture, and planning while the access window is favorable, then use cheaper models for execution. A tip for Claude users who are excited about Fable 5: Cl",
-    "status": "candidate",
-    "evidence": "Type: Tutorial | Date: 2026-06-09",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "taste-and-polish",
-      "long-horizon-run"
-    ]
-  },
-  {
-    "id": "candidate-28",
-    "caseNumber": 28,
-    "title": "Using Goals and Workflows in Claude Code",
-    "creator": "@oikon48",
-    "category": "Taste and Polish",
-    "sourceUrl": "https://x.com/oikon48/status/2064402696124453157",
-    "creatorUrl": "https://x.com/oikon48",
-    "summary": "Use Fable 5 as a thought partner before implementation, then combine /goal and workflows to execute and verify the plan. Thariq from the Claude Code team explains that after Claude Fable 5 came out, the way work is done fundamentally changed. In the past, people verified whether Claude was doing the work correctly. Now they verify whether Claude is doing the right work. There are three concrete changes. 1. Treat Clau",
-    "whyPromising": "workflow integration - Use Fable 5 as a thought partner before implementation, then combine /goal and workflows to execute and verify the plan. Thariq from the Claude Code team explains that after Claude Fable 5 c",
-    "status": "candidate",
-    "evidence": "Type: Tutorial | Date: 2026-06-09",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "taste-and-polish",
-      "workflow-integration"
-    ]
-  },
-  {
-    "id": "candidate-29",
-    "caseNumber": 29,
-    "title": "Hermes Agent Integration Setup",
-    "creator": "@IBuzovskyi",
-    "category": "Taste and Polish",
-    "sourceUrl": "https://x.com/IBuzovskyi/status/2064427654942740608",
-    "creatorUrl": "https://x.com/IBuzovskyi",
-    "summary": "Configure Hermes to use anthropic/claude-fable-5 for complex /goal runs and cached long-horizon tasks. HERMES AGENT NOW RUNS ON CLAUDE FABLE 5, Anthropic's first public Mythos-class model. Released June 9. Built for the kind of work Hermes does best: long-horizon autonomous tasks. Add it to any profile through Nous Portal, OpenRouter, or the native Anthropic API: hermes model Pick provider, then: /model anthropic/cla",
-    "whyPromising": "long-horizon run - Configure Hermes to use anthropic/claude-fable-5 for complex /goal runs and cached long-horizon tasks. HERMES AGENT NOW RUNS ON CLAUDE FABLE 5, Anthropic's first public Mythos-class model. R",
-    "status": "candidate",
-    "evidence": "Type: Tutorial | Date: 2026-06-09",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "taste-and-polish",
-      "long-horizon-run"
-    ]
-  },
-  {
     "id": "candidate-30",
     "caseNumber": 30,
     "title": "Capabilities, Pricing, and Subscription Notes",
@@ -551,25 +228,6 @@
     ]
   },
   {
-    "id": "candidate-31",
-    "caseNumber": 31,
-    "title": "Launch, Access, Pricing, and Safety Summary",
-    "creator": "@ctgptlb",
-    "category": "Research and Knowledge Work",
-    "sourceUrl": "https://x.com/ctgptlb/status/2064410460963934479",
-    "creatorUrl": "https://x.com/ctgptlb",
-    "summary": "Use this launch summary to choose access route, API model name, context window, caching strategy, and subscription timing. A summary of what you should know about Claude Fable 5, the Mythos-class model that is finally generally available. Anthropic announced Claude Fable 5, the first generally available Mythos-class model positioned above Opus and the first member of the Claude 5 family. Access: - API model name: cla",
-    "whyPromising": "benchmark signal - Use this launch summary to choose access route, API model name, context window, caching strategy, and subscription timing. A summary of what you should know about Claude Fable 5, the Mythos-",
-    "status": "candidate",
-    "evidence": "Type: Tutorial | Date: 2026-06-09",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "research-and-knowledge-work",
-      "benchmark-signal"
-    ]
-  },
-  {
     "id": "candidate-32",
     "caseNumber": 32,
     "title": "Advisor-Based Cost Reduction Strategy",
@@ -586,63 +244,6 @@
     "tags": [
       "long-horizon-agents",
       "long-horizon-run"
-    ]
-  },
-  {
-    "id": "candidate-33",
-    "caseNumber": 33,
-    "title": "Pricing, Access, and Safety Guardrails",
-    "creator": "@op7418",
-    "category": "Long-Horizon Agents",
-    "sourceUrl": "https://x.com/op7418/status/2064399444523782377",
-    "creatorUrl": "https://x.com/op7418",
-    "summary": "Use this case to understand Fable 5 access, API pricing, and safety fallback behavior before planning workloads. I did not expect Anthropic's Mythos model to actually launch today. This release is a lower-permission version of Mythos, named Fable 5. Its evaluation benchmarks are astonishing, even higher than the previous Mythos Preview model. For agentic coding, its main strengths are coding, agents, and tool use, wi",
-    "whyPromising": "benchmark signal - Use this case to understand Fable 5 access, API pricing, and safety fallback behavior before planning workloads. I did not expect Anthropic's Mythos model to actually launch today. This rele",
-    "status": "candidate",
-    "evidence": "Type: Integration | Date: 2026-06-09",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "long-horizon-agents",
-      "benchmark-signal"
-    ]
-  },
-  {
-    "id": "candidate-34",
-    "caseNumber": 34,
-    "title": "One-Line Swarms Integration",
-    "creator": "@swarmscorp",
-    "category": "Taste and Polish",
-    "sourceUrl": "https://x.com/swarms_corp/status/2064420238553186343",
-    "creatorUrl": "https://x.com/swarms_corp",
-    "summary": "Set the Swarms model name to anthropic/claude-fable-5 and run Fable 5 through the Swarms framework or API. Fable 5 and Mythos are now live on Swarms Beginning on day one of release, both models are fully supported across the Swarms Python framework and the Swarms API. Developers can start building immediately with no migrations, additional configuration, or infrastructure changes required. Highlights: - Day-one suppo",
-    "whyPromising": "benchmark signal - Set the Swarms model name to anthropic/claude-fable-5 and run Fable 5 through the Swarms framework or API. Fable 5 and Mythos are now live on Swarms Beginning on day one of release, both mod",
-    "status": "candidate",
-    "evidence": "Type: Integration | Date: 2026-06-09",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "taste-and-polish",
-      "benchmark-signal"
-    ]
-  },
-  {
-    "id": "candidate-35",
-    "caseNumber": 35,
-    "title": "Fable 5 vs GPT-5.5 Cost and Quality Comparison",
-    "creator": "@AlicanKiraz0",
-    "category": "First-Principles Engines",
-    "sourceUrl": "https://x.com/AlicanKiraz0/status/2064424400494186867",
-    "creatorUrl": "https://x.com/AlicanKiraz0",
-    "summary": "Compare Fable 5 and GPT-5.5 on the same coding task to judge output quality, runtime, and tool cost. Cursor Fable 5 Max vs Codex GPT 5.5 Very High. Scenario: Physarum simulation with agents plus a pheromone trail map. Timing: - GPT 5.5 Very High: 17 minutes - Fable 5: more than 40 minutes Cost: - GPT 5.5 Very High: about $6 on Codex - Fable 5 Max: $360.55 on Cursor Yes, this is not a joke.",
-    "whyPromising": "workflow integration - Compare Fable 5 and GPT-5.5 on the same coding task to judge output quality, runtime, and tool cost. Cursor Fable 5 Max vs Codex GPT 5.5 Very High. Scenario: Physarum simulation with agents ",
-    "status": "candidate",
-    "evidence": "Type: Evaluation | Date: 2026-06-09",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "first-principles-engines",
-      "workflow-integration"
     ]
   },
   {
@@ -722,25 +323,6 @@
     ]
   },
   {
-    "id": "candidate-40",
-    "caseNumber": 40,
-    "title": "Cost and Speed Comparison",
-    "creator": "@HKrackDev",
-    "category": "First-Principles Engines",
-    "sourceUrl": "https://x.com/HKrackDev/status/2064435392649306546",
-    "creatorUrl": "https://x.com/HKrackDev",
-    "summary": "Use this comparison to decide whether the quality gain justifies higher cost and slower long-horizon runs. Is @AnthropicAI's Fable 5 actually worth the upgrade? We benchmarked the new Mythos-family model against Claude Opus 4.8, and the data tells a surprising story: - Costs 2x more than Claude Opus 4.8. - Up to 3x slower on long-horizon engineering tasks. - 15-20% more comments, but mostly minor nitpicks. Fable 5 ha",
-    "whyPromising": "long-horizon run - Use this comparison to decide whether the quality gain justifies higher cost and slower long-horizon runs. Is @AnthropicAI's Fable 5 actually worth the upgrade? We benchmarked the new Mythos",
-    "status": "candidate",
-    "evidence": "Type: Evaluation | Date: 2026-06-09",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "first-principles-engines",
-      "long-horizon-run"
-    ]
-  },
-  {
     "id": "candidate-41",
     "caseNumber": 41,
     "title": "Claude Code Hands-On Notes",
@@ -776,25 +358,6 @@
     "tags": [
       "research-and-knowledge-work",
       "benchmark-signal"
-    ]
-  },
-  {
-    "id": "candidate-43",
-    "caseNumber": 43,
-    "title": "Multi-Benchmark Launch Summary",
-    "creator": "@MTSlive",
-    "category": "Long-Horizon Agents",
-    "sourceUrl": "https://x.com/MTSlive/status/2064430633800319436",
-    "creatorUrl": "https://x.com/MTSlive",
-    "summary": "Use this launch benchmark summary to understand the headline scores most relevant to coding agents and complex tasks. SITUATION EXPLAINED: Claude Fable 5 just dropped. Anthropic launched Claude Fable 5 today, \"a Mythos class model made safe for general use\" Frontier Code Diamond: GPT 5.5 at 6%, Opus 4.8 at 13%, Fable 5 at 29-30% Agentic coding: 88%, Cybersecurity: 78% Anthropic: \"The longer and more complex the task,",
-    "whyPromising": "long-horizon run - Use this launch benchmark summary to understand the headline scores most relevant to coding agents and complex tasks. SITUATION EXPLAINED: Claude Fable 5 just dropped. Anthropic launched Cla",
-    "status": "candidate",
-    "evidence": "Type: Evaluation | Date: 2026-06-09",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "long-horizon-agents",
-      "long-horizon-run"
     ]
   },
   {
@@ -836,25 +399,6 @@
     ]
   },
   {
-    "id": "candidate-46",
-    "caseNumber": 46,
-    "title": "Physics Simulation Comparison",
-    "creator": "@atomicchathq",
-    "category": "First-Principles Engines",
-    "sourceUrl": "https://x.com/atomic_chat_hq/status/2064488894398161377",
-    "creatorUrl": "https://x.com/atomic_chat_hq",
-    "summary": "Run identical physics simulation prompts against Fable 5 and Opus 4.8 to compare output quality, cost, and speed. New Fable 5 beats Opus 4.8 on real-world physics simulations. We gave both models the same three prompts and asked them to build self-contained HTML5 simulations with real physics and no libraries: 1. Chaotic double pendulum 2. Galton board 3. Water in a spinning drum (WCSPH) Generation cost: - Fable 5: $",
-    "whyPromising": "long-horizon run - Run identical physics simulation prompts against Fable 5 and Opus 4.8 to compare output quality, cost, and speed. New Fable 5 beats Opus 4.8 on real-world physics simulations. We gave both m",
-    "status": "candidate",
-    "evidence": "Type: Demo | Date: 2026-06-09",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "first-principles-engines",
-      "long-horizon-run"
-    ]
-  },
-  {
     "id": "candidate-47",
     "caseNumber": 47,
     "title": "Debugging Experience and Design Judgment",
@@ -874,63 +418,6 @@
     ]
   },
   {
-    "id": "candidate-48",
-    "caseNumber": 48,
-    "title": "Multi-Dimensional Pros and Cons",
-    "creator": "@clairevo",
-    "category": "One-Shot Complete Worlds",
-    "sourceUrl": "https://x.com/clairevo/status/2064416978685874333",
-    "creatorUrl": "https://x.com/clairevo",
-    "summary": "Use this case to understand practical strengths and weaknesses before making Fable 5 a daily driver. Fable 5 (aka baby Mythos) just dropped. Is it as scary (or scary good) as they claim? My thoughts after some early testing: - smart smart smart (crushed SWE bench) - but do you always need hyper intelligence? - faceplanted on one-shot design in a way that shocked me - i'm not sure about dynamic workflows + complex sub",
-    "whyPromising": "one-shot artifact - Use this case to understand practical strengths and weaknesses before making Fable 5 a daily driver. Fable 5 (aka baby Mythos) just dropped. Is it as scary (or scary good) as they claim? My ",
-    "status": "candidate",
-    "evidence": "Type: Demo | Date: 2026-06-09",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "one-shot-complete-worlds",
-      "one-shot-artifact"
-    ]
-  },
-  {
-    "id": "candidate-49",
-    "caseNumber": 49,
-    "title": "Legal S-1 Drafting Test",
-    "creator": "@gabepereyra",
-    "category": "Taste and Polish",
-    "sourceUrl": "https://x.com/gabepereyra/status/2064436570720284879",
-    "creatorUrl": "https://x.com/gabepereyra",
-    "summary": "Use an S-1 drafting prompt as a legal-agent capability test and compare structure, formatting, and length. The first prompt I always run on a new model to test legal capabilities is: Draft an S-1. It immediately gives a good sense of the model's general capabilities. You can tell from the length of the S-1, formatting, structure, and writing how big a jump in general and legal performance the new model is likely to b",
-    "whyPromising": "benchmark signal - Use an S-1 drafting prompt as a legal-agent capability test and compare structure, formatting, and length. The first prompt I always run on a new model to test legal capabilities is: Draft a",
-    "status": "candidate",
-    "evidence": "Type: Tutorial | Date: 2026-06-09",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "taste-and-polish",
-      "benchmark-signal"
-    ]
-  },
-  {
-    "id": "candidate-50",
-    "caseNumber": 50,
-    "title": "Healthcare Benchmark Details",
-    "creator": "@iScienceLuvr",
-    "category": "Taste and Polish",
-    "sourceUrl": "https://x.com/iScienceLuvr/status/2064411823445774554",
-    "creatorUrl": "https://x.com/iScienceLuvr",
-    "summary": "Use this benchmark note to evaluate Fable 5 on healthcare-related tasks and identify missing hard medical evals. I appreciate Anthropic providing healthcare-related evals. Let's quickly go over them. HealthBench: - Benchmark from OpenAI with 5k multi-turn conversations with patients and rubrics for evaluation. - Fable 5 achieves 62.7% vs. GPT-5.5's 56.5%. - I would also appreciate HealthBench Hard scores in addition ",
-    "whyPromising": "benchmark signal - Use this benchmark note to evaluate Fable 5 on healthcare-related tasks and identify missing hard medical evals. I appreciate Anthropic providing healthcare-related evals. Let's quickly go o",
-    "status": "candidate",
-    "evidence": "Type: Evaluation | Date: 2026-06-09",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "taste-and-polish",
-      "benchmark-signal"
-    ]
-  },
-  {
     "id": "candidate-51",
     "caseNumber": 51,
     "title": "ParseBench Document Parsing Evaluation",
@@ -942,25 +429,6 @@
     "whyPromising": "long-horizon run - Use this case to decide whether Fable 5 is cost-effective for document parsing versus specialized OCR systems. Claude Fable 5 thinks document parsing is beneath it. It is absolutely crushing",
     "status": "candidate",
     "evidence": "Type: Evaluation | Date: 2026-06-10",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "taste-and-polish",
-      "long-horizon-run"
-    ]
-  },
-  {
-    "id": "candidate-52",
-    "caseNumber": 52,
-    "title": "SWE-Bench Pro and FrontierCode Comparison",
-    "creator": "@jumperz",
-    "category": "Taste and Polish",
-    "sourceUrl": "https://x.com/jumperz/status/2064402965461406044",
-    "creatorUrl": "https://x.com/jumperz",
-    "summary": "Use this benchmark case to evaluate Fable 5 for migrations, complex implementations, autonomous sessions, tests, and visual verification. Fable 5 is here and it honestly destroys GPT 5.5 in SWE-Bench Pro, the agentic coding benchmark: - Fable 5: 80.3% - GPT 5.5: 58.6% - Gap: 22 points It is even further ahead on FrontierCode Diamond: - Fable 5: 29.3% - GPT 5.5: 5.7% This is basically Anthropic's strongest model for l",
-    "whyPromising": "long-horizon run - Use this benchmark case to evaluate Fable 5 for migrations, complex implementations, autonomous sessions, tests, and visual verification. Fable 5 is here and it honestly destroys GPT 5.5 in ",
-    "status": "candidate",
-    "evidence": "Type: Evaluation | Date: 2026-06-09",
     "sourceCollection": "awesome-claude-fable-5",
     "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
     "tags": [
@@ -1004,25 +472,6 @@
     "tags": [
       "research-and-knowledge-work",
       "benchmark-signal"
-    ]
-  },
-  {
-    "id": "candidate-55",
-    "caseNumber": 55,
-    "title": "Benchmarks, Pricing, Access, and Safeguards",
-    "creator": "@lucasflatwhite",
-    "category": "First-Principles Engines",
-    "sourceUrl": "https://x.com/lucas_flatwhite/status/2064483645184979183",
-    "creatorUrl": "https://x.com/lucas_flatwhite",
-    "summary": "Use this case as a broad checklist for benchmarks, pricing, access, safeguards, and strategic implications. Claude Fable 5 and Mythos 5 have launched. They are the most powerful models Anthropic has made so far. Andrej Karpathy commented that the longer and more complex the task is, the more Fable 5's strengths become visible. When you give it ambitious work, it understands and keeps going. The temptation to stop loo",
-    "whyPromising": "long-horizon run - Use this case as a broad checklist for benchmarks, pricing, access, safeguards, and strategic implications. Claude Fable 5 and Mythos 5 have launched. They are the most powerful models Anthr",
-    "status": "candidate",
-    "evidence": "Type: Evaluation | Date: 2026-06-09",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "first-principles-engines",
-      "long-horizon-run"
     ]
   },
   {
@@ -1121,82 +570,6 @@
     ]
   },
   {
-    "id": "candidate-61",
-    "caseNumber": 61,
-    "title": "Fable Prompting Verification Guide",
-    "creator": "@aashatwt",
-    "category": "Taste and Polish",
-    "sourceUrl": "https://x.com/aashatwt/status/2064973740354818074",
-    "creatorUrl": "https://x.com/aashatwt",
-    "summary": "Use this prompting guide to shift from longer prompt hacks toward goal, context, constraints, tools, and verification loops. Treat Fable 5 prompting as context and environment design rather than a long list of step-by-step instructions. The post summarizes a practical pattern: provide a clear goal, relevant context, constraints, tool access, and a way to verify success. It also argues that verification, evaluation, a",
-    "whyPromising": "long-horizon run - Use this prompting guide to shift from longer prompt hacks toward goal, context, constraints, tools, and verification loops. Treat Fable 5 prompting as context and environment design rather ",
-    "status": "candidate",
-    "evidence": "Type: Tutorial | Date: 2026-06-11",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "taste-and-polish",
-      "long-horizon-run"
-    ]
-  },
-  {
-    "id": "candidate-62",
-    "caseNumber": 62,
-    "title": "Istanbul Platform Game Reference Build",
-    "creator": "@ozansihay",
-    "category": "One-Shot Complete Worlds",
-    "sourceUrl": "https://x.com/ozansihay/status/2064973170780545535",
-    "creatorUrl": "https://x.com/ozansihay",
-    "summary": "Use a reference sprite sheet plus one conversion instruction to test Fable 5 on a playable platform game. The creator first generated a retro Istanbul platform-game sprite sheet with GPT Image 2, then gave that reference image to Claude Fable 5 High and asked it to turn the image into a game. The reported result was produced in a single pass.",
-    "whyPromising": "benchmark signal - Use a reference sprite sheet plus one conversion instruction to test Fable 5 on a playable platform game. The creator first generated a retro Istanbul platform-game sprite sheet with GPT Ima",
-    "status": "candidate",
-    "evidence": "Type: Demo | Date: 2026-06-11",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "one-shot-complete-worlds",
-      "benchmark-signal"
-    ]
-  },
-  {
-    "id": "candidate-63",
-    "caseNumber": 63,
-    "title": "Business 3D City Dashboard",
-    "creator": "@noisyb0y1",
-    "category": "One-Shot Complete Worlds",
-    "sourceUrl": "https://x.com/noisyb0y1/status/2064970594118967756",
-    "creatorUrl": "https://x.com/noisyb0y1",
-    "summary": "Use Fable 5 to turn a business workflow into a live 3D city dashboard concept. The post describes a one-prompt business visualization where warehouses, packing, drones, orders, departments, customers, and AI assistants become a live 3D city. It frames the output as a client-facing alternative to static slides, with operational figures such as 42 deliveries, 12-minute average time, and $651 in revenue shown on screen.",
-    "whyPromising": "one-shot artifact - Use Fable 5 to turn a business workflow into a live 3D city dashboard concept. The post describes a one-prompt business visualization where warehouses, packing, drones, orders, departments, ",
-    "status": "candidate",
-    "evidence": "Type: Demo | Date: 2026-06-11",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "one-shot-complete-worlds",
-      "one-shot-artifact"
-    ]
-  },
-  {
-    "id": "candidate-64",
-    "caseNumber": 64,
-    "title": "Three.js Hole Game One-Shot",
-    "creator": "@thebuggeddev",
-    "category": "One-Shot Complete Worlds",
-    "sourceUrl": "https://x.com/thebuggeddev/status/2064968106104275008",
-    "creatorUrl": "https://x.com/thebuggeddev",
-    "summary": "Use Fable 5 to one-shot a 3D browser game prototype in Three.js. The creator says Fable 5 built an entire 3D HOLE IT-style game using Three.js in one shot. This is a lightweight but concrete game-generation demo for testing whether the model can produce a playable 3D interaction from a compact request.",
-    "whyPromising": "one-shot artifact - Use Fable 5 to one-shot a 3D browser game prototype in Three.js. The creator says Fable 5 built an entire 3D HOLE IT-style game using Three.js in one shot. This is a lightweight but concrete",
-    "status": "candidate",
-    "evidence": "Type: Demo | Date: 2026-06-11",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "one-shot-complete-worlds",
-      "one-shot-artifact"
-    ]
-  },
-  {
     "id": "candidate-65",
     "caseNumber": 65,
     "title": "DeepSWE Score Comparison",
@@ -1235,25 +608,6 @@
     ]
   },
   {
-    "id": "candidate-67",
-    "caseNumber": 67,
-    "title": "Super Mario Game Token Cost",
-    "creator": "@pankajkumardev",
-    "category": "One-Shot Complete Worlds",
-    "sourceUrl": "https://x.com/pankajkumar_dev/status/2064941888990593416",
-    "creatorUrl": "https://x.com/pankajkumar_dev",
-    "summary": "Use this single-shot game build to estimate Fable 5 output quality and token consumption. The creator asked Claude Fable 5 to build a Super Mario Nintendo-style game. The post reports that the task used around 2 million tokens and produced a strong single-shot result, making it useful for judging both game-building quality and cost.",
-    "whyPromising": "long-horizon run - Use this single-shot game build to estimate Fable 5 output quality and token consumption. The creator asked Claude Fable 5 to build a Super Mario Nintendo-style game. The post reports that t",
-    "status": "candidate",
-    "evidence": "Type: Demo | Date: 2026-06-11",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "one-shot-complete-worlds",
-      "long-horizon-run"
-    ]
-  },
-  {
     "id": "candidate-68",
     "caseNumber": 68,
     "title": "Claude Code Fallback Setting",
@@ -1273,44 +627,6 @@
     ]
   },
   {
-    "id": "candidate-69",
-    "caseNumber": 69,
-    "title": "Namma Metro Simulator Build",
-    "creator": "@anilbpai",
-    "category": "First-Principles Engines",
-    "sourceUrl": "https://x.com/anilbpai/status/2064927784833790091",
-    "creatorUrl": "https://x.com/anilbpai",
-    "summary": "Use this demo as a compact example of vibe-coding a public-transit simulator with Fable 5. The creator reports building a Namma Metro simulator while riding the Bengaluru Metro, using Claude Fable 5 as the coding partner. The post is brief, but it links to a visual demo and shows Fable 5 applied to a location-specific simulation idea.",
-    "whyPromising": "public demo lead - Use this demo as a compact example of vibe-coding a public-transit simulator with Fable 5. The creator reports building a Namma Metro simulator while riding the Bengaluru Metro, using Claude",
-    "status": "candidate",
-    "evidence": "Type: Demo | Date: 2026-06-11",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "first-principles-engines",
-      "public-demo-lead"
-    ]
-  },
-  {
-    "id": "candidate-70",
-    "caseNumber": 70,
-    "title": "Dusk Drive One-Prompt Game",
-    "creator": "@VincentLogic",
-    "category": "One-Shot Complete Worlds",
-    "sourceUrl": "https://x.com/VincentLogic/status/2064921358359011684",
-    "creatorUrl": "https://x.com/VincentLogic",
-    "summary": "Use this one-prompt driving-game case to evaluate Fable 5 on low-poly game prototyping without human edits. The post describes Claude Fable 5 creating a complete driving game, Dusk Drive, from one prompt. The creator highlights the low-poly visual style, aurora snow drifting scene, and the claim that there was zero human editing between idea and playable version.",
-    "whyPromising": "one-shot artifact - Use this one-prompt driving-game case to evaluate Fable 5 on low-poly game prototyping without human edits. The post describes Claude Fable 5 creating a complete driving game, Dusk Drive, fr",
-    "status": "candidate",
-    "evidence": "Type: Demo | Date: 2026-06-11",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "one-shot-complete-worlds",
-      "one-shot-artifact"
-    ]
-  },
-  {
     "id": "candidate-71",
     "caseNumber": 71,
     "title": "APEX-Agents Pass@1 Ranking",
@@ -1327,25 +643,6 @@
     "tags": [
       "long-horizon-agents",
       "benchmark-signal"
-    ]
-  },
-  {
-    "id": "candidate-72",
-    "caseNumber": 72,
-    "title": "Claude Model Selection Playbook",
-    "creator": "@charliejhills",
-    "category": "Taste and Polish",
-    "sourceUrl": "https://x.com/charliejhills/status/2064957428211536212",
-    "creatorUrl": "https://x.com/charliejhills",
-    "summary": "Use this model-selection playbook to reserve Fable 5 for the hardest Claude Code jobs. The post compares Haiku 4.5, Sonnet 4.6, Opus 4.8, and Fable 5 across model effort and limit usage. Its practical advice is to run Sonnet for everyday work, switch to Opus for harder problems, and save Fable 5 for the toughest Claude Code tasks where planning, building, and testing depth matter.",
-    "whyPromising": "public demo lead - Use this model-selection playbook to reserve Fable 5 for the hardest Claude Code jobs. The post compares Haiku 4.5, Sonnet 4.6, Opus 4.8, and Fable 5 across model effort and limit usage. Its",
-    "status": "candidate",
-    "evidence": "Type: Tutorial | Date: 2026-06-11",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "taste-and-polish",
-      "public-demo-lead"
     ]
   },
   {
@@ -1406,25 +703,6 @@
     ]
   },
   {
-    "id": "candidate-76",
-    "caseNumber": 76,
-    "title": "Claude Code Model Matching Fix",
-    "creator": "@ClaudeCodeLog",
-    "category": "Long-Horizon Agents",
-    "sourceUrl": "https://x.com/ClaudeCodeLog/status/2064948584907153576",
-    "creatorUrl": "https://x.com/ClaudeCodeLog",
-    "summary": "Use this Claude Code changelog note to avoid Fable 5 model-name and context matching issues. Claude Code 2.1.173 includes a fix that strips the [1m] suffix from Fable 5 model names to prevent default 1M context from breaking model matching. The same release also suppresses a spurious Windows sandbox dependency warning and clarifies grep help output modes.",
-    "whyPromising": "workflow integration - Use this Claude Code changelog note to avoid Fable 5 model-name and context matching issues. Claude Code 2.1.173 includes a fix that strips the [1m] suffix from Fable 5 model names to preven",
-    "status": "candidate",
-    "evidence": "Type: Integration | Date: 2026-06-11",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "long-horizon-agents",
-      "workflow-integration"
-    ]
-  },
-  {
     "id": "candidate-77",
     "caseNumber": 77,
     "title": "Three Web Apps in Claude Code",
@@ -1441,25 +719,6 @@
     "tags": [
       "taste-and-polish",
       "benchmark-signal"
-    ]
-  },
-  {
-    "id": "candidate-78",
-    "caseNumber": 78,
-    "title": "Rilable Open Source App Builder",
-    "creator": "@rileybrown",
-    "category": "Taste and Polish",
-    "sourceUrl": "https://x.com/rileybrown/status/2064931283403178354",
-    "creatorUrl": "https://x.com/rileybrown",
-    "summary": "Use this open-source app-builder case to study Fable 5 across iOS, web apps, sandboxes, and API-token cost. The creator open sourced Rilable, an iOS app that builds web apps and iOS apps. The post says it was built with Fable 5 in 10 prompts, cost about $210 in API tokens, uses Claude models for app generation, spins up sandboxes through Daytona, uses Convex for the database, Vercel AI Gateway for AI features, and a ",
-    "whyPromising": "long-horizon run - Use this open-source app-builder case to study Fable 5 across iOS, web apps, sandboxes, and API-token cost. The creator open sourced Rilable, an iOS app that builds web apps and iOS apps. Th",
-    "status": "candidate",
-    "evidence": "Type: Integration | Date: 2026-06-11",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject.",
-    "tags": [
-      "taste-and-polish",
-      "long-horizon-run"
     ]
   },
   {
@@ -1520,26 +779,6 @@
     ]
   },
   {
-    "id": "candidate-83",
-    "caseNumber": 83,
-    "title": "Figma Capture Landing Page Clone",
-    "creator": "@mikefutia",
-    "creatorUrl": "https://x.com/mikefutia",
-    "category": "Taste and Polish",
-    "sourceUrl": "https://x.com/mikefutia/status/2065537778516205856",
-    "summary": "Uses Figma page capture, Figma MCP, Claude Code, and Claude Fable 5 to rebuild a competitor page into an on-brand landing page workflow with structure, copy, and generated photography.",
-    "whyPromising": "design workflow - turns a captured live page into editable layers and a shippable branded page instead of a static screenshot clone.",
-    "evidence": "Type: X Post | Date: 2026-06-12",
-    "tags": [
-      "taste-and-polish",
-      "design-workflow"
-    ],
-    "priorityScore": 89,
-    "status": "candidate",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject."
-  },
-  {
     "id": "candidate-85",
     "caseNumber": 85,
     "title": "CloudWatch Log Triage Agent",
@@ -1555,26 +794,6 @@
       "ops-triage"
     ],
     "priorityScore": 88,
-    "status": "candidate",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject."
-  },
-  {
-    "id": "candidate-86",
-    "caseNumber": 86,
-    "title": "World Cup Predictor in Sandboxes",
-    "creator": "@upstash",
-    "creatorUrl": "https://x.com/upstash",
-    "category": "Productized Play",
-    "sourceUrl": "https://x.com/upstash/status/2064702195333820846",
-    "summary": "A World Cup prediction app runs Claude Fable 5, GPT-5.5, and Gemini inside isolated Upstash sandboxes to research news, injuries, and match context.",
-    "whyPromising": "product demo - situates Fable in a multi-model research app with isolated execution rather than a standalone chat transcript.",
-    "evidence": "Type: Integration | Date: 2026-06-10",
-    "tags": [
-      "productized-play",
-      "sandboxed-agents"
-    ],
-    "priorityScore": 85,
     "status": "candidate",
     "sourceCollection": "awesome-claude-fable-5",
     "nextStep": "Open the original post, verify media/artifact, then promote or reject."
