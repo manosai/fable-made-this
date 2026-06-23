@@ -637,5 +637,33 @@
       "alpha-school"
     ],
     "status": "verified"
+  },
+  {
+    "id": "techhalla-gta2-clone",
+    "title": "GTA 2 Clone in Two Hours",
+    "creator": "TechHalla",
+    "category": "One-Shot Complete Worlds",
+    "format": "Playable Game Build",
+    "impressiveness": 88,
+    "proof": "X post presents a GTA 2-style clone made with Claude Fable 5 High in about two hours, with the creator also using Tripo for custom 3D assets and sharing a tutorial-style workflow.",
+    "whyItMatters": "It makes the one-shot-worlds theme immediately legible: a recognizable game format, moving vehicles, a playable environment, and enough production context to show Fable coordinating code while asset tooling fills in the world.",
+    "sourceUrl": "https://x.com/techhalla/status/2064682080445898957",
+    "createdDuringWindow": "Verified: posted Jun 10, 2026",
+    "windowRule": "Substantially shared during active availability window",
+    "platform": "X",
+    "media": {
+      "type": "video",
+      "src": "/media/techhalla-gta2/video.mp4",
+      "poster": "/media/techhalla-gta2/poster.jpg",
+      "duration": "00:48"
+    },
+    "tags": [
+      "game",
+      "gta-clone",
+      "tripo",
+      "tutorial",
+      "two-hour-build"
+    ],
+    "status": "verified"
   }
 ]

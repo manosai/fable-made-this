@@ -157,6 +157,11 @@ h1 {
   margin-top: 24px;
 }
 
+.thesisPanel .signalRow {
+  margin-top: 26px;
+  row-gap: 12px;
+}
+
 .tags span,
 .cardTop span,
 .signalRow span {

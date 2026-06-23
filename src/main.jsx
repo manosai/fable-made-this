@@ -6,6 +6,19 @@ import "./styles.css";
 
 const assetPath = (path) => (path?.startsWith("/") ? `${import.meta.env.BASE_URL}${path.slice(1)}` : path);
 
+const cleanSourceSummary = (summary = "") =>
+  summary
+    .replace(/\s*GitHub metadata:\s*[^.]+\.?$/i, "")
+    .trim();
+
+const sourceProofLabel = (item) => {
+  if (item.sourceCollection === "github-search") {
+    return null;
+  }
+
+  return item.createdDuringWindow;
+};
+
 const candidateItems = candidates.map((candidate, index) => ({
   id: `candidate-${candidate.id}`,
   title: candidate.title,
@@ -559,8 +572,8 @@ function App() {
               <ArtifactCover item={item} />
               <h3>{item.title}</h3>
               <p className="creator">{item.creator}</p>
-              <p>{item.whyItMatters}</p>
-              <p className="sourceProof">{item.createdDuringWindow}</p>
+              <p>{cleanSourceSummary(item.whyItMatters)}</p>
+              {sourceProofLabel(item) && <p className="sourceProof">{sourceProofLabel(item)}</p>}
               <div className="links">
                 <a href={item.sourceUrl} target="_blank" rel="noreferrer">
                   View source

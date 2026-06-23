@@ -1540,26 +1540,6 @@
     "nextStep": "Open the original post, verify media/artifact, then promote or reject."
   },
   {
-    "id": "candidate-84",
-    "caseNumber": 84,
-    "title": "GTA 2 Clone in Two Hours",
-    "creator": "@techhalla",
-    "creatorUrl": "https://x.com/techhalla",
-    "category": "One-Shot Complete Worlds",
-    "sourceUrl": "https://x.com/techhalla/status/2064682080445898957",
-    "summary": "A GTA 2-style game build pairing Claude Fable 5 High with separate 3D asset tooling, framed as a compact tutorial with prompts and production notes.",
-    "whyPromising": "game build - combines code generation and asset generation into a playable game workflow rather than a benchmark screenshot.",
-    "evidence": "Type: Tutorial | Date: 2026-06-10",
-    "tags": [
-      "one-shot-complete-worlds",
-      "game-build"
-    ],
-    "priorityScore": 91,
-    "status": "candidate",
-    "sourceCollection": "awesome-claude-fable-5",
-    "nextStep": "Open the original post, verify media/artifact, then promote or reject."
-  },
-  {
     "id": "candidate-85",
     "caseNumber": 85,
     "title": "CloudWatch Log Triage Agent",
