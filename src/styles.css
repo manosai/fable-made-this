@@ -322,6 +322,11 @@ select {
   text-wrap: balance;
 }
 
+.sectionIntro h2 {
+  max-width: 980px;
+  font-size: clamp(2.8rem, 6vw, 5.6rem);
+}
+
 .sectionHeader p,
 .sectionIntro p,
 .thesisPanel p {
@@ -606,14 +611,21 @@ a:hover {
 
 .synthesis {
   margin: 34px 0 0;
-  padding: 34px;
+  padding: clamp(1.5rem, 4vw, 3.5rem);
 }
 
 .sectionIntro {
-  display: grid;
-  grid-template-columns: minmax(240px, 0.72fr) minmax(0, 1fr);
-  gap: 24px;
-  align-items: end;
+  display: block;
+  max-width: 1120px;
+}
+
+.sectionIntro .eyebrow {
+  margin-bottom: 18px;
+}
+
+.sectionIntro p:not(.eyebrow) {
+  max-width: 760px;
+  font-size: clamp(1rem, 1.2vw, 1.18rem);
 }
 
 .thesisPanel {
