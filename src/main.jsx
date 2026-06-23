@@ -32,7 +32,6 @@ const archiveItems = [
 const allItems = [...featuredItems, ...archiveItems];
 const previewItems = featuredItems.slice(0, 8);
 const categories = ["All", ...Array.from(new Set(allItems.map((project) => project.category)))];
-const windowLabel = "June 9-13, 2026";
 const catalogUrl = "https://github.com/Anil-matcha/awesome-claude-fable-5";
 const submissionUrl =
   "https://github.com/manosai/fable-made-this/issues/new?title=Fable%20Made%20This%20submission&body=Source%20link%3A%0A%0ACreator%3A%0A%0AWhat%20did%20Fable%20make%3F%0A%0AWhy%20is%20it%20impressive%3F";
@@ -77,8 +76,8 @@ const synthesisThemes = [
 ];
 
 const synthesisSignals = [
-  `${allItems.length} sourced entries`,
-  `${featuredItems.length} media-backed artifacts staged first`,
+  "One-shot artifacts",
+  "Long-horizon builds",
   "Worlds, engines, games, agents, and polished interfaces",
   "Same underlying capabilities as Mythos 5",
   "1M token context and up to 128k output"
@@ -181,13 +180,11 @@ function App() {
   }, [category, query, sort]);
 
   const archiveVisibleItems = archiveExpanded ? archiveFiltered : archiveFiltered.slice(0, 12);
-  const capturedMedia = featuredItems.length;
   const pageSize = Math.max(rowsPerPage, columns * rowsPerPage);
   const pageCount = Math.max(1, Math.ceil(filtered.length / pageSize));
   const currentPage = Math.min(page, pageCount);
   const pageStart = (currentPage - 1) * pageSize;
-  const pageEnd = Math.min(pageStart + pageSize, filtered.length);
-  const paginatedItems = filtered.slice(pageStart, pageEnd);
+  const paginatedItems = filtered.slice(pageStart, pageStart + pageSize);
   const paginationItems = visiblePageItems(currentPage, pageCount);
 
   useEffect(() => {
@@ -241,17 +238,9 @@ function App() {
           <p className="eyebrow">Fable Window Gallery</p>
           <h1>Fable Made This</h1>
           <p className="dek">
-            {allItems.length} sourced entries from the few public days when Claude Fable felt less like a chatbot and
-            more like a builder. The first pass foregrounds {featuredItems.length} media-backed artifacts; the deeper
-            archive follows after the analysis.
+            A gallery from the few public days when Claude Fable felt less like a chatbot and more like a builder.
+            Start with the artifacts that explain themselves visually, then wander into the deeper source trail.
           </p>
-          <div className="stats">
-            <span>{windowLabel}</span>
-            <span>{allItems.length} sourced entries</span>
-            <span>{capturedMedia} media cards</span>
-            <span>{archiveItems.length} archive leads</span>
-            <span>{categories.length - 1} categories</span>
-          </div>
           <div className="heroLinks">
             <a href="#gallery">Enter the gallery</a>
             <a href="#synthesis">What made it interesting?</a>
@@ -307,11 +296,10 @@ function App() {
           <p className="eyebrow">Gallery</p>
           <h2>Browse the artifacts</h2>
           <p>
-            The opening gallery is deliberately media-first: the most legible screenshots and videos come before the
-            source-backed archive. Hover or focus a card to reveal the source trail.
+            The opening gallery favors examples that communicate at a glance: games, simulations, product surfaces,
+            engines, and worlds with visible craft. Hover or focus a card to reveal the source trail.
           </p>
         </div>
-        <strong>{filtered.length}</strong>
       </section>
 
       <section className="grid" ref={gridRef}>
@@ -369,7 +357,7 @@ function App() {
 
       <nav className="pagination" aria-label="Gallery pagination">
         <p>
-          Showing {filtered.length === 0 ? 0 : pageStart + 1}-{pageEnd} of {filtered.length}
+          Browse the featured gallery
           <span>Four rows per page</span>
         </p>
         <div className="paginationControls">
@@ -448,14 +436,13 @@ function App() {
       <section className="archive" id="archive" aria-label="Source-backed archive">
         <div className="sectionHeader archiveHeader">
           <div>
-            <p className="eyebrow">Full Archive</p>
-            <h2>Source-backed leads</h2>
+            <p className="eyebrow">More To Explore</p>
+            <h2>Source trail</h2>
             <p>
-              These entries are useful context, but less instantly visual. They stay lower on the page so the strongest
-              artifacts set the first impression while the full research trail remains browsable.
+              These are useful trails for deeper browsing. They stay lower on the page so the strongest artifacts set
+              the first impression while the broader research remains available.
             </p>
           </div>
-          <strong>{archiveFiltered.length}</strong>
         </div>
         <div className="archiveGrid">
           {archiveVisibleItems.map((item) => (
@@ -485,7 +472,7 @@ function App() {
         </div>
         {archiveFiltered.length > 12 && (
           <button className="archiveToggle" type="button" onClick={() => setArchiveExpanded((value) => !value)}>
-            {archiveExpanded ? "Show fewer archive leads" : `Show all ${archiveFiltered.length} archive leads`}
+            {archiveExpanded ? "Show fewer" : "Show all"}
           </button>
         )}
       </section>
@@ -496,8 +483,8 @@ function App() {
         <a href={catalogUrl} target="_blank" rel="noreferrer">
           Anil-matcha/awesome-claude-fable-5
         </a>
-        , which collected many of the original posts used for source-backed leads. The page leads with media-backed
-        artifacts, then keeps the broader archive lower for completeness. Missing something great?{" "}
+        , which collected many of the original posts. The page leads with the most instantly legible artifacts, then
+        keeps the broader trail lower for completeness. Missing something great?{" "}
         <a href={submissionUrl} target="_blank" rel="noreferrer">
           Submit it here
         </a>

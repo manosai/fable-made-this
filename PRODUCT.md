@@ -28,7 +28,7 @@ Selective, artifact-led, and slightly uncanny. The page should feel like an exhi
 
 ## Design Principles
 
-1. Stage the experience: lead with visible artifacts, then preserve less visual source-backed leads lower on the page.
+1. Stage the experience: lead with visible artifacts, then keep the deeper source trail lower on the page.
 2. Average examples hurt the first impression: curation should prioritize stronger entries without deleting useful research context.
 3. Make the artifact legible in under two seconds: category, creator, and why-it-matters should support the media, not compete with it.
 4. Preserve source credibility: every claim should remain traceable to an original source or playable artifact.
