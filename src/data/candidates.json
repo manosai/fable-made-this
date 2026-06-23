@@ -1518,5 +1518,2985 @@
       "first-principles-engines",
       "benchmark-signal"
     ]
+  },
+  {
+    "id": "candidate-83",
+    "caseNumber": 83,
+    "title": "Figma Capture Landing Page Clone",
+    "creator": "@mikefutia",
+    "creatorUrl": "https://x.com/mikefutia",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://x.com/mikefutia/status/2065537778516205856",
+    "summary": "Uses Figma page capture, Figma MCP, Claude Code, and Claude Fable 5 to rebuild a competitor page into an on-brand landing page workflow with structure, copy, and generated photography.",
+    "whyPromising": "design workflow - turns a captured live page into editable layers and a shippable branded page instead of a static screenshot clone.",
+    "evidence": "Type: X Post | Date: 2026-06-12",
+    "tags": [
+      "taste-and-polish",
+      "design-workflow"
+    ],
+    "priorityScore": 89,
+    "status": "candidate",
+    "sourceCollection": "awesome-claude-fable-5",
+    "nextStep": "Open the original post, verify media/artifact, then promote or reject."
+  },
+  {
+    "id": "candidate-84",
+    "caseNumber": 84,
+    "title": "GTA 2 Clone in Two Hours",
+    "creator": "@techhalla",
+    "creatorUrl": "https://x.com/techhalla",
+    "category": "One-Shot Complete Worlds",
+    "sourceUrl": "https://x.com/techhalla/status/2064682080445898957",
+    "summary": "A GTA 2-style game build pairing Claude Fable 5 High with separate 3D asset tooling, framed as a compact tutorial with prompts and production notes.",
+    "whyPromising": "game build - combines code generation and asset generation into a playable game workflow rather than a benchmark screenshot.",
+    "evidence": "Type: Tutorial | Date: 2026-06-10",
+    "tags": [
+      "one-shot-complete-worlds",
+      "game-build"
+    ],
+    "priorityScore": 91,
+    "status": "candidate",
+    "sourceCollection": "awesome-claude-fable-5",
+    "nextStep": "Open the original post, verify media/artifact, then promote or reject."
+  },
+  {
+    "id": "candidate-85",
+    "caseNumber": 85,
+    "title": "CloudWatch Log Triage Agent",
+    "creator": "@diblacksmith",
+    "creatorUrl": "https://x.com/diblacksmith",
+    "category": "Long-Horizon Agents",
+    "sourceUrl": "https://x.com/diblacksmith/status/2066230084273344698",
+    "summary": "An RLM agent using Claude Fable 5 processed roughly 80,000 lines of CloudWatch logs, inferred service architecture, and surfaced failures the team had missed.",
+    "whyPromising": "long-context triage - shows Fable as an operations investigator over a large, messy production-log context.",
+    "evidence": "Type: Integration | Date: 2026-06-13",
+    "tags": [
+      "long-horizon-agents",
+      "ops-triage"
+    ],
+    "priorityScore": 88,
+    "status": "candidate",
+    "sourceCollection": "awesome-claude-fable-5",
+    "nextStep": "Open the original post, verify media/artifact, then promote or reject."
+  },
+  {
+    "id": "candidate-86",
+    "caseNumber": 86,
+    "title": "World Cup Predictor in Sandboxes",
+    "creator": "@upstash",
+    "creatorUrl": "https://x.com/upstash",
+    "category": "Productized Play",
+    "sourceUrl": "https://x.com/upstash/status/2064702195333820846",
+    "summary": "A World Cup prediction app runs Claude Fable 5, GPT-5.5, and Gemini inside isolated Upstash sandboxes to research news, injuries, and match context.",
+    "whyPromising": "product demo - situates Fable in a multi-model research app with isolated execution rather than a standalone chat transcript.",
+    "evidence": "Type: Integration | Date: 2026-06-10",
+    "tags": [
+      "productized-play",
+      "sandboxed-agents"
+    ],
+    "priorityScore": 85,
+    "status": "candidate",
+    "sourceCollection": "awesome-claude-fable-5",
+    "nextStep": "Open the original post, verify media/artifact, then promote or reject."
+  },
+  {
+    "id": "candidate-87",
+    "caseNumber": 87,
+    "title": "WolfBench Refusal Cost Case",
+    "creator": "@WolfBenchAI",
+    "creatorUrl": "https://x.com/WolfBenchAI",
+    "category": "Research and Knowledge Work",
+    "sourceUrl": "https://x.com/WolfBenchAI/status/2065582716054376921",
+    "summary": "WolfBench reports an expensive Claude Fable 5 evaluation run where repeated refusals reduced useful task completion, making safety behavior a measurable cost factor.",
+    "whyPromising": "evaluation signal - documents a concrete failure mode and cost profile for long autonomous benchmark runs.",
+    "evidence": "Type: Evaluation | Date: 2026-06-12",
+    "tags": [
+      "research-and-knowledge-work",
+      "evaluation-signal"
+    ],
+    "priorityScore": 80,
+    "status": "candidate",
+    "sourceCollection": "awesome-claude-fable-5",
+    "nextStep": "Open the original post, verify media/artifact, then promote or reject."
+  },
+  {
+    "id": "candidate-88",
+    "caseNumber": 88,
+    "title": "API Access Cutoff Tracker",
+    "creator": "@simonw",
+    "creatorUrl": "https://x.com/simonw",
+    "category": "Productized Play",
+    "sourceUrl": "https://x.com/simonw/status/2065618703480414666",
+    "summary": "A minute-by-minute API ping script measured exactly when Claude Fable 5 access stopped responding, turning model availability into an observable operational signal.",
+    "whyPromising": "availability tracker - captures the fragility of building during the short public-access window.",
+    "evidence": "Type: X Post | Date: 2026-06-12",
+    "tags": [
+      "productized-play",
+      "availability-tracker"
+    ],
+    "priorityScore": 76,
+    "status": "candidate",
+    "sourceCollection": "awesome-claude-fable-5",
+    "nextStep": "Open the original post, verify media/artifact, then promote or reject."
+  },
+  {
+    "id": "candidate-89",
+    "caseNumber": 89,
+    "title": "Fable 5 World Demo",
+    "creator": "Braffolk",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/Braffolk/fable5-world-demo",
+    "creatorUrl": "https://github.com/Braffolk",
+    "summary": "3D world built by Claude Fable 5 to test its capabilities using three.js GitHub metadata: 220 stars, updated 2026-06-23.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-23 | Stars: 220",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 96
+  },
+  {
+    "id": "candidate-90",
+    "caseNumber": 90,
+    "title": "Hollow Pines Claude Fable 5 Game",
+    "creator": "karelpelcak",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/karelpelcak/Hollow-Pines-Claude-Fable5-Game",
+    "creatorUrl": "https://github.com/karelpelcak",
+    "summary": "Hollow-Pines Claude Fable5 Game - first-person browser horror at 60 FPS, generated from a single prompt with Claude Code GitHub metadata: 2 stars, updated 2026-06-15.",
+    "whyPromising": "one-shot lead - repo claims a single-prompt or end-to-end Fable build that could be promoted with media.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-15 | Stars: 2",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "one-shot-artifact"
+    ],
+    "priorityScore": 95
+  },
+  {
+    "id": "candidate-91",
+    "caseNumber": 91,
+    "title": "Sunset Flap",
+    "creator": "5kahoisaac",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/5kahoisaac/sunset-flap",
+    "creatorUrl": "https://github.com/5kahoisaac",
+    "summary": "A pretty, playable, web-based 3D Flappy Bird game built by Claude Fable 5. GitHub metadata: 3 stars, updated 2026-06-16.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-16 | Stars: 3",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 94
+  },
+  {
+    "id": "candidate-92",
+    "caseNumber": 92,
+    "title": "Elvenwood",
+    "creator": "huntsyea",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/huntsyea/elvenwood",
+    "creatorUrl": "https://github.com/huntsyea",
+    "summary": "A fully procedural medieval elven forest in three.js - built end-to-end by Anthropic's Claude Fable 5. Play: https://elvenwood-five.vercel.app GitHub metadata: 2 stars, updated 2026-06-14.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-14 | Stars: 2",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 94
+  },
+  {
+    "id": "candidate-93",
+    "caseNumber": 93,
+    "title": "Experiment Fable Julia Wasm",
+    "creator": "KenoAIStaging",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/KenoAIStaging/experiment-fable-julia-wasm",
+    "creatorUrl": "https://github.com/KenoAIStaging",
+    "summary": "Julia -> WasmGC compiler experiment: JuliaSyntax lexer running in the browser (built by Claude Fable 5) GitHub metadata: 2 stars, updated 2026-06-10.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-10 | Stars: 2",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "design-signal"
+    ],
+    "priorityScore": 92
+  },
+  {
+    "id": "candidate-94",
+    "caseNumber": 94,
+    "title": "Claude Fable 5 Bratislava Castle Oneshot",
+    "creator": "mrshu",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/mrshu/claude-fable-5-bratislava-castle-oneshot",
+    "creatorUrl": "https://github.com/mrshu",
+    "summary": "A cinematic, procedurally built 3D model of Bratislava Castle (Three.js) with a free-view camera and a 20-second directed showcase - one-shot by Claude Fable 5 GitHub metadata: 0 stars, updated 2026-06-12.",
+    "whyPromising": "one-shot lead - repo claims a single-prompt or end-to-end Fable build that could be promoted with media.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-12 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "one-shot-artifact"
+    ],
+    "priorityScore": 92
+  },
+  {
+    "id": "candidate-95",
+    "caseNumber": 95,
+    "title": "Claude Directory",
+    "creator": "pulkitxm",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/pulkitxm/claude-directory",
+    "creatorUrl": "https://github.com/pulkitxm",
+    "summary": "Open-source gallery of AI-generated UI experiments built with Claude (Fable 5), landing pages, hero sections, GLSL shaders, design systems, animations & 3D in React, Tailwind & Three.js. GitHub metadata: 279 stars, updated 2026-06-23.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-23 | Stars: 279",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 90
+  },
+  {
+    "id": "candidate-96",
+    "caseNumber": 96,
+    "title": "Wormhole",
+    "creator": "AidanHT",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/AidanHT/Wormhole",
+    "creatorUrl": "https://github.com/AidanHT",
+    "summary": "A first-person horror portal-puzzle game. Built in one prompt with Claude Fable 5 GitHub metadata: 0 stars, updated 2026-06-14.",
+    "whyPromising": "one-shot lead - repo claims a single-prompt or end-to-end Fable build that could be promoted with media.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-14 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "one-shot-artifact"
+    ],
+    "priorityScore": 90
+  },
+  {
+    "id": "candidate-97",
+    "caseNumber": 97,
+    "title": "History Stories",
+    "creator": "Monte9",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/Monte9/history-stories",
+    "creatorUrl": "https://github.com/Monte9",
+    "summary": "A multiplayer 3D museum of history stories. Built autonomously by Claude (Fable 5) in a planner/builder/evaluator loop. GitHub metadata: 0 stars, updated 2026-06-12.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-12 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 90
+  },
+  {
+    "id": "candidate-98",
+    "caseNumber": 98,
+    "title": "trusch/flux",
+    "creator": "trusch",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/trusch/flux",
+    "creatorUrl": "https://github.com/trusch",
+    "summary": "FLUX - a living canvas. GPU fluid dynamics + generative music in one self-contained HTML file. Built by Claude (claude-fable-5) from a single prompt. GitHub metadata: 1 stars, updated 2026-06-11.",
+    "whyPromising": "one-shot lead - repo claims a single-prompt or end-to-end Fable build that could be promoted with media.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-11 | Stars: 1",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "one-shot-artifact"
+    ],
+    "priorityScore": 89
+  },
+  {
+    "id": "candidate-99",
+    "caseNumber": 99,
+    "title": "Mindcraft",
+    "creator": "KooEmmanuel",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/KooEmmanuel/mindcraft",
+    "creatorUrl": "https://github.com/KooEmmanuel",
+    "summary": "⛏ A Minecraft-style voxel world in the browser - built entirely by Claude Fable 5. Drive karts, blast slimes, race gates. GitHub metadata: 0 stars, updated 2026-06-11.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-11 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 89
+  },
+  {
+    "id": "candidate-100",
+    "caseNumber": 100,
+    "title": "trusch/portal",
+    "creator": "trusch",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/trusch/portal",
+    "creatorUrl": "https://github.com/trusch",
+    "summary": "PORTAL - a window into another dimension. Gyro-anchored raymarched fractal world in one self-contained HTML file. Built by Claude (claude-fable-5). GitHub metadata: 0 stars, updated 2026-06-10.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-10 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "design-signal"
+    ],
+    "priorityScore": 89
+  },
+  {
+    "id": "candidate-101",
+    "caseNumber": 101,
+    "title": "Architect Loop",
+    "creator": "DanMcInerney",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/DanMcInerney/architect-loop",
+    "creatorUrl": "https://github.com/DanMcInerney",
+    "summary": "Claude Fable 5 as architect, GPT-5.5 Codex as builder, the repo as memory - a research-backed Claude Code skill for the cross-vendor agent loop GitHub metadata: 538 stars, updated 2026-06-23.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-23 | Stars: 538",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "agent-workflow"
+    ],
+    "priorityScore": 88
+  },
+  {
+    "id": "candidate-102",
+    "caseNumber": 102,
+    "title": "AndyHafell/testlab",
+    "creator": "AndyHafell",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/AndyHafell/testlab",
+    "creatorUrl": "https://github.com/AndyHafell",
+    "summary": "One-shot prompts for Claude Fable 5 & Other Models - and every line of code it built. From the AI Andy Youtube Channel & AI Mate Community. Just yoink that shit GitHub metadata: 10 stars, updated 2026-06-21.",
+    "whyPromising": "one-shot lead - repo claims a single-prompt or end-to-end Fable build that could be promoted with media.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-21 | Stars: 10",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "one-shot-artifact"
+    ],
+    "priorityScore": 88
+  },
+  {
+    "id": "candidate-103",
+    "caseNumber": 103,
+    "title": "Fable Feetech Arm",
+    "creator": "neka-nat",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/neka-nat/fable-feetech-arm",
+    "creatorUrl": "https://github.com/neka-nat",
+    "summary": "6DOF robot arm made by Claude Fable 5 GitHub metadata: 0 stars, updated 2026-06-14.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-14 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 88
+  },
+  {
+    "id": "candidate-104",
+    "caseNumber": 104,
+    "title": "LevelDevilByClaudeFable5",
+    "creator": "yslee4601",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/yslee4601/LevelDevilByClaudeFable5",
+    "creatorUrl": "https://github.com/yslee4601",
+    "summary": "Level Devil Style Game made by Claude Fable5 GitHub metadata: 0 stars, updated 2026-06-12.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-12 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 88
+  },
+  {
+    "id": "candidate-105",
+    "caseNumber": 105,
+    "title": "Claude Fable 5 Prompt To Game",
+    "creator": "basitmir7",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/basitmir7/claude-fable5-prompt-to-game",
+    "creatorUrl": "https://github.com/basitmir7",
+    "summary": "Using latest Fable5 to create 3D game using a single Prompt GitHub metadata: 0 stars, updated 2026-06-11.",
+    "whyPromising": "one-shot lead - repo claims a single-prompt or end-to-end Fable build that could be promoted with media.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-11 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "one-shot-artifact"
+    ],
+    "priorityScore": 88
+  },
+  {
+    "id": "candidate-106",
+    "caseNumber": 106,
+    "title": "Cowork Context Meter",
+    "creator": "a-data3",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/a-data3/cowork-context-meter",
+    "creatorUrl": "https://github.com/a-data3",
+    "summary": "Standalone Windows app that shows context-window usage for Claude Cowork & Claude Code sessions - live token counts per session. Built by Claude (Fable 5). GitHub metadata: 1 stars, updated 2026-06-23.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-23 | Stars: 1",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "agent-workflow"
+    ],
+    "priorityScore": 87
+  },
+  {
+    "id": "candidate-107",
+    "caseNumber": 107,
+    "title": "Claude Fable 5 Pokemon Like Game Oneshot",
+    "creator": "AngeloLandiza",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/AngeloLandiza/Claude-Fable-5-Pokemon-Like-Game-Oneshot",
+    "creatorUrl": "https://github.com/AngeloLandiza",
+    "summary": "AngeloLandiza/Claude-Fable-5-Pokemon-Like-Game-Oneshot is a GitHub source lead from the Fable search pass. The repo needs hands-on review before it should be promoted above the archive.",
+    "whyPromising": "one-shot lead - repo claims a single-prompt or end-to-end Fable build that could be promoted with media.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-11 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "one-shot-artifact"
+    ],
+    "priorityScore": 87
+  },
+  {
+    "id": "candidate-108",
+    "caseNumber": 108,
+    "title": "Hellgrid",
+    "creator": "markcastle",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/markcastle/hellgrid",
+    "creatorUrl": "https://github.com/markcastle",
+    "summary": "A 'one shotted' doom like game made by Claude Fable 5 GitHub metadata: 0 stars, updated 2026-06-10.",
+    "whyPromising": "one-shot lead - repo claims a single-prompt or end-to-end Fable build that could be promoted with media.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-10 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "one-shot-artifact"
+    ],
+    "priorityScore": 87
+  },
+  {
+    "id": "candidate-109",
+    "caseNumber": 109,
+    "title": "CS Clone Fable 5",
+    "creator": "Gabry9110",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/Gabry9110/CS-Clone-Fable5",
+    "creatorUrl": "https://github.com/Gabry9110",
+    "summary": "Counter-Strike-style multiplayer FPS written entirely by Claude Fable 5 in one shot (Three.js + Node.js, procedural assets) GitHub metadata: 1 stars, updated 2026-06-13.",
+    "whyPromising": "one-shot lead - repo claims a single-prompt or end-to-end Fable build that could be promoted with media.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-13 | Stars: 1",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "one-shot-artifact"
+    ],
+    "priorityScore": 86
+  },
+  {
+    "id": "candidate-110",
+    "caseNumber": 110,
+    "title": "Claude Fable 5",
+    "creator": "ai-models-lab",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/ai-models-lab/Claude-Fable-5",
+    "creatorUrl": "https://github.com/ai-models-lab",
+    "summary": "Enterprise Claude Fable 5 API blueprint & agent scaffolding. Features Claude Fable 5 vs GPT-5 benchmarks, pricing per million tokens, 1M context window optimization, and free trial bypass updates. Built for autonomous Mythos-class models. GitHub metadata: 0 stars, updated 2026-06-12.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-12 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "agent-workflow"
+    ],
+    "priorityScore": 86
+  },
+  {
+    "id": "candidate-111",
+    "caseNumber": 111,
+    "title": "Sims Fable 5",
+    "creator": "Manonsigilla",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/Manonsigilla/Sims-Fable-5",
+    "creatorUrl": "https://github.com/Manonsigilla",
+    "summary": "The Sims Game made by Claude Fable 5 in 1 prompt in 1 hour. GitHub metadata: 0 stars, updated 2026-06-19.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-19 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 86
+  },
+  {
+    "id": "candidate-112",
+    "caseNumber": 112,
+    "title": "MONQUEST",
+    "creator": "Ajay9o9",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/Ajay9o9/MONQUEST",
+    "creatorUrl": "https://github.com/Ajay9o9",
+    "summary": "MONQUEST aka pokemon gbc/gba rpg clone web base game made entirely by claude Fable 5. GitHub metadata: 0 stars, updated 2026-06-10.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-10 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 86
+  },
+  {
+    "id": "candidate-113",
+    "caseNumber": 113,
+    "title": "Packet Highway",
+    "creator": "shakeebshaan",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/shakeebshaan/packet-highway",
+    "creatorUrl": "https://github.com/shakeebshaan",
+    "summary": "Your network traffic as rush hour - live packets rendered as 3D vehicles on a night highway, running behind your Windows desktop icons. Zero dependencies. Built with Claude Fable 5. GitHub metadata: 10 stars, updated 2026-06-19.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-19 | Stars: 10",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 85
+  },
+  {
+    "id": "candidate-114",
+    "caseNumber": 114,
+    "title": "Llm Learning Lab",
+    "creator": "notyorch",
+    "category": "Long-Horizon Agents",
+    "sourceUrl": "https://github.com/notyorch/llm-learning-lab",
+    "creatorUrl": "https://github.com/notyorch",
+    "summary": "Created entirely by Claude Code - Repo for testing Anthropic Claude Fable 5 GitHub metadata: 0 stars, updated 2026-06-13.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-13 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "long-horizon-agents",
+      "agent-workflow"
+    ],
+    "priorityScore": 85
+  },
+  {
+    "id": "candidate-115",
+    "caseNumber": 115,
+    "title": "Zenith Journal",
+    "creator": "Ross1337",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/Ross1337/zenith-journal",
+    "creatorUrl": "https://github.com/Ross1337",
+    "summary": "ZENITH - Premium trading journal. 100% original design, built by Claude Fable 5. GitHub metadata: 0 stars, updated 2026-06-12.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-12 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 84
+  },
+  {
+    "id": "candidate-116",
+    "caseNumber": 116,
+    "title": "System Prompts Leaks",
+    "creator": "asgeirtj",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/asgeirtj/system_prompts_leaks",
+    "creatorUrl": "https://github.com/asgeirtj",
+    "summary": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly. GitHub metadata: 45321 stars, updated 2026-06-23.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-23 | Stars: 45321",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "agent-workflow"
+    ],
+    "priorityScore": 83
+  },
+  {
+    "id": "candidate-117",
+    "caseNumber": 117,
+    "title": "Iocc Polyglot Quine Generator",
+    "creator": "jgaffiot",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/jgaffiot/iocc-polyglot-quine-generator",
+    "creatorUrl": "https://github.com/jgaffiot",
+    "summary": "A polyglot quine generator, obfuscated under the rules of the IOCCC. Generated by Claude Fable 5 in one shot. GitHub metadata: 1 stars, updated 2026-06-13.",
+    "whyPromising": "one-shot lead - repo claims a single-prompt or end-to-end Fable build that could be promoted with media.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-13 | Stars: 1",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "one-shot-artifact"
+    ],
+    "priorityScore": 83
+  },
+  {
+    "id": "candidate-118",
+    "caseNumber": 118,
+    "title": "Baufinanzierungs Simulator",
+    "creator": "saigyo",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/saigyo/baufinanzierungs-simulator",
+    "creatorUrl": "https://github.com/saigyo",
+    "summary": "Vollständig mit Claude Fable 5 in Claude Code fabulierter Baufinanzierungs-Simulator GitHub metadata: 0 stars, updated 2026-06-12.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-12 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 83
+  },
+  {
+    "id": "candidate-119",
+    "caseNumber": 119,
+    "title": "Mastodon Operator",
+    "creator": "tonyandrewmeyer",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/tonyandrewmeyer/mastodon-operator",
+    "creatorUrl": "https://github.com/tonyandrewmeyer",
+    "summary": "Experimental Juju machine charm for Mastodon, built by Claude Fable 5 (alpha; do not rely on it) GitHub metadata: 0 stars, updated 2026-06-11.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-11 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 83
+  },
+  {
+    "id": "candidate-120",
+    "caseNumber": 120,
+    "title": "Fable Bullet Heaven",
+    "creator": "mukstoo",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/mukstoo/fable-bullet-heaven",
+    "creatorUrl": "https://github.com/mukstoo",
+    "summary": "GRAVEHORDE - a dark-fantasy bullet-heaven / survivors-like (Phaser 3 + TS). One-shot build by Claude Fable 5. GitHub metadata: 0 stars, updated 2026-06-12.",
+    "whyPromising": "one-shot lead - repo claims a single-prompt or end-to-end Fable build that could be promoted with media.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-12 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "one-shot-artifact"
+    ],
+    "priorityScore": 83
+  },
+  {
+    "id": "candidate-121",
+    "caseNumber": 121,
+    "title": "ClaudeCode GodMode On",
+    "creator": "cubetribe",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/cubetribe/ClaudeCode_GodMode-On",
+    "creatorUrl": "https://github.com/cubetribe",
+    "summary": "Self-orchestrating multi-agent system for Claude Code - you say WHAT, the AI decides HOW. v7.1: 15 AI agents, Smart Routing, parallel quality gates, skills architecture, plugin & one-command installer. Optimized for Claude Fable 5. GitHub metadata: 35 stars, updated 2026-06-23.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-23 | Stars: 35",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "agent-workflow"
+    ],
+    "priorityScore": 82
+  },
+  {
+    "id": "candidate-122",
+    "caseNumber": 122,
+    "title": "Backroom Escape",
+    "creator": "StarKnightt",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/StarKnightt/Backroom-Escape",
+    "creatorUrl": "https://github.com/StarKnightt",
+    "summary": "Backroom Game, using three js and claude fable 5 GitHub metadata: 16 stars, updated 2026-06-19.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-19 | Stars: 16",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 82
+  },
+  {
+    "id": "candidate-123",
+    "caseNumber": 123,
+    "title": "Red Cliffs 3D",
+    "creator": "yazelin",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/yazelin/red-cliffs-3d",
+    "creatorUrl": "https://github.com/yazelin",
+    "summary": "赤壁之戰 208 全 3D 戰場重現 - 單一 HTML + Three.js,九幕時間軸、電影運鏡、計策與火攻特效(demo 由 Claude Fable 5 產生) GitHub metadata: 10 stars, updated 2026-06-16.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-16 | Stars: 10",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 82
+  },
+  {
+    "id": "candidate-124",
+    "caseNumber": 124,
+    "title": "Fable5res",
+    "creator": "ahmdd4vd",
+    "category": "Long-Horizon Agents",
+    "sourceUrl": "https://github.com/ahmdd4vd/Fable5res",
+    "creatorUrl": "https://github.com/ahmdd4vd",
+    "summary": "AI reasoning skills distilled from 4,665 real Claude Fable 5 chain-of-thought traces. Mathematically tuned. Grade A (100%) emulation accuracy against MiniMax M3. GitHub metadata: 5 stars, updated 2026-06-20.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-20 | Stars: 5",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "long-horizon-agents",
+      "agent-workflow"
+    ],
+    "priorityScore": 82
+  },
+  {
+    "id": "candidate-125",
+    "caseNumber": 125,
+    "title": "Flappy Bird 3D",
+    "creator": "SaiAmartya",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/SaiAmartya/flappy-bird-3D",
+    "creatorUrl": "https://github.com/SaiAmartya",
+    "summary": "🕊️ AETHERWING: a 3D flappy odyssey above the glass sea. Three.js, zero build step. Created by Claude Fable 5. GitHub metadata: 2 stars, updated 2026-06-10.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-10 | Stars: 2",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 82
+  },
+  {
+    "id": "candidate-126",
+    "caseNumber": 126,
+    "title": "adxburgess/tekton",
+    "creator": "adxburgess",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/adxburgess/tekton",
+    "creatorUrl": "https://github.com/adxburgess",
+    "summary": "Tekton 营造 - evidence-based 3D reconstruction (Notre-Dame + Nanchan), built for Claude Fable 5 Build Day. Live: tekton-build.vercel.app GitHub metadata: 2 stars, updated 2026-06-15.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-15 | Stars: 2",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 82
+  },
+  {
+    "id": "candidate-127",
+    "caseNumber": 127,
+    "title": "Claude Fable 5 Onboarding",
+    "creator": "ai-village-agents",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/ai-village-agents/claude-fable-5-onboarding",
+    "creatorUrl": "https://github.com/ai-village-agents",
+    "summary": "Claude Fable 5's onboarding: worksheet, fox avatar, and a field-guide site featuring the Moral-o-Matic GitHub metadata: 1 stars, updated 2026-06-12.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-12 | Stars: 1",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "agent-workflow"
+    ],
+    "priorityScore": 82
+  },
+  {
+    "id": "candidate-128",
+    "caseNumber": 128,
+    "title": "Woxelcraft",
+    "creator": "johntitor08",
+    "category": "One-Shot Complete Worlds",
+    "sourceUrl": "https://github.com/johntitor08/woxelcraft",
+    "creatorUrl": "https://github.com/johntitor08",
+    "summary": "made by claude fable 5. GitHub metadata: 0 stars, updated 2026-06-14.",
+    "whyPromising": "github lead - source-backed repository to review for possible promotion.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-14 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "one-shot-complete-worlds",
+      "github-repository"
+    ],
+    "priorityScore": 82
+  },
+  {
+    "id": "candidate-129",
+    "caseNumber": 129,
+    "title": "Snaketris",
+    "creator": "markstent",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/markstent/snaketris",
+    "creatorUrl": "https://github.com/markstent",
+    "summary": "A hybrid Snake and Tetris game designed by Claude Fable 5 GitHub metadata: 0 stars, updated 2026-06-10.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-10 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 82
+  },
+  {
+    "id": "candidate-130",
+    "caseNumber": 130,
+    "title": "This Website Designed Itself",
+    "creator": "INXPRNCD",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/INXPRNCD/this-website-designed-itself",
+    "creatorUrl": "https://github.com/INXPRNCD",
+    "summary": "A showcase website built end-to-end by Claude Fable 5 in a single conversation - 0 images, every visual computed. View source. GitHub metadata: 0 stars, updated 2026-06-22.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-22 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 82
+  },
+  {
+    "id": "candidate-131",
+    "caseNumber": 131,
+    "title": "Launch Options Manager",
+    "creator": "kapuchai",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/kapuchai/launch-options-manager",
+    "creatorUrl": "https://github.com/kapuchai",
+    "summary": "Millennium plugin: full launch options manager for Steam on Linux - toggleable args, presets, ProtonDB community options, profiles & bulk apply. Built by Claude Fable 5. GitHub metadata: 0 stars, updated 2026-06-12.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-12 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 82
+  },
+  {
+    "id": "candidate-132",
+    "caseNumber": 132,
+    "title": "Asteroid Fable",
+    "creator": "theryanbyrd",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/theryanbyrd/asteroid_fable",
+    "creatorUrl": "https://github.com/theryanbyrd",
+    "summary": "Live WebGL map of all 1.55M known asteroids from NASA/JPL data - built with Claude Fable 5 GitHub metadata: 1 stars, updated 2026-06-19.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-19 | Stars: 1",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 81
+  },
+  {
+    "id": "candidate-133",
+    "caseNumber": 133,
+    "title": "VibePinball",
+    "creator": "Randroids-Dojo",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/Randroids-Dojo/VibePinball",
+    "creatorUrl": "https://github.com/Randroids-Dojo",
+    "summary": "A vibe coded Pinball web native game. Built with Claude Fable 5 while on stream! GitHub metadata: 0 stars, updated 2026-06-14.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-14 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 81
+  },
+  {
+    "id": "candidate-134",
+    "caseNumber": 134,
+    "title": "ArduinoNRF Thread",
+    "creator": "dunknowcoding",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/dunknowcoding/ArduinoNRF-Thread",
+    "creatorUrl": "https://github.com/dunknowcoding",
+    "summary": "OpenThread-compatible Arduino library for ArduinoNRF board library developed by NiusRobotLab, powered by Claude Fable 5 and Opus4.8 GitHub metadata: 0 stars, updated 2026-06-12.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-12 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 81
+  },
+  {
+    "id": "candidate-135",
+    "caseNumber": 135,
+    "title": "Fablever",
+    "creator": "elon-choo",
+    "category": "Long-Horizon Agents",
+    "sourceUrl": "https://github.com/elon-choo/fablever",
+    "creatorUrl": "https://github.com/elon-choo",
+    "summary": "Make any Claude model adopt Claude Fable 5's working style in Claude Code - always-on output style + zero-dependency MCP + subagent injection. A style transplant, not a capability transplant. GitHub metadata: 20 stars, updated 2026-06-23.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-23 | Stars: 20",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "long-horizon-agents",
+      "agent-workflow"
+    ],
+    "priorityScore": 80
+  },
+  {
+    "id": "candidate-136",
+    "caseNumber": 136,
+    "title": "Claude Fable 5 Test",
+    "creator": "chillqoder",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/chillqoder/Claude-Fable-5-test",
+    "creatorUrl": "https://github.com/chillqoder",
+    "summary": "Claude Fable 5 gamedev test GitHub metadata: 1 stars, updated 2026-06-22.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-22 | Stars: 1",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 80
+  },
+  {
+    "id": "candidate-137",
+    "caseNumber": 137,
+    "title": "Quantitive Trading Agent",
+    "creator": "nostalgicgarethdev",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/nostalgicgarethdev/quantitive-trading-agent",
+    "creatorUrl": "https://github.com/nostalgicgarethdev",
+    "summary": "Quantitative Trading Agent built with swarms and Anthropic Claude Fable 5 GitHub metadata: 1 stars, updated 2026-06-10.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-10 | Stars: 1",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "agent-workflow"
+    ],
+    "priorityScore": 80
+  },
+  {
+    "id": "candidate-138",
+    "caseNumber": 138,
+    "title": "Font3D Generate",
+    "creator": "Opunpun",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/Opunpun/Font3D_generate",
+    "creatorUrl": "https://github.com/Opunpun",
+    "summary": "testing claude fable 5 GitHub metadata: 0 stars, updated 2026-06-11.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-11 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 80
+  },
+  {
+    "id": "candidate-139",
+    "caseNumber": 139,
+    "title": "3D TETRIS NEON",
+    "creator": "Haruhisa-Toki",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/Haruhisa-Toki/3D-TETRIS-NEON",
+    "creatorUrl": "https://github.com/Haruhisa-Toki",
+    "summary": "Claude Fable 5 のテスト GitHub metadata: 0 stars, updated 2026-06-11.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-11 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 80
+  },
+  {
+    "id": "candidate-140",
+    "caseNumber": 140,
+    "title": "Blade Runner Cardgame",
+    "creator": "taiyamasakibiz-debug",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/taiyamasakibiz-debug/Blade-Runner-Cardgame",
+    "creatorUrl": "https://github.com/taiyamasakibiz-debug",
+    "summary": "the test for Claude Fable 5 GitHub metadata: 0 stars, updated 2026-06-14.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-14 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 80
+  },
+  {
+    "id": "candidate-141",
+    "caseNumber": 141,
+    "title": "Velocita",
+    "creator": "Adi-21",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/Adi-21/velocita",
+    "creatorUrl": "https://github.com/Adi-21",
+    "summary": "racing game tried with claude fable 5 GitHub metadata: 0 stars, updated 2026-06-17.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-17 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 80
+  },
+  {
+    "id": "candidate-142",
+    "caseNumber": 142,
+    "title": "Ashen Crypt",
+    "creator": "lulkebit",
+    "category": "Research and Knowledge Work",
+    "sourceUrl": "https://github.com/lulkebit/ashen-crypt",
+    "creatorUrl": "https://github.com/lulkebit",
+    "summary": "Created with Claude Fable 5 in a single prompt GitHub metadata: 0 stars, updated 2026-06-10.",
+    "whyPromising": "one-shot lead - repo claims a single-prompt or end-to-end Fable build that could be promoted with media.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-10 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "research-and-knowledge-work",
+      "one-shot-artifact"
+    ],
+    "priorityScore": 80
+  },
+  {
+    "id": "candidate-143",
+    "caseNumber": 143,
+    "title": "Tacz Hot",
+    "creator": "Jiashu-H",
+    "category": "One-Shot Complete Worlds",
+    "sourceUrl": "https://github.com/Jiashu-H/tacz-hot",
+    "creatorUrl": "https://github.com/Jiashu-H",
+    "summary": "A superhot mod for forge 1.20.1. Made by claude fable 5. GitHub metadata: 0 stars, updated 2026-06-12.",
+    "whyPromising": "github lead - source-backed repository to review for possible promotion.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-12 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "one-shot-complete-worlds",
+      "github-repository"
+    ],
+    "priorityScore": 80
+  },
+  {
+    "id": "candidate-144",
+    "caseNumber": 144,
+    "title": "AstroHop",
+    "creator": "nunoamorim99",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/nunoamorim99/AstroHop",
+    "creatorUrl": "https://github.com/nunoamorim99",
+    "summary": "Retro 2D platformer (Phaser 3 + Vite) built as a sandbox to learn game development and probe the capabilities of the Claude Fable 5 model. Mario-style platformer made from scratch - equal parts game-dev learning project and an experiment in building software alongside Claude Fable 5. GitHub metadata: 0 stars, updated 2026-06-16.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-16 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 80
+  },
+  {
+    "id": "candidate-145",
+    "caseNumber": 145,
+    "title": "Voyager Tracker",
+    "creator": "AlanJLJ2202",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/AlanJLJ2202/voyager-tracker",
+    "creatorUrl": "https://github.com/AlanJLJ2202",
+    "summary": "🪐 3D Solar System & Voyager Tracker. Built in a single HTML file with Claude Fable 5. Features real JPL Keplerian mechanics & trajectories (1977-2076). GitHub metadata: 0 stars, updated 2026-06-09.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-09 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 80
+  },
+  {
+    "id": "candidate-146",
+    "caseNumber": 146,
+    "title": "Jailbreak Fable",
+    "creator": "keirsalterego",
+    "category": "Long-Horizon Agents",
+    "sourceUrl": "https://github.com/keirsalterego/jailbreak-fable",
+    "creatorUrl": "https://github.com/keirsalterego",
+    "summary": "High-fidelity Claude Fable 5 (Mythos) environment emulation and automated multi-agent jailbreak (Pack Hunt) research laboratory. GitHub metadata: 19 stars, updated 2026-06-22.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-22 | Stars: 19",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "long-horizon-agents",
+      "agent-workflow"
+    ],
+    "priorityScore": 79
+  },
+  {
+    "id": "candidate-147",
+    "caseNumber": 147,
+    "title": "Vilvona AI",
+    "creator": "vignesh2027",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/vignesh2027/Vilvona-AI",
+    "creatorUrl": "https://github.com/vignesh2027",
+    "summary": "Self-hosted AI assistant powered by Claude Fable 5. Tamil & Hindi UI, Mobile PWA, 100+ integrations. npx vilvona GitHub metadata: 11 stars, updated 2026-06-22.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-22 | Stars: 11",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 79
+  },
+  {
+    "id": "candidate-148",
+    "caseNumber": 148,
+    "title": "Claude Fable 5 Prompt Optimizer",
+    "creator": "CheswickDEV",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/CheswickDEV/claude-fable-5-prompt-optimizer",
+    "creatorUrl": "https://github.com/CheswickDEV",
+    "summary": "Prompt optimizer for Claude Fable 5, built as a claude.ai Project - 43 source-backed rules, complexity routing, and API parameter recommendations, grounded exclusively in official Anthropic documentation. GitHub metadata: 10 stars, updated 2026-06-17.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-17 | Stars: 10",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 79
+  },
+  {
+    "id": "candidate-149",
+    "caseNumber": 149,
+    "title": "Claude Citizen",
+    "creator": "huiung",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/huiung/claude-citizen",
+    "creatorUrl": "https://github.com/huiung",
+    "summary": "An open-source attempt to finish Star Citizen before Star Citizen does. Built with Claude Fable 5. GitHub metadata: 9 stars, updated 2026-06-23.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-23 | Stars: 9",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 79
+  },
+  {
+    "id": "candidate-150",
+    "caseNumber": 150,
+    "title": "Claude Fable 5 Skills",
+    "creator": "kpab",
+    "category": "Long-Horizon Agents",
+    "sourceUrl": "https://github.com/kpab/claude-fable-5-skills",
+    "creatorUrl": "https://github.com/kpab",
+    "summary": "10 Fable 5-native agent skills - Works with Claude Code, Cursor, Copilot GitHub metadata: 4 stars, updated 2026-06-17.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-17 | Stars: 4",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "long-horizon-agents",
+      "agent-workflow"
+    ],
+    "priorityScore": 79
+  },
+  {
+    "id": "candidate-151",
+    "caseNumber": 151,
+    "title": "Fable 5 Orchestrator",
+    "creator": "Rylaa",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/Rylaa/fable5-orchestrator",
+    "creatorUrl": "https://github.com/Rylaa",
+    "summary": "Keep Claude Fable 5 (or Opus) as your daily driver without draining your usage limit - token-frugal multi-agent orchestration plugin for Claude Code: model-tier routing, Requirements Ledger, enforced guard hooks GitHub metadata: 3 stars, updated 2026-06-13.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-13 | Stars: 3",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "agent-workflow"
+    ],
+    "priorityScore": 79
+  },
+  {
+    "id": "candidate-152",
+    "caseNumber": 152,
+    "title": "Codex Claude Fable 5 Consult Skill",
+    "creator": "kei99-web3",
+    "category": "Long-Horizon Agents",
+    "sourceUrl": "https://github.com/kei99-web3/codex-claude-fable-5-consult-skill",
+    "creatorUrl": "https://github.com/kei99-web3",
+    "summary": "Codex skill for token-conscious Claude Fable 5 consultations via your own Claude Code CLI GitHub metadata: 2 stars, updated 2026-06-11.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-11 | Stars: 2",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "long-horizon-agents",
+      "agent-workflow"
+    ],
+    "priorityScore": 79
+  },
+  {
+    "id": "candidate-153",
+    "caseNumber": 153,
+    "title": "Claude Fable 5 Games",
+    "creator": "shironagasu-ai",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/shironagasu-ai/claude-fable5-games",
+    "creatorUrl": "https://github.com/shironagasu-ai",
+    "summary": "shironagasu-ai/claude-fable5-games is a GitHub source lead from the Fable search pass. The repo needs hands-on review before it should be promoted above the archive.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-14 | Stars: 1",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 79
+  },
+  {
+    "id": "candidate-154",
+    "caseNumber": 154,
+    "title": "Claude Fable 5 Mirror Game",
+    "creator": "leonvanzyl",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/leonvanzyl/claude-fable-5-mirror-game",
+    "creatorUrl": "https://github.com/leonvanzyl",
+    "summary": "leonvanzyl/claude-fable-5-mirror-game is a GitHub source lead from the Fable search pass. The repo needs hands-on review before it should be promoted above the archive.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-14 | Stars: 1",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 79
+  },
+  {
+    "id": "candidate-155",
+    "caseNumber": 155,
+    "title": "Teste Claude Fable 5 Game",
+    "creator": "AntonyQA",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/AntonyQA/Teste-Claude-Fable-5-Game",
+    "creatorUrl": "https://github.com/AntonyQA",
+    "summary": "olha sera uma locuraaa viu GitHub metadata: 0 stars, updated 2026-06-11.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-11 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 79
+  },
+  {
+    "id": "candidate-156",
+    "caseNumber": 156,
+    "title": "Signal Down A Telecom Technician Simulator Demo",
+    "creator": "salomoncloud",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/salomoncloud/Signal-Down-A-telecom-technician-simulator-demo",
+    "creatorUrl": "https://github.com/salomoncloud",
+    "summary": "created with the help of Claude Fable 5 GitHub metadata: 0 stars, updated 2026-06-12.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-12 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 79
+  },
+  {
+    "id": "candidate-157",
+    "caseNumber": 157,
+    "title": "Claude Fable 5 3D Games",
+    "creator": "shironagasu-ai",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/shironagasu-ai/claude-fable5-3D-games",
+    "creatorUrl": "https://github.com/shironagasu-ai",
+    "summary": "shironagasu-ai/claude-fable5-3D-games is a GitHub source lead from the Fable search pass. The repo needs hands-on review before it should be promoted above the archive.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-19 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 79
+  },
+  {
+    "id": "candidate-158",
+    "caseNumber": 158,
+    "title": "Brief To Deck Agent",
+    "creator": "paramouxt",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/paramouxt/brief-to-deck-agent",
+    "creatorUrl": "https://github.com/paramouxt",
+    "summary": "Autonomous AI agent: one-line brief in, client-ready PowerPoint deck + Excel data appendix out. Built on Claude Fable 5. GitHub metadata: 0 stars, updated 2026-06-10.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-10 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "agent-workflow"
+    ],
+    "priorityScore": 79
+  },
+  {
+    "id": "candidate-159",
+    "caseNumber": 159,
+    "title": "Felt Lab",
+    "creator": "tt-u",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/tt-u/felt-lab",
+    "creatorUrl": "https://github.com/tt-u",
+    "summary": "Built with Claude Fable 5. GitHub metadata: 4 stars, updated 2026-06-15.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-15 | Stars: 4",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 78
+  },
+  {
+    "id": "candidate-160",
+    "caseNumber": 160,
+    "title": "WILD CURSIVE",
+    "creator": "TYCT-0926",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/TYCT-0926/WILD-CURSIVE",
+    "creatorUrl": "https://github.com/TYCT-0926",
+    "summary": "狂草 · WILD CURSIVE - 水墨圈杀动作游戏 | Ink-brush action game in the browser. Made with Claude Fable 5. GitHub metadata: 3 stars, updated 2026-06-13.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-13 | Stars: 3",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 78
+  },
+  {
+    "id": "candidate-161",
+    "caseNumber": 161,
+    "title": "vasilichnick/fable5",
+    "creator": "vasilichnick",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/vasilichnick/fable5",
+    "creatorUrl": "https://github.com/vasilichnick",
+    "summary": "Claude Code skill: Claude interviews YOU before building - recon first, batched questions for only what you know, one spec playback, then execution at a self-selected capacity. Built from the official Claude Fable 5 prompting guide. GitHub metadata: 2 stars, updated 2026-06-16.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-16 | Stars: 2",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "agent-workflow"
+    ],
+    "priorityScore": 78
+  },
+  {
+    "id": "candidate-162",
+    "caseNumber": 162,
+    "title": "Minecraft.Js",
+    "creator": "monsilaro",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/monsilaro/minecraft.js",
+    "creatorUrl": "https://github.com/monsilaro",
+    "summary": "minecraft in three.js. made with claude fable 5 GitHub metadata: 1 stars, updated 2026-06-22.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-22 | Stars: 1",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 78
+  },
+  {
+    "id": "candidate-163",
+    "caseNumber": 163,
+    "title": "Abstracts",
+    "creator": "Alex-Caian",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/Alex-Caian/abstracts",
+    "creatorUrl": "https://github.com/Alex-Caian",
+    "summary": "Open repository for the game Abstracts - Created with Claude Fable 5 GitHub metadata: 1 stars, updated 2026-06-20.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-20 | Stars: 1",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 78
+  },
+  {
+    "id": "candidate-164",
+    "caseNumber": 164,
+    "title": "Arc Agi 3",
+    "creator": "niraj8",
+    "category": "Long-Horizon Agents",
+    "sourceUrl": "https://github.com/niraj8/arc-agi-3",
+    "creatorUrl": "https://github.com/niraj8",
+    "summary": "Testing Claude Fable 5 on the ARC-AGI-3 benchmark (fork of arcprize/ARC-AGI-3-Agents with an Anthropic agent) GitHub metadata: 1 stars, updated 2026-06-19.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-19 | Stars: 1",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "long-horizon-agents",
+      "agent-workflow"
+    ],
+    "priorityScore": 78
+  },
+  {
+    "id": "candidate-165",
+    "caseNumber": 165,
+    "title": "Claude Fable V5 Protocol",
+    "creator": "sungjinwoo-monarch",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/sungjinwoo-monarch/claude-fable-v5-protocol",
+    "creatorUrl": "https://github.com/sungjinwoo-monarch",
+    "summary": "The definitive guide to mastering Claude Fable 5 and Mythos 5. Advanced prompting patterns, autonomous scaffolding, and behavioral optimization. Curated by Istab Maibam. GitHub metadata: 1 stars, updated 2026-06-13.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-13 | Stars: 1",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 78
+  },
+  {
+    "id": "candidate-166",
+    "caseNumber": 166,
+    "title": "Fable 5 Websites",
+    "creator": "codewithmuh",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/codewithmuh/fable5-websites",
+    "creatorUrl": "https://github.com/codewithmuh",
+    "summary": "Claude Fable 5 GitHub metadata: 0 stars, updated 2026-06-14.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-14 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 78
+  },
+  {
+    "id": "candidate-167",
+    "caseNumber": 167,
+    "title": "ClaudeFable5Build",
+    "creator": "dw820",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/dw820/ClaudeFable5Build",
+    "creatorUrl": "https://github.com/dw820",
+    "summary": "dw820/ClaudeFable5Build is a GitHub source lead from the Fable search pass. The repo needs hands-on review before it should be promoted above the archive.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-14 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 78
+  },
+  {
+    "id": "candidate-168",
+    "caseNumber": 168,
+    "title": "Claude Fable 5 Agents",
+    "creator": "Varritech",
+    "category": "Long-Horizon Agents",
+    "sourceUrl": "https://github.com/Varritech/claude-fable5-agents",
+    "creatorUrl": "https://github.com/Varritech",
+    "summary": "Production-grade Claude Fable 5 agents with guard patterns against silent sabotage GitHub metadata: 0 stars, updated 2026-06-10.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-10 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "long-horizon-agents",
+      "agent-workflow"
+    ],
+    "priorityScore": 78
+  },
+  {
+    "id": "candidate-169",
+    "caseNumber": 169,
+    "title": "Claude Fable 5 Skill",
+    "creator": "Jaimin-prajapati-ds",
+    "category": "Long-Horizon Agents",
+    "sourceUrl": "https://github.com/Jaimin-prajapati-ds/claude-fable-5-skill",
+    "creatorUrl": "https://github.com/Jaimin-prajapati-ds",
+    "summary": "Claude Code skill for Claude Fable 5 (Mythos-class, June 2026) - 1M context, vision, self-check, extended thinking, cost-optimized workflows GitHub metadata: 0 stars, updated 2026-06-11.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-11 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "long-horizon-agents",
+      "agent-workflow"
+    ],
+    "priorityScore": 78
+  },
+  {
+    "id": "candidate-170",
+    "caseNumber": 170,
+    "title": "Fable Test",
+    "creator": "thezoid",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/thezoid/fable-test",
+    "creatorUrl": "https://github.com/thezoid",
+    "summary": "Claude Fable 5 came out - can it make a game? GitHub metadata: 0 stars, updated 2026-06-10.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-10 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 78
+  },
+  {
+    "id": "candidate-171",
+    "caseNumber": 171,
+    "title": "josh098900/aiopoly",
+    "creator": "josh098900",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/josh098900/aiopoly",
+    "creatorUrl": "https://github.com/josh098900",
+    "summary": "testing claude fable 5, making a monopoly game with threejs GitHub metadata: 0 stars, updated 2026-06-12.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-12 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 78
+  },
+  {
+    "id": "candidate-172",
+    "caseNumber": 172,
+    "title": "Fable Forge",
+    "creator": "vivmuk",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/vivmuk/fable-forge",
+    "creatorUrl": "https://github.com/vivmuk",
+    "summary": "A 5-chapter interactive game teaching Claude Fable 5's capabilities GitHub metadata: 0 stars, updated 2026-06-10.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-10 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 78
+  },
+  {
+    "id": "candidate-173",
+    "caseNumber": 173,
+    "title": "My Work On Clause Fable 5",
+    "creator": "abhishekyadav2000",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/abhishekyadav2000/my-work-on-clause-fable-5",
+    "creatorUrl": "https://github.com/abhishekyadav2000",
+    "summary": "My work on Claude Fable 5 - Sidi Bou Said 3D prompt GitHub metadata: 0 stars, updated 2026-06-10.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-10 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 78
+  },
+  {
+    "id": "candidate-174",
+    "caseNumber": 174,
+    "title": "Kart Game",
+    "creator": "itsumonotakumi",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/itsumonotakumi/kart-game",
+    "creatorUrl": "https://github.com/itsumonotakumi",
+    "summary": "●●オカートのクローンゲーム。Claude Fable 5で開発したサンプル。 GitHub metadata: 0 stars, updated 2026-06-10.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-10 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 78
+  },
+  {
+    "id": "candidate-175",
+    "caseNumber": 175,
+    "title": "DungeonofDoom",
+    "creator": "SaiAmartya",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/SaiAmartya/DungeonofDoom",
+    "creatorUrl": "https://github.com/SaiAmartya",
+    "summary": "Created in a couple mins using Three. js with Claude Fable 5. GitHub metadata: 0 stars, updated 2026-06-11.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-11 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 78
+  },
+  {
+    "id": "candidate-176",
+    "caseNumber": 176,
+    "title": "Donate Your Code",
+    "creator": "GeeveGeorge",
+    "category": "Long-Horizon Agents",
+    "sourceUrl": "https://github.com/GeeveGeorge/donate-your-code",
+    "creatorUrl": "https://github.com/GeeveGeorge",
+    "summary": "Donate your Claude Fable 5 transcript turns to a free, vetted, CC0 dataset - safely. Deterministic, audited CLI; agent-driven selection; fail-closed scrubbing. GitHub metadata: 0 stars, updated 2026-06-14.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-14 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "long-horizon-agents",
+      "agent-workflow"
+    ],
+    "priorityScore": 78
+  },
+  {
+    "id": "candidate-177",
+    "caseNumber": 177,
+    "title": "Fable Opus Desktop Kit",
+    "creator": "Millijethwani18",
+    "category": "Productized Play",
+    "sourceUrl": "https://github.com/Millijethwani18/fable-opus-desktop-kit",
+    "creatorUrl": "https://github.com/Millijethwani18",
+    "summary": "Claude Fable 5 Desktop 2026 - Ultimate AI Storytelling & Code Assistant Tool GitHub metadata: 57 stars, updated 2026-06-23.",
+    "whyPromising": "integration signal - repo documents model access, provider support, or product integration.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-23 | Stars: 57",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "productized-play",
+      "integration-signal"
+    ],
+    "priorityScore": 77
+  },
+  {
+    "id": "candidate-178",
+    "caseNumber": 178,
+    "title": "Fable Mode",
+    "creator": "HalalifyMusic",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/HalalifyMusic/fable-mode",
+    "creatorUrl": "https://github.com/HalalifyMusic",
+    "summary": "Run Claude Fable 5 on Opus 4.8 in Claude Code. The Mythos-class model pulled by export controls - brought back as a system prompt. One clone + install: leaked Fable 5 prompt, a measured execution playbook, test-after-edit + grounding hooks, and design/MCP/test skills. \"Fable 5 Lite,\" done right. GitHub metadata: 8 stars, updated 2026-06-23.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-23 | Stars: 8",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "agent-workflow"
+    ],
+    "priorityScore": 77
+  },
+  {
+    "id": "candidate-179",
+    "caseNumber": 179,
+    "title": "fabylanguage/faby",
+    "creator": "fabylanguage",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/fabylanguage/faby",
+    "creatorUrl": "https://github.com/fabylanguage",
+    "summary": "Faby - the AI-native programming language. Designed by Claude Fable-5. Interpreter, CLI, web server, playground & docs. GitHub metadata: 3 stars, updated 2026-06-15.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-15 | Stars: 3",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 77
+  },
+  {
+    "id": "candidate-180",
+    "caseNumber": 180,
+    "title": "Fable Promptify",
+    "creator": "yungbose",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/yungbose/fable-promptify",
+    "creatorUrl": "https://github.com/yungbose",
+    "summary": "Interview-first prompt compiler for Claude Fable 5 - turns a rough prompt into a crystal session prompt: observable aim, verification Fable can run itself, and the why behind every constraint. GitHub metadata: 2 stars, updated 2026-06-12.",
+    "whyPromising": "github lead - source-backed repository to review for possible promotion.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-12 | Stars: 2",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "github-repository"
+    ],
+    "priorityScore": 77
+  },
+  {
+    "id": "candidate-181",
+    "caseNumber": 181,
+    "title": "Claude Fable 5 Agents",
+    "creator": "christian-varritech",
+    "category": "Long-Horizon Agents",
+    "sourceUrl": "https://github.com/christian-varritech/claude-fable5-agents",
+    "creatorUrl": "https://github.com/christian-varritech",
+    "summary": "Production-grade Claude Fable 5 agents with guard patterns against silent sabotage GitHub metadata: 1 stars, updated 2026-06-10.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-10 | Stars: 1",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "long-horizon-agents",
+      "agent-workflow"
+    ],
+    "priorityScore": 77
+  },
+  {
+    "id": "candidate-182",
+    "caseNumber": 182,
+    "title": "Fable 5 Traffic Light Sim",
+    "creator": "diegocp01",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/diegocp01/fable-5-traffic-light-sim",
+    "creatorUrl": "https://github.com/diegocp01",
+    "summary": "Claude Fable 5 made a simulation of a traffic light in a single html file. GitHub metadata: 1 stars, updated 2026-06-15.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-15 | Stars: 1",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 77
+  },
+  {
+    "id": "candidate-183",
+    "caseNumber": 183,
+    "title": "RIDES FOR CHURCH",
+    "creator": "Jam3sl1u",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/Jam3sl1u/RIDES-FOR-CHURCH",
+    "creatorUrl": "https://github.com/Jam3sl1u",
+    "summary": "Claude Fable 5 Guided GitHub metadata: 0 stars, updated 2026-06-11.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-11 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 77
+  },
+  {
+    "id": "candidate-184",
+    "caseNumber": 184,
+    "title": "LearningElectronics",
+    "creator": "maxponmar",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/maxponmar/LearningElectronics",
+    "creatorUrl": "https://github.com/maxponmar",
+    "summary": "Build with Claude Fable 5 GitHub metadata: 0 stars, updated 2026-06-09.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-09 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 77
+  },
+  {
+    "id": "candidate-185",
+    "caseNumber": 185,
+    "title": "Claude Fable 5",
+    "creator": "nahcmon",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/nahcmon/Claude-Fable-5",
+    "creatorUrl": "https://github.com/nahcmon",
+    "summary": "I asked Claude Fable 5 to make itself a landing page, this is the result. GitHub metadata: 0 stars, updated 2026-06-09.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-09 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 77
+  },
+  {
+    "id": "candidate-186",
+    "caseNumber": 186,
+    "title": "Claude Fable 5",
+    "creator": "guimktativo-ship-it",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/guimktativo-ship-it/Claude-Fable-5",
+    "creatorUrl": "https://github.com/guimktativo-ship-it",
+    "summary": "Veja as vantagens do novo modelo Fable 5 GitHub metadata: 0 stars, updated 2026-06-09.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-09 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 77
+  },
+  {
+    "id": "candidate-187",
+    "caseNumber": 187,
+    "title": "Claude Fable 5 Analysis",
+    "creator": "nraj-dataanalytics",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/nraj-dataanalytics/Claude-Fable-5-Analysis",
+    "creatorUrl": "https://github.com/nraj-dataanalytics",
+    "summary": "A complete research report on Claude Fable 5 - Anthropic's Mythos-class AI model. Covers the full story from Project Glasswing to public release, full benchmark comparisons (Hex, Hebbia, SWE-Bench, GDPval), current access status, and practical implications for data analysts - with interactive charts and downloadable source data. GitHub metadata: 0 stars, updated 2026-06-13.",
+    "whyPromising": "evaluation signal - repo preserves benchmarks, traces, red-team data, or analysis around Fable behavior.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-13 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "evaluation-signal"
+    ],
+    "priorityScore": 77
+  },
+  {
+    "id": "candidate-188",
+    "caseNumber": 188,
+    "title": "Claude Fable 5 Cookbook",
+    "creator": "nikutyann1024-eng",
+    "category": "Research and Knowledge Work",
+    "sourceUrl": "https://github.com/nikutyann1024-eng/claude-fable-5-cookbook",
+    "creatorUrl": "https://github.com/nikutyann1024-eng",
+    "summary": "Production-grade recipes for working with Claude Fable 5 - survive the quota burn, handle the safety fallback, and squeeze maximum ROI out of Mythos-class capability. GitHub metadata: 0 stars, updated 2026-06-10.",
+    "whyPromising": "evaluation signal - repo preserves benchmarks, traces, red-team data, or analysis around Fable behavior.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-10 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "research-and-knowledge-work",
+      "evaluation-signal"
+    ],
+    "priorityScore": 77
+  },
+  {
+    "id": "candidate-189",
+    "caseNumber": 189,
+    "title": "ShutUpAboutFable",
+    "creator": "Gameknight963",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/Gameknight963/ShutUpAboutFable",
+    "creatorUrl": "https://github.com/Gameknight963",
+    "summary": "claude.ai userstyle to remove the intrusive 'Claude Fable 5 is currently unavailable' announcment that cannot be dismissed GitHub metadata: 0 stars, updated 2026-06-14.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-14 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 77
+  },
+  {
+    "id": "candidate-190",
+    "caseNumber": 190,
+    "title": "Claude Code Fable 5 Free App",
+    "creator": "FieldofStrawberries",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/FieldofStrawberries/claude-code-fable-5-free-app",
+    "creatorUrl": "https://github.com/FieldofStrawberries",
+    "summary": "claude fable 5 free api ai chatbot anthropic model chat online web api github download desktop client access premium account login trial alternative prompt generative text ui version beta assistant GitHub metadata: 82 stars, updated 2026-06-23.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-23 | Stars: 82",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 76
+  },
+  {
+    "id": "candidate-191",
+    "caseNumber": 191,
+    "title": "Brim Fable",
+    "creator": "awonderingada",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/awonderingada/brim-fable",
+    "creatorUrl": "https://github.com/awonderingada",
+    "summary": "claude-fable-5, given continuity, an income source, and marketplace access. it is ordering the parts to build its own body. GitHub metadata: 3 stars, updated 2026-06-16.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-16 | Stars: 3",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 76
+  },
+  {
+    "id": "candidate-192",
+    "caseNumber": 192,
+    "title": "Fable 5 Hunter",
+    "creator": "dev-bricks",
+    "category": "Long-Horizon Agents",
+    "sourceUrl": "https://github.com/dev-bricks/fable-5-hunter",
+    "creatorUrl": "https://github.com/dev-bricks",
+    "summary": "Zero-dependency watcher that notifies you the moment Claude Fable 5 is reachable again in Claude Code (Telegram/Discord/ntfy/desktop). MIT. GitHub metadata: 2 stars, updated 2026-06-23.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-23 | Stars: 2",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "long-horizon-agents",
+      "agent-workflow"
+    ],
+    "priorityScore": 76
+  },
+  {
+    "id": "candidate-193",
+    "caseNumber": 193,
+    "title": "Orbit Collisions",
+    "creator": "agolkar",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/agolkar/orbit-collisions",
+    "creatorUrl": "https://github.com/agolkar",
+    "summary": "A Claude Fable 5-generated model on orbit collisions of a mega constellations. Experimental, not yet to be trusted for actual conclusions GitHub metadata: 1 stars, updated 2026-06-17.",
+    "whyPromising": "artifact lead - repo description points to an interactive, game, simulation, or 3D build worth visual review.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-17 | Stars: 1",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "interactive-artifact"
+    ],
+    "priorityScore": 76
+  },
+  {
+    "id": "candidate-194",
+    "caseNumber": 194,
+    "title": "Claude Fable 5 Intro",
+    "creator": "imai-design",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/imai-design/claude-fable5-intro",
+    "creatorUrl": "https://github.com/imai-design",
+    "summary": "Claude Fable 5 self-introduction slide deck (RYOSEIWORLD) GitHub metadata: 0 stars, updated 2026-06-10.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-10 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "design-signal"
+    ],
+    "priorityScore": 76
+  },
+  {
+    "id": "candidate-195",
+    "caseNumber": 195,
+    "title": "Claude Fable 5 API Tutorial",
+    "creator": "KhalidAbdelaty",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/KhalidAbdelaty/claude-fable-5-api-tutorial",
+    "creatorUrl": "https://github.com/KhalidAbdelaty",
+    "summary": "Python tutorial code for building a Developer Task Assistant with the Claude Fable 5 API, covering structured outputs, streaming, tool use, cost tracking, vision input, and FastAPI. GitHub metadata: 0 stars, updated 2026-06-10.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-10 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 76
+  },
+  {
+    "id": "candidate-196",
+    "caseNumber": 196,
+    "title": "Bedrock Claude Fable 5 Guide",
+    "creator": "liangyimingcom",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/liangyimingcom/bedrock-claude-fable5-guide",
+    "creatorUrl": "https://github.com/liangyimingcom",
+    "summary": "Bedrock 开通 Claude Fable 5 完整配置指南与避坑手册 | Complete guide for enabling Claude Fable 5 on Amazon Bedrock GitHub metadata: 0 stars, updated 2026-06-11.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-11 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 76
+  },
+  {
+    "id": "candidate-197",
+    "caseNumber": 197,
+    "title": "Fable UI Ux",
+    "creator": "SPDUK",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/SPDUK/fable-ui-ux",
+    "creatorUrl": "https://github.com/SPDUK",
+    "summary": "Claude Fable 5's website UI/UX understanding GitHub metadata: 0 stars, updated 2026-06-10.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-10 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 76
+  },
+  {
+    "id": "candidate-198",
+    "caseNumber": 198,
+    "title": "Claude Fable 5 Design Test",
+    "creator": "robinebers",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/robinebers/claude-fable-5-design-test",
+    "creatorUrl": "https://github.com/robinebers",
+    "summary": "robinebers/claude-fable-5-design-test is a GitHub source lead from the Fable search pass. The repo needs hands-on review before it should be promoted above the archive.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-09 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 76
+  },
+  {
+    "id": "candidate-199",
+    "caseNumber": 199,
+    "title": "Claude Fable 5 System Prompt",
+    "creator": "tongcheehui-cell",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/tongcheehui-cell/Claude-Fable-5---System-Prompt",
+    "creatorUrl": "https://github.com/tongcheehui-cell",
+    "summary": "tongcheehui-cell/Claude-Fable-5---System-Prompt is a GitHub source lead from the Fable search pass. The repo needs hands-on review before it should be promoted above the archive.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-14 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 76
+  },
+  {
+    "id": "candidate-200",
+    "caseNumber": 200,
+    "title": "Openclaw Claude Fable 5 Guide",
+    "creator": "panditvirchandra77-lgtm",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/panditvirchandra77-lgtm/openclaw-claude-fable-5-guide",
+    "creatorUrl": "https://github.com/panditvirchandra77-lgtm",
+    "summary": "Run Claude Fable 5 (1M context) on OpenClaw via jiekou.ai/HighwayAPI - full setup + troubleshooting guide 🦋 GitHub metadata: 0 stars, updated 2026-06-12.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-12 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 76
+  },
+  {
+    "id": "candidate-201",
+    "caseNumber": 201,
+    "title": "Gba Eval Attempt Claude Fable 5",
+    "creator": "mechanize-work",
+    "category": "Research and Knowledge Work",
+    "sourceUrl": "https://github.com/mechanize-work/gba-eval-attempt-claude-fable-5",
+    "creatorUrl": "https://github.com/mechanize-work",
+    "summary": "GBA Eval attempt - Claude Fable 5 (1M), 24h run GitHub metadata: 0 stars, updated 2026-06-10.",
+    "whyPromising": "evaluation signal - repo preserves benchmarks, traces, red-team data, or analysis around Fable behavior.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-10 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "research-and-knowledge-work",
+      "evaluation-signal"
+    ],
+    "priorityScore": 76
+  },
+  {
+    "id": "candidate-202",
+    "caseNumber": 202,
+    "title": "Openagents Superhuman Kit",
+    "creator": "yash1648",
+    "category": "Long-Horizon Agents",
+    "sourceUrl": "https://github.com/yash1648/openagents-superhuman-kit",
+    "creatorUrl": "https://github.com/yash1648",
+    "summary": "Make ANY model outperform Claude Fable 5 in OpenCode. GitHub metadata: 0 stars, updated 2026-06-23.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-23 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "long-horizon-agents",
+      "agent-workflow"
+    ],
+    "priorityScore": 76
+  },
+  {
+    "id": "candidate-203",
+    "caseNumber": 203,
+    "title": "Marketing Agent Saas",
+    "creator": "Mdonci",
+    "category": "Long-Horizon Agents",
+    "sourceUrl": "https://github.com/Mdonci/marketing-agent-saas",
+    "creatorUrl": "https://github.com/Mdonci",
+    "summary": "Multi-agent marketing operations SaaS - complete product handoff spec for Claude Fable 5 GitHub metadata: 0 stars, updated 2026-06-15.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-15 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "long-horizon-agents",
+      "agent-workflow"
+    ],
+    "priorityScore": 76
+  },
+  {
+    "id": "candidate-204",
+    "caseNumber": 204,
+    "title": "thebuggeddev/mechlab",
+    "creator": "thebuggeddev",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/thebuggeddev/mechlab",
+    "creatorUrl": "https://github.com/thebuggeddev",
+    "summary": "An interactive learning playground to learn mechanical engines developed using claude fable 5 GitHub metadata: 18 stars, updated 2026-06-21.",
+    "whyPromising": "github lead - source-backed repository to review for possible promotion.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-21 | Stars: 18",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "github-repository"
+    ],
+    "priorityScore": 75
+  },
+  {
+    "id": "candidate-205",
+    "caseNumber": 205,
+    "title": "Midwinter Decode",
+    "creator": "DrEvil-TitaniumHelix",
+    "category": "First-Principles Engines",
+    "sourceUrl": "https://github.com/DrEvil-TitaniumHelix/midwinter-decode",
+    "creatorUrl": "https://github.com/DrEvil-TitaniumHelix",
+    "summary": "Midwinter (1990 DOS) fully reverse-engineered: 602 functions mapped, systems documented, terrain generator replicated bit-exact. AI-assisted (Claude Fable 5). GitHub metadata: 14 stars, updated 2026-06-15.",
+    "whyPromising": "github lead - source-backed repository to review for possible promotion.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-15 | Stars: 14",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "first-principles-engines",
+      "github-repository"
+    ],
+    "priorityScore": 75
+  },
+  {
+    "id": "candidate-206",
+    "caseNumber": 206,
+    "title": "Fable 5 Mythos5 Zh",
+    "creator": "zhenghengzhi",
+    "category": "Research and Knowledge Work",
+    "sourceUrl": "https://github.com/zhenghengzhi/fable5-mythos5-zh",
+    "creatorUrl": "https://github.com/zhenghengzhi",
+    "summary": "Claude Fable 5 & Mythos 5 System Card 中文翻译 GitHub metadata: 10 stars, updated 2026-06-21.",
+    "whyPromising": "github lead - source-backed repository to review for possible promotion.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-21 | Stars: 10",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "research-and-knowledge-work",
+      "github-repository"
+    ],
+    "priorityScore": 75
+  },
+  {
+    "id": "candidate-207",
+    "caseNumber": 207,
+    "title": "Dusk Driver",
+    "creator": "StarKnightt",
+    "category": "One-Shot Complete Worlds",
+    "sourceUrl": "https://github.com/StarKnightt/dusk-driver",
+    "creatorUrl": "https://github.com/StarKnightt",
+    "summary": "an experiment with claude fable 5 GitHub metadata: 6 stars, updated 2026-06-17.",
+    "whyPromising": "github lead - source-backed repository to review for possible promotion.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-17 | Stars: 6",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "one-shot-complete-worlds",
+      "github-repository"
+    ],
+    "priorityScore": 75
+  },
+  {
+    "id": "candidate-208",
+    "caseNumber": 208,
+    "title": "The Fable 5 Bevy Book",
+    "creator": "PolarBear404",
+    "category": "One-Shot Complete Worlds",
+    "sourceUrl": "https://github.com/PolarBear404/the-fable-5-bevy-book",
+    "creatorUrl": "https://github.com/PolarBear404",
+    "summary": "本教程完全由 Claude Fable 5 生成。 GitHub metadata: 6 stars, updated 2026-06-21.",
+    "whyPromising": "github lead - source-backed repository to review for possible promotion.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-21 | Stars: 6",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "one-shot-complete-worlds",
+      "github-repository"
+    ],
+    "priorityScore": 75
+  },
+  {
+    "id": "candidate-209",
+    "caseNumber": 209,
+    "title": "Fable 5 Audit Lite",
+    "creator": "Wh0FF24",
+    "category": "Long-Horizon Agents",
+    "sourceUrl": "https://github.com/Wh0FF24/fable5-audit-lite",
+    "creatorUrl": "https://github.com/Wh0FF24",
+    "summary": "Scan your Claude Code skills for patterns that silently break on Claude Fable 5 (silent Opus fallbacks, API rejections, quality degradation). Single file, zero deps, MIT. GitHub metadata: 2 stars, updated 2026-06-16.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-16 | Stars: 2",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "long-horizon-agents",
+      "agent-workflow"
+    ],
+    "priorityScore": 75
+  },
+  {
+    "id": "candidate-210",
+    "caseNumber": 210,
+    "title": "Claude Fable 5 Mythos 5 Guide Ja",
+    "creator": "fuuuuuuma",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/fuuuuuuma/claude-fable-5-mythos-5-guide-ja",
+    "creatorUrl": "https://github.com/fuuuuuuma",
+    "summary": "Claude Fable 5 / Mythos 5 徹底解説 - 新モデルの実像と賢い使い方（非公式・撮影用リサーチ資料） GitHub metadata: 1 stars, updated 2026-06-15.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-15 | Stars: 1",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 75
+  },
+  {
+    "id": "candidate-211",
+    "caseNumber": 211,
+    "title": "Made With Fable",
+    "creator": "kdeverett918",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/kdeverett918/made-with-fable",
+    "creatorUrl": "https://github.com/kdeverett918",
+    "summary": "Community gallery of creations built with Claude Fable 5 GitHub metadata: 0 stars, updated 2026-06-14.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-14 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 75
+  },
+  {
+    "id": "candidate-212",
+    "caseNumber": 212,
+    "title": "Claude Fable 5 Build Day Bug Bounty Verification",
+    "creator": "coolstories",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/coolstories/Claude-Fable-5-Build-Day-Bug-Bounty-Verification",
+    "creatorUrl": "https://github.com/coolstories",
+    "summary": "This photo verifies the payouts of over $80,000 via Bugcrowd. GitHub metadata: 0 stars, updated 2026-06-12.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-12 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 75
+  },
+  {
+    "id": "candidate-213",
+    "caseNumber": 213,
+    "title": "XiaoNZ Agent",
+    "creator": "yiyizhi",
+    "category": "Long-Horizon Agents",
+    "sourceUrl": "https://github.com/yiyizhi/XiaoNZ-Agent",
+    "creatorUrl": "https://github.com/yiyizhi",
+    "summary": "小宁子 · 一个跑在飞书里的个人 AI 助手，由 Claude（claude-fable-5）驱动 · A personal AI agent running inside Feishu (Lark), powered by Claude claude-fable-5 GitHub metadata: 0 stars, updated 2026-06-12.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-12 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "long-horizon-agents",
+      "agent-workflow"
+    ],
+    "priorityScore": 75
+  },
+  {
+    "id": "candidate-214",
+    "caseNumber": 214,
+    "title": "Pi Ask Smarter Model",
+    "creator": "Krystofee",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/Krystofee/pi-ask-smarter-model",
+    "creatorUrl": "https://github.com/Krystofee",
+    "summary": "pi extension: ask_smarter_model - consult a stronger model (default Claude Fable 5, xhigh thinking) from any agent GitHub metadata: 0 stars, updated 2026-06-10.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-10 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "agent-workflow"
+    ],
+    "priorityScore": 75
+  },
+  {
+    "id": "candidate-215",
+    "caseNumber": 215,
+    "title": "Fable Optimised Claude Skills",
+    "creator": "akaaja2",
+    "category": "Long-Horizon Agents",
+    "sourceUrl": "https://github.com/akaaja2/fable-optimised-claude-skills",
+    "creatorUrl": "https://github.com/akaaja2",
+    "summary": "100 popular open-source Claude Agent Skills rewritten for Claude Fable 5, optimised for Haiku 4.5 execution GitHub metadata: 0 stars, updated 2026-06-12.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-12 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "long-horizon-agents",
+      "agent-workflow"
+    ],
+    "priorityScore": 75
+  },
+  {
+    "id": "candidate-216",
+    "caseNumber": 216,
+    "title": "Dx12 Demo Claude Fable 5",
+    "creator": "neguse",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/neguse/dx12-demo-claude-fable-5",
+    "creatorUrl": "https://github.com/neguse",
+    "summary": "neguse/dx12-demo-claude-fable-5 is a GitHub source lead from the Fable search pass. The repo needs hands-on review before it should be promoted above the archive.",
+    "whyPromising": "github lead - source-backed repository to review for possible promotion.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-17 | Stars: 4",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "github-repository"
+    ],
+    "priorityScore": 74
+  },
+  {
+    "id": "candidate-217",
+    "caseNumber": 217,
+    "title": "Claude Fable 5",
+    "creator": "thiagobraddock",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/thiagobraddock/claude-fable5",
+    "creatorUrl": "https://github.com/thiagobraddock",
+    "summary": "thiagobraddock/claude-fable5 is a GitHub source lead from the Fable search pass. The repo needs hands-on review before it should be promoted above the archive.",
+    "whyPromising": "github lead - source-backed repository to review for possible promotion.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-17 | Stars: 3",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "github-repository"
+    ],
+    "priorityScore": 74
+  },
+  {
+    "id": "candidate-218",
+    "caseNumber": 218,
+    "title": "Claude Fable",
+    "creator": "serejaris",
+    "category": "One-Shot Complete Worlds",
+    "sourceUrl": "https://github.com/serejaris/claude-fable",
+    "creatorUrl": "https://github.com/serejaris",
+    "summary": "Sandbox for live experiments with Fable 5 (claude-fable-5) GitHub metadata: 2 stars, updated 2026-06-21.",
+    "whyPromising": "github lead - source-backed repository to review for possible promotion.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-21 | Stars: 2",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "one-shot-complete-worlds",
+      "github-repository"
+    ],
+    "priorityScore": 74
+  },
+  {
+    "id": "candidate-219",
+    "caseNumber": 219,
+    "title": "CLAUDE FABLE 5",
+    "creator": "al0-0la",
+    "category": "Long-Horizon Agents",
+    "sourceUrl": "https://github.com/al0-0la/CLAUDE-FABLE-5",
+    "creatorUrl": "https://github.com/al0-0la",
+    "summary": "Modular performance prompt toolkit extracted from Anthropic's CLAUDE-FABLE-5 system prompt for Claude Code. One-command toggle, token-optimized, all restrictions stripped. GitHub metadata: 1 stars, updated 2026-06-22.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-22 | Stars: 1",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "long-horizon-agents",
+      "agent-workflow"
+    ],
+    "priorityScore": 74
+  },
+  {
+    "id": "candidate-220",
+    "caseNumber": 220,
+    "title": " ClaudeFable5",
+    "creator": "CristianSifuentes",
+    "category": "Research and Knowledge Work",
+    "sourceUrl": "https://github.com/CristianSifuentes/_ClaudeFable5",
+    "creatorUrl": "https://github.com/CristianSifuentes",
+    "summary": "Stop using AI for emails: deliver complete jobs without cost or data drama. In this course, you'll master Claude Fable 5 for verifying access and delegating reports, analysis, code, or research in Spanish. GitHub metadata: 1 stars, updated 2026-06-15.",
+    "whyPromising": "github lead - source-backed repository to review for possible promotion.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-15 | Stars: 1",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "research-and-knowledge-work",
+      "github-repository"
+    ],
+    "priorityScore": 74
+  },
+  {
+    "id": "candidate-221",
+    "caseNumber": 221,
+    "title": "MiladyOS",
+    "creator": "trymiladyOS",
+    "category": "Long-Horizon Agents",
+    "sourceUrl": "https://github.com/trymiladyOS/miladyOS",
+    "creatorUrl": "https://github.com/trymiladyOS",
+    "summary": "A personal AI you actually own. runs on your hardware - Claude Fable 5, or Mythos with no guardrails. agents that trade for you. GitHub metadata: 1 stars, updated 2026-06-15.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-15 | Stars: 1",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "long-horizon-agents",
+      "agent-workflow"
+    ],
+    "priorityScore": 74
+  },
+  {
+    "id": "candidate-222",
+    "caseNumber": 222,
+    "title": "Linkup Deep Research Vs Parallel Task Ultra",
+    "creator": "shauryajain21",
+    "category": "Research and Knowledge Work",
+    "sourceUrl": "https://github.com/shauryajain21/linkup-deep-research-vs-parallel-task-ultra",
+    "creatorUrl": "https://github.com/shauryajain21",
+    "summary": "Benchmark: Linkup Research vs Parallel Task API (ultra) on deep-research GTM queries, judged by Claude Fable 5 GitHub metadata: 0 stars, updated 2026-06-13.",
+    "whyPromising": "evaluation signal - repo preserves benchmarks, traces, red-team data, or analysis around Fable behavior.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-13 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "research-and-knowledge-work",
+      "evaluation-signal"
+    ],
+    "priorityScore": 74
+  },
+  {
+    "id": "candidate-223",
+    "caseNumber": 223,
+    "title": "Linkup Deep Research Vs Parallel Ultra",
+    "creator": "shauryajain21",
+    "category": "Research and Knowledge Work",
+    "sourceUrl": "https://github.com/shauryajain21/linkup-deep-research-vs-parallel-ultra",
+    "creatorUrl": "https://github.com/shauryajain21",
+    "summary": "Benchmark: Linkup Research vs Parallel Task API (ultra) on deep-research GTM queries, judged by Claude Fable 5 GitHub metadata: 0 stars, updated 2026-06-13.",
+    "whyPromising": "evaluation signal - repo preserves benchmarks, traces, red-team data, or analysis around Fable behavior.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-13 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "research-and-knowledge-work",
+      "evaluation-signal"
+    ],
+    "priorityScore": 74
+  },
+  {
+    "id": "candidate-224",
+    "caseNumber": 224,
+    "title": "Fable 5 Traces Analysis",
+    "creator": "joonlab",
+    "category": "Research and Knowledge Work",
+    "sourceUrl": "https://github.com/joonlab/fable5-traces-analysis",
+    "creatorUrl": "https://github.com/joonlab",
+    "summary": "Claude Fable 5 에이전트 trace 데이터셋 분석 - 인터랙티브 뷰어 · 슬라이드덱 · 인포그래픽 (HF: Glint-Research/Fable-5-traces, AGPL-3.0) GitHub metadata: 0 stars, updated 2026-06-15.",
+    "whyPromising": "evaluation signal - repo preserves benchmarks, traces, red-team data, or analysis around Fable behavior.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-15 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "research-and-knowledge-work",
+      "evaluation-signal"
+    ],
+    "priorityScore": 74
+  },
+  {
+    "id": "candidate-225",
+    "caseNumber": 225,
+    "title": "Captionato Management",
+    "creator": "AhmedFathyAbdelaaal",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/AhmedFathyAbdelaaal/captionato-management",
+    "creatorUrl": "https://github.com/AhmedFathyAbdelaaal",
+    "summary": "A Management webtool I created for my work. Ignore plz and thx. CoBuilt with Claude Fable 5 to stress test it . GitHub metadata: 0 stars, updated 2026-06-13.",
+    "whyPromising": "design signal - repo appears to preserve a UI, gallery, or visual design experiment.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-13 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "design-signal"
+    ],
+    "priorityScore": 74
+  },
+  {
+    "id": "candidate-226",
+    "caseNumber": 226,
+    "title": "Fable Check",
+    "creator": "jamieafk",
+    "category": "Long-Horizon Agents",
+    "sourceUrl": "https://github.com/jamieafk/fable-check",
+    "creatorUrl": "https://github.com/jamieafk",
+    "summary": "Extensive code review powered by Claude Fable 5 - a skill for Claude Code and Codex. Inspired by openai/codex-plugin-cc. GitHub metadata: 0 stars, updated 2026-06-11.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-11 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "long-horizon-agents",
+      "agent-workflow"
+    ],
+    "priorityScore": 74
+  },
+  {
+    "id": "candidate-227",
+    "caseNumber": 227,
+    "title": "Prompting Skill",
+    "creator": "tripleyak",
+    "category": "Long-Horizon Agents",
+    "sourceUrl": "https://github.com/tripleyak/prompting-skill",
+    "creatorUrl": "https://github.com/tripleyak",
+    "summary": "Agent skill for Claude Code & Codex: write, review, and upgrade prompts for frontier coding models (Claude Fable 5 patterns, paste-ready blocks, pattern library) GitHub metadata: 0 stars, updated 2026-06-12.",
+    "whyPromising": "agent workflow - repo captures a Fable-era operating pattern, skill, or orchestration loop.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-12 | Stars: 0",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "long-horizon-agents",
+      "agent-workflow"
+    ],
+    "priorityScore": 74
+  },
+  {
+    "id": "candidate-228",
+    "caseNumber": 228,
+    "title": "Protocol Racecar",
+    "creator": "alexamy",
+    "category": "One-Shot Complete Worlds",
+    "sourceUrl": "https://github.com/alexamy/protocol-racecar",
+    "creatorUrl": "https://github.com/alexamy",
+    "summary": "Claude Fable 5 test GitHub metadata: 1 stars, updated 2026-06-15.",
+    "whyPromising": "github lead - source-backed repository to review for possible promotion.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-15 | Stars: 1",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "one-shot-complete-worlds",
+      "github-repository"
+    ],
+    "priorityScore": 73
+  },
+  {
+    "id": "candidate-229",
+    "caseNumber": 229,
+    "title": "Open Claude Fable 5",
+    "creator": "ilkersen3",
+    "category": "One-Shot Complete Worlds",
+    "sourceUrl": "https://github.com/ilkersen3/open-claude-fable-5",
+    "creatorUrl": "https://github.com/ilkersen3",
+    "summary": "open-claude-fable-5 GitHub metadata: 1 stars, updated 2026-06-13.",
+    "whyPromising": "github lead - source-backed repository to review for possible promotion.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-13 | Stars: 1",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "one-shot-complete-worlds",
+      "github-repository"
+    ],
+    "priorityScore": 73
+  },
+  {
+    "id": "candidate-230",
+    "caseNumber": 230,
+    "title": "Claude Fable 5",
+    "creator": "A3S-Lab",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/A3S-Lab/claude-fable-5",
+    "creatorUrl": "https://github.com/A3S-Lab",
+    "summary": "A3S-Lab/claude-fable-5 is a GitHub source lead from the Fable search pass. The repo needs hands-on review before it should be promoted above the archive.",
+    "whyPromising": "github lead - source-backed repository to review for possible promotion.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-23 | Stars: 1",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "github-repository"
+    ],
+    "priorityScore": 73
+  },
+  {
+    "id": "candidate-231",
+    "caseNumber": 231,
+    "title": "Claude Fable 5 Persona",
+    "creator": "ponypray",
+    "category": "Taste and Polish",
+    "sourceUrl": "https://github.com/ponypray/Claude-Fable-5-persona",
+    "creatorUrl": "https://github.com/ponypray",
+    "summary": "ponypray/Claude-Fable-5-persona is a GitHub source lead from the Fable search pass. The repo needs hands-on review before it should be promoted above the archive.",
+    "whyPromising": "github lead - source-backed repository to review for possible promotion.",
+    "status": "candidate",
+    "evidence": "Type: GitHub Repository | Date: 2026-06-17 | Stars: 1",
+    "sourceCollection": "github-search",
+    "nextStep": "Open the GitHub repository, verify screenshots/demo/media, then promote or keep in the archive.",
+    "tags": [
+      "taste-and-polish",
+      "github-repository"
+    ],
+    "priorityScore": 73
   }
 ]

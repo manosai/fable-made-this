@@ -11,7 +11,7 @@ const candidateItems = candidates.map((candidate, index) => ({
   title: candidate.title,
   creator: candidate.creator,
   category: candidate.category,
-  impressiveness: Math.max(70, 88 - Math.floor(index / 7)),
+  impressiveness: candidate.priorityScore ?? Math.max(70, 88 - Math.floor(index / 7)),
   proof: `${candidate.evidence.replace(/^Type: /, "")} via ${candidate.sourceCollection}`,
   whyItMatters: candidate.summary,
   sourceUrl: candidate.sourceUrl,
