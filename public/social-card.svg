@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
   <title id="title">Fable Made This</title>
-  <desc id="desc">A launch card for a gallery of 17 media-backed Claude Fable artifacts.</desc>
+  <desc id="desc">A launch card for a gallery of 101 Claude Fable entries with the most visual artifacts first.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#fff8ec"/>
@@ -51,7 +51,7 @@
     <text x="0" y="0" fill="#c76f3a" font-family="Avenir Next, Atkinson Hyperlegible, ui-sans-serif, system-ui, sans-serif" font-size="22" font-weight="900" letter-spacing="4">FABLE WINDOW GALLERY</text>
     <text x="0" y="142" fill="#211713" font-family="Avenir Next, Atkinson Hyperlegible, ui-sans-serif, system-ui, sans-serif" font-size="128" font-weight="900" letter-spacing="-12">Fable</text>
     <text x="0" y="248" fill="#211713" font-family="Avenir Next, Atkinson Hyperlegible, ui-sans-serif, system-ui, sans-serif" font-size="128" font-weight="900" letter-spacing="-12">Made This</text>
-    <text x="4" y="314" fill="#624a3a" font-family="Avenir Next, Atkinson Hyperlegible, ui-sans-serif, system-ui, sans-serif" font-size="32" font-weight="650">17 media-backed artifacts from Fable's public window</text>
+    <text x="4" y="314" fill="#624a3a" font-family="Avenir Next, Atkinson Hyperlegible, ui-sans-serif, system-ui, sans-serif" font-size="32" font-weight="650">101 entries, with the visual artifacts first</text>
     <g transform="translate(0 370)">
       <rect x="0" y="0" width="172" height="48" rx="24" fill="#fffdf8" stroke="#573f2b" stroke-opacity="0.18"/>
       <rect x="190" y="0" width="228" height="48" rx="24" fill="#fffdf8" stroke="#573f2b" stroke-opacity="0.18"/>

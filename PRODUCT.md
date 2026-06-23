@@ -10,9 +10,9 @@ AI builders, designers, researchers, and technically curious readers arriving fr
 
 ## Product Purpose
 
-Fable Made This is a curated public gallery of media-backed Claude Fable artifacts. Its job is to make the strongest examples browsable, understandable, and impressive at a glance, while also preserving source attribution and synthesis about why Fable felt different.
+Fable Made This is a curated public gallery of Claude Fable artifacts and source-backed leads. Its job is to make the strongest examples browsable, understandable, and impressive at a glance, while also preserving the broader source trail and synthesis about why Fable felt different.
 
-Success means visitors can immediately see the artifact threshold: not isolated answers or benchmark claims, but complete worlds, engines, games, tools, agents, and polished product surfaces.
+Success means visitors can immediately see the artifact threshold: not isolated answers or benchmark claims, but complete worlds, engines, games, tools, agents, and polished product surfaces. The strongest media-backed examples should set the first impression; less visual leads should live lower in the archive.
 
 ## Brand Personality
 
@@ -28,8 +28,8 @@ Selective, artifact-led, and slightly uncanny. The page should feel like an exhi
 
 ## Design Principles
 
-1. Show, do not merely describe: every gallery card needs a visible artifact, screenshot, or video.
-2. Average examples hurt the thesis: curation should prefer fewer stronger entries over a larger but weaker archive.
+1. Stage the experience: lead with visible artifacts, then preserve less visual source-backed leads lower on the page.
+2. Average examples hurt the first impression: curation should prioritize stronger entries without deleting useful research context.
 3. Make the artifact legible in under two seconds: category, creator, and why-it-matters should support the media, not compete with it.
 4. Preserve source credibility: every claim should remain traceable to an original source or playable artifact.
 5. Feel authored, not templated: the visual system should avoid saturated AI-page tropes and use layout, motion, and type with a clear point of view.

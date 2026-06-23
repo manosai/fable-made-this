@@ -1,13 +1,37 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import projects from "./data/projects.json";
+import candidates from "./data/candidates.json";
 import "./styles.css";
 
 const assetPath = (path) => (path?.startsWith("/") ? `${import.meta.env.BASE_URL}${path.slice(1)}` : path);
 
-const galleryItems = projects.filter((project) => project.media);
-const categories = ["All", ...Array.from(new Set(galleryItems.map((project) => project.category)))];
-const featuredItems = galleryItems.slice(0, 8);
+const candidateItems = candidates.map((candidate, index) => ({
+  id: `candidate-${candidate.id}`,
+  title: candidate.title,
+  creator: candidate.creator,
+  category: candidate.category,
+  impressiveness: Math.max(70, 88 - Math.floor(index / 7)),
+  proof: `${candidate.evidence.replace(/^Type: /, "")} via ${candidate.sourceCollection}`,
+  whyItMatters: candidate.summary,
+  sourceUrl: candidate.sourceUrl,
+  createdDuringWindow: candidate.evidence.includes("Date:") ? candidate.evidence.replace(/^Type: /, "") : "Source-backed lead",
+  tags: candidate.tags,
+  status: "source-backed",
+  archiveTier: 0
+}));
+
+const featuredItems = projects.filter((project) => project.media);
+const archiveItems = [
+  ...candidateItems.sort((a, b) => b.impressiveness - a.impressiveness),
+  ...projects
+    .filter((project) => !project.media)
+    .map((project) => ({ ...project, archiveTier: 1 }))
+    .sort((a, b) => b.impressiveness - a.impressiveness)
+];
+const allItems = [...featuredItems, ...archiveItems];
+const previewItems = featuredItems.slice(0, 8);
+const categories = ["All", ...Array.from(new Set(allItems.map((project) => project.category)))];
 const windowLabel = "June 9-13, 2026";
 const catalogUrl = "https://github.com/Anil-matcha/awesome-claude-fable-5";
 const submissionUrl =
@@ -53,12 +77,31 @@ const synthesisThemes = [
 ];
 
 const synthesisSignals = [
-  `${galleryItems.length} media-backed artifacts`,
-  "Only cards with a visible artifact, video, or screenshot",
+  `${allItems.length} sourced entries`,
+  `${featuredItems.length} media-backed artifacts staged first`,
   "Worlds, engines, games, agents, and polished interfaces",
   "Same underlying capabilities as Mythos 5",
   "1M token context and up to 128k output"
 ];
+
+function matchesItem(item, category, query) {
+  if (category !== "All" && item.category !== category) return false;
+  const needle = query.trim().toLowerCase();
+  if (!needle) return true;
+  return [item.title, item.creator, item.category, item.whyItMatters, item.proof, item.tags.join(" ")]
+    .join(" ")
+    .toLowerCase()
+    .includes(needle);
+}
+
+function sortItems(items, sort) {
+  return [...items].sort((a, b) => {
+    if (sort === "title") return a.title.localeCompare(b.title);
+    if (sort === "category") return a.category.localeCompare(b.category) || b.impressiveness - a.impressiveness;
+    if ((a.archiveTier ?? 0) !== (b.archiveTier ?? 0)) return (a.archiveTier ?? 0) - (b.archiveTier ?? 0);
+    return b.impressiveness - a.impressiveness;
+  });
+}
 
 function Media({ item }) {
   if (item.media?.type === "video") {
@@ -120,27 +163,25 @@ function App() {
   const [sort, setSort] = useState("impressiveness");
   const [page, setPage] = useState(1);
   const [columns, setColumns] = useState(3);
+  const [archiveExpanded, setArchiveExpanded] = useState(false);
   const gridRef = useRef(null);
 
   const filtered = useMemo(() => {
-    const needle = query.trim().toLowerCase();
-    return galleryItems
-      .filter((item) => category === "All" || item.category === category)
-      .filter((item) => {
-        if (!needle) return true;
-        return [item.title, item.creator, item.category, item.whyItMatters, item.proof, item.tags.join(" ")]
-          .join(" ")
-          .toLowerCase()
-          .includes(needle);
-      })
-      .sort((a, b) => {
-        if (sort === "title") return a.title.localeCompare(b.title);
-        if (sort === "category") return a.category.localeCompare(b.category) || b.impressiveness - a.impressiveness;
-        return b.impressiveness - a.impressiveness;
-      });
+    return sortItems(
+      featuredItems.filter((item) => matchesItem(item, category, query)),
+      sort
+    );
   }, [category, query, sort]);
 
-  const capturedMedia = galleryItems.filter((item) => item.media).length;
+  const archiveFiltered = useMemo(() => {
+    return sortItems(
+      archiveItems.filter((item) => matchesItem(item, category, query)),
+      sort
+    );
+  }, [category, query, sort]);
+
+  const archiveVisibleItems = archiveExpanded ? archiveFiltered : archiveFiltered.slice(0, 12);
+  const capturedMedia = featuredItems.length;
   const pageSize = Math.max(rowsPerPage, columns * rowsPerPage);
   const pageCount = Math.max(1, Math.ceil(filtered.length / pageSize));
   const currentPage = Math.min(page, pageCount);
@@ -151,6 +192,7 @@ function App() {
 
   useEffect(() => {
     setPage(1);
+    setArchiveExpanded(false);
   }, [category, query, sort]);
 
   useEffect(() => {
@@ -199,26 +241,28 @@ function App() {
           <p className="eyebrow">Fable Window Gallery</p>
           <h1>Fable Made This</h1>
           <p className="dek">
-            {galleryItems.length} media-backed artifacts from the few public days when Claude Fable felt less like a
-            chatbot and more like a builder: games, worlds, agents, CAD tools, simulations, visual systems, and polished
-            product surfaces.
+            {allItems.length} sourced entries from the few public days when Claude Fable felt less like a chatbot and
+            more like a builder. The first pass foregrounds {featuredItems.length} media-backed artifacts; the deeper
+            archive follows after the analysis.
           </p>
           <div className="stats">
             <span>{windowLabel}</span>
-            <span>{galleryItems.length} entries</span>
+            <span>{allItems.length} sourced entries</span>
             <span>{capturedMedia} media cards</span>
+            <span>{archiveItems.length} archive leads</span>
             <span>{categories.length - 1} categories</span>
           </div>
           <div className="heroLinks">
             <a href="#gallery">Enter the gallery</a>
             <a href="#synthesis">What made it interesting?</a>
+            <a href="#archive">Browse the full archive</a>
             <a href={submissionUrl} target="_blank" rel="noreferrer">
               Submit a missing artifact
             </a>
           </div>
         </div>
         <div className="heroVisual" aria-label="Featured artifact preview">
-          {featuredItems.map((item) => (
+          {previewItems.map((item) => (
             <a
               className="previewTile"
               href={cardDestination(item)}
@@ -263,8 +307,8 @@ function App() {
           <p className="eyebrow">Gallery</p>
           <h2>Browse the artifacts</h2>
           <p>
-            The gallery now only keeps examples with a visible artifact, screenshot, or video. Hover or focus a card to
-            reveal the source trail.
+            The opening gallery is deliberately media-first: the most legible screenshots and videos come before the
+            source-backed archive. Hover or focus a card to reveal the source trail.
           </p>
         </div>
         <strong>{filtered.length}</strong>
@@ -369,7 +413,8 @@ function App() {
           <p>
             The public reaction was not just benchmark excitement. It was a threshold feeling: people watched a model
             turn underspecified creative intent into complete, inspectable artifacts with working mechanics and enough
-            design taste to feel authored. This page intentionally privileges examples you can understand by looking.
+            design taste to feel authored. This page intentionally leads with examples you can understand by looking,
+            then preserves the broader source trail for deeper browsing.
           </p>
         </div>
         <div className="thesisPanel">
@@ -400,14 +445,59 @@ function App() {
         </div>
       </section>
 
+      <section className="archive" id="archive" aria-label="Source-backed archive">
+        <div className="sectionHeader archiveHeader">
+          <div>
+            <p className="eyebrow">Full Archive</p>
+            <h2>Source-backed leads</h2>
+            <p>
+              These entries are useful context, but less instantly visual. They stay lower on the page so the strongest
+              artifacts set the first impression while the full research trail remains browsable.
+            </p>
+          </div>
+          <strong>{archiveFiltered.length}</strong>
+        </div>
+        <div className="archiveGrid">
+          {archiveVisibleItems.map((item) => (
+            <article
+              className="sourceCard"
+              key={item.id}
+              role="link"
+              tabIndex={0}
+              onClick={(event) => handleCardClick(item, event)}
+              onKeyDown={(event) => handleCardKeyDown(item, event)}
+              aria-label={`Open ${item.title}`}
+            >
+              <div className="sourceMeta">
+                <span>{item.category}</span>
+                <small>{item.createdDuringWindow}</small>
+              </div>
+              <h3>{item.title}</h3>
+              <p className="creator">{item.creator}</p>
+              <p>{item.whyItMatters}</p>
+              <div className="links">
+                <a href={item.sourceUrl} target="_blank" rel="noreferrer">
+                  View source
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+        {archiveFiltered.length > 12 && (
+          <button className="archiveToggle" type="button" onClick={() => setArchiveExpanded((value) => !value)}>
+            {archiveExpanded ? "Show fewer archive leads" : `Show all ${archiveFiltered.length} archive leads`}
+          </button>
+        )}
+      </section>
+
       <footer>
         Built from direct X/Reddit research, local media capture, Anthropic launch and system-card sources, and the
         public catalog{" "}
         <a href={catalogUrl} target="_blank" rel="noreferrer">
           Anil-matcha/awesome-claude-fable-5
         </a>
-        , which collected many of the original posts used for source-backed leads. Every card links to the playable
-        artifact when available, otherwise to the original source. Missing something great?{" "}
+        , which collected many of the original posts used for source-backed leads. The page leads with media-backed
+        artifacts, then keeps the broader archive lower for completeness. Missing something great?{" "}
         <a href={submissionUrl} target="_blank" rel="noreferrer">
           Submit it here
         </a>
@@ -417,4 +507,6 @@ function App() {
   );
 }
 
-createRoot(document.getElementById("root")).render(<App />);
+const rootElement = document.getElementById("root");
+globalThis.__fableMadeThisRoot ??= createRoot(rootElement);
+globalThis.__fableMadeThisRoot.render(<App />);

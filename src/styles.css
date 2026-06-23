@@ -300,7 +300,8 @@ select {
 }
 
 .sectionHeader,
-.synthesis {
+.synthesis,
+.archiveHeader {
   border: 1px solid var(--line);
   border-radius: 34px;
   background: rgba(255, 252, 246, 0.64);
@@ -680,8 +681,138 @@ a:hover {
 .card video,
 .card input,
 .card select,
-.card button {
+.card button,
+.sourceCard a {
   cursor: auto;
+}
+
+.archive {
+  margin-top: var(--space-2xl);
+}
+
+.archiveHeader {
+  background:
+    radial-gradient(circle at 100% 0%, rgba(65, 111, 148, 0.12), transparent 22rem),
+    rgba(255, 252, 246, 0.58);
+}
+
+.archiveGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+  margin-top: var(--space-lg);
+}
+
+.sourceCard {
+  position: relative;
+  display: grid;
+  gap: 10px;
+  min-height: 250px;
+  border: 1px solid rgba(69, 52, 40, 0.13);
+  border-radius: 26px;
+  padding: 18px;
+  background:
+    radial-gradient(circle at 12% 0%, rgba(244, 180, 95, 0.1), transparent 11rem),
+    rgba(255, 253, 248, 0.7);
+  box-shadow: 0 12px 28px rgba(72, 45, 26, 0.06);
+  cursor: pointer;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.sourceCard:hover,
+.sourceCard:focus-visible {
+  border-color: rgba(185, 95, 52, 0.3);
+  box-shadow: 0 18px 42px rgba(72, 45, 26, 0.1);
+  outline: none;
+  transform: translateY(-3px);
+}
+
+.sourceCard:focus-visible {
+  outline: 3px solid rgba(185, 95, 52, 0.24);
+  outline-offset: 4px;
+}
+
+.sourceMeta {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.sourceMeta span,
+.sourceMeta small {
+  border-radius: 999px;
+  padding: 6px 9px;
+  background: rgba(36, 28, 22, 0.05);
+  color: #624a3a;
+  font-size: 0.72rem;
+  font-weight: 850;
+}
+
+.sourceMeta span {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.sourceMeta small {
+  max-width: 48%;
+  color: var(--soft);
+  text-align: right;
+}
+
+.sourceCard h3 {
+  margin: 0;
+  color: #241812;
+  font-family: "Bricolage Grotesque", "Atkinson Hyperlegible", ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+}
+
+.sourceCard p {
+  display: -webkit-box;
+  margin: 0;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.sourceCard .creator {
+  margin: -3px 0 0;
+  color: var(--terra);
+  font-size: 0.86rem;
+}
+
+.archiveToggle {
+  display: block;
+  margin: var(--space-lg) auto 0;
+  border: 1px solid rgba(185, 95, 52, 0.24);
+  border-radius: 999px;
+  padding: 13px 18px;
+  background: rgba(255, 253, 248, 0.78);
+  color: var(--terra);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 900;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.archiveToggle:hover,
+.archiveToggle:focus-visible {
+  border-color: rgba(185, 95, 52, 0.44);
+  box-shadow: 0 14px 32px rgba(72, 45, 26, 0.1);
+  outline: none;
+  transform: translateY(-1px);
 }
 
 .pagination {
@@ -883,6 +1014,15 @@ footer {
 
   .paginationControls {
     justify-content: flex-start;
+  }
+
+  .sourceMeta {
+    flex-direction: column;
+  }
+
+  .sourceMeta small {
+    max-width: none;
+    text-align: left;
   }
 }
 

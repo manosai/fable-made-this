@@ -2,7 +2,7 @@
 
 ## Overview
 
-Fable Made This is a light, image-led gallery with a launch-page hero, filterable artifact grid, and synthesis section. The visual system should feel like a curated exhibition catalog for AI-made artifacts: tactile, readable, confident, and slightly strange.
+Fable Made This is a light, image-led gallery with a launch-page hero, a prioritized artifact grid, synthesis, and a lower source-backed archive. The visual system should feel like a curated exhibition catalog for AI-made artifacts: tactile, readable, confident, and slightly strange.
 
 ## Color
 
@@ -37,15 +37,16 @@ Key structures:
 
 - Full-height hero with copy and artifact preview mosaic.
 - Sticky controls for search, category, and sort.
-- Responsive paginated artifact grid.
+- Responsive paginated artifact grid for the 17 media-backed examples.
 - Synthesis section beneath the gallery.
+- Compact source-backed archive lower on the page for less visual leads.
 
 Direction:
 
-- Gallery should remain the primary experience.
+- The media-backed gallery should remain the primary experience.
 - Avoid monotonous identical-card rhythm by varying card spans and media emphasis on larger screens.
 - Give the hero one dominant visual idea rather than a generic landing-page split.
-- Keep synthesis readable but secondary to browsing.
+- Keep synthesis readable but secondary to browsing, and keep the archive visually quieter than the main gallery.
 
 ## Components
 
@@ -56,6 +57,10 @@ Should quickly communicate: “a short Fable window produced complete artifacts.
 ### Artifact Card
 
 Media-first, clickable, source-backed. The card should surface title, creator, and quick rationale without hiding the artifact or requiring hover to understand why it matters.
+
+### Source Lead
+
+Compact, text-led, and clearly secondary. Source leads should preserve research coverage without pretending to be visual artifacts.
 
 ### Controls
 
