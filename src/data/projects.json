@@ -472,8 +472,10 @@
       "bookmarks": 802
     },
     "media": {
-      "type": "image",
-      "src": "/media/fable-city-block-sim/poster.jpg"
+      "type": "video",
+      "src": "/media/fable-city-block-sim/video.mp4",
+      "poster": "/media/fable-city-block-sim/poster.jpg",
+      "duration": "00:27"
     },
     "tags": [
       "one-shot",

@@ -49,7 +49,7 @@ const categories = ["All", ...Array.from(new Set(allItems.map((project) => proje
 const catalogUrl = "https://github.com/Anil-matcha/awesome-claude-fable-5";
 const submissionUrl =
   "https://github.com/manosai/fable-made-this/issues/new?title=Fable%20Made%20This%20submission&body=Source%20link%3A%0A%0ACreator%3A%0A%0AWhat%20did%20Fable%20make%3F%0A%0AWhy%20is%20it%20impressive%3F";
-const rowsPerPage = 4;
+const rowsPerPage = 5;
 
 const synthesisThemes = [
   {
